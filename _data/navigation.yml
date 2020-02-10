@@ -1,12 +1,21 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Home"
+  #   url: /index
+    # url: http://localhost:4000
+  # - title: "알아보기"
+  #  url: /about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "카테고리"
+    url: /categories/
+    children:
+      # - title: ""
+      #   url: ""
+  - title: "태그"
+    url: /tags/
+    children:
+  - title: "사이트맵"
+    url: /sitemap.xml

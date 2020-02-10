@@ -11,7 +11,8 @@
           {{ site.masthead_title | default: site.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
-        <ul class="visible-links">
+        <ul class="visible-links" id="visible-links">
+          {% assign counter = 0 -%}
           {%- for link in site.data.navigation.main -%}
             {%- if link.url contains '://' -%}
               {%- assign url = link.url -%}
@@ -19,8 +20,36 @@
               {%- assign url = link.url | relative_url -%}
             {%- endif -%}
             <li class="masthead__menu-item">
-              <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              {% if link.url and link.children == null %}
+                <a href="{{ url }}" id="head-{{counter}}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              {%- else if link.children -%}
+                <div class="dropdown" id="head-{{counter}}">
+                  {% if link.url %}
+                    {%- if link.url contains '://' -%}
+                      {%- assign url = link.url -%}
+                    {%- else -%}
+                      {%- assign url = link.url | relative_url -%}
+                    {%- endif -%}
+                    <a href="{{url}}" class="dropbtn">{{ link.title }}</a>
+                  {% else %}
+                    <button class="dropbtn">{{ link.title }}</button>
+                  {%- endif -%}
+                  <div class="dropdown-content">
+                    {% assign children = link.children|sort:"title" %}
+                    {% for child in children %}
+                      {% comment %} internal/external URL check {% endcomment %}
+                      {% if child.url contains "://" %}
+                        {% assign child_url = child.url %}
+                      {% else %}
+                        {% assign child_url = child.url | relative_url %}
+                      {% endif %}
+                      <a href="{{ child_url }}" {% if child.description %}title="{{ child.description }}"{% endif %}>{{ child.title }}</a>
+                    {% endfor %}
+                  </div>
+                </div>
+              {%- endif -%}
             </li>
+            {% assign counter = counter | plus: 1 %}
           {%- endfor -%}
         </ul>
         {% if site.search == true %}
@@ -35,7 +64,8 @@
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
         </button>
-        <ul class="hidden-links hidden"></ul>
+        <ul class="hidden-links hidden" id="hidden-links"></ul>
+        <script src="/assets/js/neomind/nav-design.js"></script>
       </nav>
     </div>
   </div>

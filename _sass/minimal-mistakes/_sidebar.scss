@@ -8,12 +8,25 @@
 
 .sidebar {
   @include clearfix();
+  padding-top: $masthead-sidebar-padding;
   @include breakpoint(max-width $large) {
     /* fix z-index order of follow links */
     position: relative;
     z-index: 10;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+  }
+  &:not(.sticky) {
+    
+    .hitcounter  {
+        transform: translateX(100%);
+      }
+      .author__urls-wrapper  {
+        transform: translateX($hitcounter-width);
+        .author__urls {
+          transform: translateX(30%);
+        }
+      }
   }
 
   @include breakpoint($large) {
@@ -22,6 +35,7 @@
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
+
 
     &:hover {
       opacity: 1;
@@ -32,8 +46,9 @@
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
       */
-      height: calc(100vh - #{$nav-height} - 2em);
+      height: calc(100vh - #{$nav-height} - 10em); // default -2em
     }
+    
   }
 
   @include breakpoint($x-large) {
@@ -69,6 +84,13 @@
       height: 20px;
     }
   }
+
+  .hitcounter {
+    display: inline-block;
+    width: $hitcounter-width;
+    height: calc($hitcounter-width/4);
+    margin-bottom: 10px;
+  }
 }
 
 .sidebar__right {
@@ -87,7 +109,8 @@
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
-      top: 2em;
+      top: 6em;
+      //padding-top: $masthead-sidebar-padding;
       float: right;
     }
   }
@@ -185,7 +208,6 @@
   vertical-align: middle;
   font-family: $sans-serif;
   z-index: 10;
-  position: relative;
   cursor: pointer;
 
   li:last-child {
