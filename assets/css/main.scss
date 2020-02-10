@@ -6,3 +6,6 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap'); // 나눔 고딕

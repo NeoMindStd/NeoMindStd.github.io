@@ -38,6 +38,9 @@
       </div>
     {% endif %}
   </div>
+  
+  <!-- https://hitcounter.pythonanywhere.com/ -->
+  <img class="hitcounter" src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fneomindstd.github.io%2F" alt="Hits">
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
@@ -137,6 +140,14 @@
         </li>
       {% endif %}
 
+      {% if author.playstore %}
+        <li>
+          <a href="{{ author.playstore }}" itemprop="url">
+            <i class="fab fa-fw fa-google-play" aria-hidden="true"></i> Play Store
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.github %}
         <li>
           <a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
@@ -157,6 +168,22 @@
         <li>
           <a href="https://stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stack Overflow
+          </a>
+        </li>
+      {% endif %}
+      
+      {% if author.hashcode %}
+        <li>
+          <a href="https://stackoverflow.com/users/{{ author.hashcode }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fas fa-hashtag" aria-hidden="true"></i> Hash Code
+          </a>
+        </li>
+      {% endif %}
+      
+      {% if author.game %}
+        <li>
+          <a href="{{ author.game }}" itemprop="url">
+            <i class="fab fa-fw fas fa-gamepad" aria-hidden="true"></i> {{ author.name }}
           </a>
         </li>
       {% endif %}
