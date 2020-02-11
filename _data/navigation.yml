@@ -12,8 +12,8 @@ main:
   - title: "카테고리"
     url: /categories/
     children:
-      # - title: ""
-      #   url: ""
+       - title: "문제풀이"
+         url: "/categories/#문제풀이"
   - title: "태그"
     url: /tags/
     children:
