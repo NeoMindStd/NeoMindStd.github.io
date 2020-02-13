@@ -18,3 +18,9 @@ layout: single
  - [1012번 유기농 배추 풀이 - 파이썬](/문제풀이/boj1012)
 </div>
 </details>
+<details>
+<summary>2000~2999번</summary>
+<div markdown="1">
+ - [2557번 Hello World - 파이썬](/문제풀이/boj2557)
+ - [2741번 N 찍기 - 파이썬](/문제풀이/boj2741)
+</div>
