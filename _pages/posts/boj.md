@@ -24,3 +24,10 @@ layout: single
  - [2557번 Hello World - 파이썬](/문제풀이/boj2557)
  - [2741번 N 찍기 - 파이썬](/문제풀이/boj2741)
 </div>
+</details>
+<details>
+<summary>10000~10999번</summary>
+<div markdown="1">
+ - [10171번 고양이 - 파이썬](/문제풀이/boj10171)
+</div>
+</details>
