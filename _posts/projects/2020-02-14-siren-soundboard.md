@@ -1,5 +1,5 @@
 ---
-title:  "[프로젝트]사이렌 사운드보드"
+title:  "[프로젝트] 사이렌 사운드보드"
 excerpt: "각종 사이렌 음향에 효과를 주어 재생할 수 있는 어플리케이션"
 
 categories:
@@ -46,12 +46,12 @@ published: true
 
 ### 개발 내용
 
-여러종류의 사이렌들을 모아 재생속도 조정 등의 기능을 제공
+ - 여러종류의 사이렌들을 모아 재생속도 조정 등의 기능을 제공
 
 ## 실행 및 개발 환경
 
 |:----:|:----|
-| **<center>개발 O/S</center>** | Windows 10 |
+| **<center>개발 O/S</center>** | Windows 8.1 → Windows 10 |
 | **<center>실행 O/S</center>** | Android |
 | **<center>프레임워크</center>** | Android SDK |
 | **<center>개발 언어</center>** | JAVA |
