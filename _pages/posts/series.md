@@ -8,5 +8,6 @@ toc_sticky: true
 toc_label: "목차"
 ---
 
- - [프로젝트](/projects)
+ - [각종 리뷰](/reviews)
  - [백준 문제풀이](/boj)
+ - [프로젝트](/projects)
