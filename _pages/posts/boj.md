@@ -32,3 +32,9 @@ layout: single
  - [10171번 고양이 - 파이썬](/문제풀이/boj10171)
 </div>
 </details>
+<details>
+<summary>16000~16999번</summary>
+<div markdown="1">
+ - [16017번 Telemarketer or not? - 파이썬](/문제풀이/boj16017)
+</div>
+</details>
