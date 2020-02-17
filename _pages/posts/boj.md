@@ -4,6 +4,12 @@ permalink: /boj/
 layout: single
 ---
 
+- - -
+
+ - [연재 목록 모두 보기](/series)
+
+- - -
+
 ### [BOJ GitHub Repository](https://github.com/NeoMindStd/CodingLife/tree/master/baekjoon)
 
 ### 풀이한 문제들
@@ -38,3 +44,9 @@ layout: single
  - [16017번 Telemarketer or not? - 파이썬](/문제풀이/boj16017)
 </div>
 </details>
+
+- - -
+
+ - [연재 목록 모두 보기](/series)
+
+- - -

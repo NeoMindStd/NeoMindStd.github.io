@@ -9,6 +9,8 @@ main:
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
+  - title: "연재 목록"
+    url: /series/
   - title: "카테고리"
     url: /categories/
     children:
