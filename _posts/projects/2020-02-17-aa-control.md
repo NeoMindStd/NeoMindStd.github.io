@@ -57,7 +57,7 @@ published: true
 | **<center>실행 O/S</center>** | Windows 7 |
 | **<center>실행 플랫폼</center>** | 한컴오피스 한셀 |
 | **<center>개발 언어</center>** | 한셀 내장함수, Visual Basic Script |
-| **<center>에디터</center>** | 한셀 내장 에디터 |
+| **<center>에디터 / IDE</center>** | 한셀 내장 에디터 |
 
 ## 개발 후기
 

@@ -61,7 +61,7 @@ published: true
 | **<center>실행 O/S</center>** | Android |
 | **<center>프레임워크</center>** | Android SDK |
 | **<center>개발 언어</center>** | JAVA |
-| **<center>에디터</center>** | Eclipse → Android Studio |
+| **<center>에디터 / IDE</center>** | Eclipse → Android Studio |
 
 ## 개발 후기
 
