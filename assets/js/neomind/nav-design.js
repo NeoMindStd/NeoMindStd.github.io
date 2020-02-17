@@ -16,7 +16,7 @@ var observer = new MutationObserver(function(){
     }
     for(var i=linksSize - hiddenLinks.childElementCount; i < linksSize; i++){
         if(links[i].className=='dropdown'){
-            links[i].children[1].style.setProperty(`--text`,`translateX(-200%)`);
+            links[i].children[1].style.setProperty(`--text`,`translate(`+(-600/linksSize)+`%,-50%)`);
         }
     }
 });
