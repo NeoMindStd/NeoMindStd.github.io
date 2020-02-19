@@ -18,6 +18,7 @@ toc_label: "목차"
  - [사이렌 사운드보드](/project/siren-soundboard)
  - [호러 월드](/project/horror-world)
  - [방공무기 교전통제 프로그램](/project/aa-control)
+ - [애니북 놀이터](/project/edu-motion)
 
  <br>
 
