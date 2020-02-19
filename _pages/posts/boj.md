@@ -33,6 +33,12 @@ layout: single
 </div>
 </details>
 <details>
+<summary>3000~3999번</summary>
+<div markdown="1">
+ - [3109번 빵집 - 파이썬](/문제풀이/boj3109)
+</div>
+</details>
+<details>
 <summary>10000~10999번</summary>
 <div markdown="1">
  - [10171번 고양이 - 파이썬](/문제풀이/boj10171)
