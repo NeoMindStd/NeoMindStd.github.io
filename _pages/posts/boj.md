@@ -46,6 +46,12 @@ layout: single
 </div>
 </details>
 <details>
+<summary>12000~12999번</summary>
+<div markdown="1">
+ - [12833번 XORXORXOR - 파이썬](/문제풀이/boj12833)
+</div>
+</details>
+<details>
 <summary>16000~16999번</summary>
 <div markdown="1">
  - [16017번 Telemarketer or not? - 파이썬](/문제풀이/boj16017)
