@@ -45,7 +45,7 @@ published: true
 
 초등생 교육에 사용되는 외주 프로젝트로서, 크로마키와 프레임별 편집 기능을 제공하고 여러 장의 사진을 찍어 StopMotion 영상으로 변환 및 재생하는 안드로이드 어플리케이션 
 
- - 배포: [플레이 스토어](https://play.google.com/store/apps/details?id=in74mz.edumotion) <sup id="tupleH">[1](#tupleT)</sup>
+ - 배포: [플레이 스토어](https://play.google.com/store/apps/details?id=in74mz.edumotion)<sup id="tupleH">[1](#tupleT)</sup>
  - 성과: (2020-02-19 기준) 50회 이상 설치
 
 ## 프로젝트 개발 정보
