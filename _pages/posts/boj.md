@@ -40,6 +40,12 @@ layout: single
 </div>
 </details>
 <details>
+<summary>9000~9999번</summary>
+<div markdown="1">
+ - [9317번 Monitor DPI - 파이썬](/문제풀이/boj9317)
+</div>
+</details>
+<details>
 <summary>10000~10999번</summary>
 <div markdown="1">
  - [10171번 고양이 - 파이썬](/문제풀이/boj10171)
