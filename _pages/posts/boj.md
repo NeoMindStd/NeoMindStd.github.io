@@ -42,6 +42,7 @@ layout: single
 <details>
 <summary>9000~9999번</summary>
 <div markdown="1">
+ - [9286번 Gradabase - 파이썬](/문제풀이/boj9286)
  - [9317번 Monitor DPI - 파이썬](/문제풀이/boj9317)
 </div>
 </details>
