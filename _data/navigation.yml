@@ -14,6 +14,8 @@ main:
   - title: "카테고리"
     url: /categories/
     children:
+       - title: "게임"
+         url: "/categories/#게임"
        - title: "리뷰"
          url: "/categories/#리뷰"
        - title: "문제풀이"
