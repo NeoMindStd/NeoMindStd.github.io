@@ -16,6 +16,7 @@ layout: single
  - [전장 7000점 달성](/게임/bg7000score)
  - [전장 완성형 기계죽메덱](/게임/bg-perfect-mech)
  - [전장 완성형 용족덱](/게임/bg-perfect-dragon)
+ - [전장 완벽한 운빨](/게임/bg-perfect-luckey)
 </div>
 </details>
 
