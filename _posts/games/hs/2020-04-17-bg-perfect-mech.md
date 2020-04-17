@@ -26,6 +26,7 @@ published: true
 - - -
 
 ![](/assets/images/posts/games/hs/bg-perfect-mech1.png)
+
 ![](/assets/images/posts/games/hs/bg-perfect-mech2.png)
 
 5황금 기계죽메덱 ㄷㄷㄷ

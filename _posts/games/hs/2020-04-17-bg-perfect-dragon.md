@@ -26,6 +26,7 @@ published: true
 - - -
 
 ![](/assets/images/posts/games/hs/bg-perfect-dragon1.png)
+
 ![](/assets/images/posts/games/hs/bg-perfect-dragon2.png)
 
 라디나 둘에 황금말리고스 ㄷㄷ
