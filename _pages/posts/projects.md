@@ -21,6 +21,7 @@ toc_label: "목차"
  - [애니북 놀이터](/project/edu-motion)
  - [픽키](/project/pickey)
  - [쿠폰 매니저](/project/coupon-manager)
+ - [브레인 매니저](/project/brain-manager)
  - [휴일 알리미](/project/holinoti)
  - [VR Shooting](/project/vr-shooting)
 
