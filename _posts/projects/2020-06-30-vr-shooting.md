@@ -42,6 +42,7 @@ published: true
 
  - 저장소: [깃 허브 리포지토리](https://github.com/NeoMindStd/GNU-VR)
  - 다운로드: [깃 허브 릴리즈](https://github.com/NeoMindStd/GNU-VR/releases/download/v1.0/VRShooting.zip)
+ - [프로젝트 보고서](/assets/pdf/projects/vr-shooting/report.pdf)
 
 ## 프로젝트 개발 정보
 
