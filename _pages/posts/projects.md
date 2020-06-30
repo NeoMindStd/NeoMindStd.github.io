@@ -22,6 +22,7 @@ toc_label: "목차"
  - [픽키](/project/pickey)
  - [쿠폰 매니저](/project/coupon-manager)
  - [휴일 알리미](/project/holinoti)
+ - [VR Shooting](/project/vr-shooting)
 
  <br>
 
