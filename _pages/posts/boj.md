@@ -69,6 +69,12 @@ layout: single
 </div>
 </details>
 <details>
+<summary>13000~13999번</summary>
+<div markdown="1">
+ - [13420번 사칙연산 - 파이썬](/문제풀이/boj13420)
+</div>
+</details>
+<details>
 <summary>16000~16999번</summary>
 <div markdown="1">
  - [16017번 Telemarketer or not? - 파이썬](/문제풀이/boj16017)
