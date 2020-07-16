@@ -49,6 +49,12 @@ layout: single
 </div>
 </details>
 <details>
+<summary>8000~8999번</summary>
+<div markdown="1">
+ - [8246번 Stół - 파이썬](/문제풀이/boj8246)
+</div>
+</details>
+<details>
 <summary>9000~9999번</summary>
 <div markdown="1">
  - [9286번 Gradabase - 파이썬](/문제풀이/boj9286)
