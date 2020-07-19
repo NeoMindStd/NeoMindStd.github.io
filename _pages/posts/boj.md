@@ -43,6 +43,12 @@ layout: single
 </div>
 </details>
 <details>
+<summary>4000~4999번</summary>
+<div markdown="1">
+ - [4949번 균형잡힌 세상 - 파이썬](/문제풀이/boj4949)
+</div>
+</details>
+<details>
 <summary>5000~5999번</summary>
 <div markdown="1">
  - [5613번 계산기 프로그램 - 파이썬](/문제풀이/boj5613)
