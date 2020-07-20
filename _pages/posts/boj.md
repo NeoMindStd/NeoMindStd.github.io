@@ -87,6 +87,12 @@ layout: single
 </div>
 </details>
 <details>
+<summary>15000~15999번</summary>
+<div markdown="1">
+ - [15734번 명장 남정훈 - 파이썬](/문제풀이/boj15734)
+</div>
+</details>
+<details>
 <summary>16000~16999번</summary>
 <div markdown="1">
  - [16017번 Telemarketer or not? - 파이썬](/문제풀이/boj16017)
