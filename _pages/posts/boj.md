@@ -57,6 +57,12 @@ layout: single
 </div>
 </details>
 <details>
+<summary>7000~7999번</summary>
+<div markdown="1">
+ - [7662번 이중 우선순위 큐 - 파이썬](/문제풀이/boj7662)
+</div>
+</details>
+<details>
 <summary>8000~8999번</summary>
 <div markdown="1">
  - [8246번 Stół - 파이썬](/문제풀이/boj8246)
