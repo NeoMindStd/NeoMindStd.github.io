@@ -107,6 +107,12 @@ layout: single
  - [16917번 양념 반 후라이드 반 - 파이썬](/문제풀이/boj16917)
 </div>
 </details>
+<details>
+<summary>17000~17999번</summary>
+<div markdown="1">
+ - [17496번 스타후르츠 - 파이썬](/문제풀이/boj17496)
+</div>
+</details>
 
 - - -
 
