@@ -81,6 +81,7 @@ layout: single
 <summary>10000~10999번</summary>
 <div markdown="1">
  - [10171번 고양이 - 파이썬](/문제풀이/boj10171)
+ - [10539번 수빈이와 수열 - 파이썬](/문제풀이/boj10539)
 </div>
 </details>
 <details>
