@@ -115,6 +115,12 @@ layout: single
  - [17496번 스타후르츠 - 파이썬](/문제풀이/boj17496)
 </div>
 </details>
+<details>
+<summary>18000~18999번</summary>
+<div markdown="1">
+ - [18247번 겨울왕국 티켓 예매 풀이 - 파이썬](/문제풀이/boj18247)
+</div>
+</details>
 
 - - -
 
