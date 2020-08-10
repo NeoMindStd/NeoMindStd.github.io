@@ -1,5 +1,5 @@
 ---
-title: "게임 연재 모음"
+title: "개발 공부 모음"
 permalink: /dev/study/
 layout: single
 ---
@@ -13,7 +13,7 @@ layout: single
 <details>
 <summary>언어분석</summary>
 <div markdown="1">
- - [파이썬](./language/python)
+ - [파이썬 파헤치기](./language/python)
 </div>
 </details>
 

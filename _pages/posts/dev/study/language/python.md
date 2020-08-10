@@ -1,5 +1,5 @@
 ---
-title: "게임 연재 모음"
+title: "파이썬 파헤치기"
 permalink: /dev/study/language/python
 layout: single
 ---
@@ -13,6 +13,7 @@ layout: single
 <details>
 <summary>언어분석</summary>
 <div markdown="1">
+ - [파이썬의 어휘 분석](/dev/study/language/python/lexical-analysis)
 </div>
 </details>
 
