@@ -90,6 +90,12 @@ layout: single
 </div>
 </details>
 <details>
+<summary>11000~11999번</summary>
+<div markdown="1">
+ - [11729번 하노이 탑 이동 순서 - 파이썬](/문제풀이/boj11729)
+</div>
+</details>
+<details>
 <summary>12000~12999번</summary>
 <div markdown="1">
  - [12833번 XORXORXOR - 파이썬](/문제풀이/boj12833)
