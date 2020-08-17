@@ -130,6 +130,7 @@ layout: single
 <details>
 <summary>18000~18999번</summary>
 <div markdown="1">
+ - [18005번 Even or Odd? 풀이 - 파이썬](/문제풀이/boj18005)
  - [18247번 겨울왕국 티켓 예매 풀이 - 파이썬](/문제풀이/boj18247)
 </div>
 </details>
