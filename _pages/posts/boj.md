@@ -39,6 +39,7 @@ layout: single
 <details>
 <summary>2000~2999번</summary>
 <div markdown="1">
+ - [2292번 벌집 - 파이썬](/문제풀이/boj2292)
  - [2557번 Hello World - 파이썬](/문제풀이/boj2557)
  - [2741번 N 찍기 - 파이썬](/문제풀이/boj2741)
 </div>
