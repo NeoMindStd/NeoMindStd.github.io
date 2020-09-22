@@ -127,6 +127,7 @@ layout: single
 <details>
 <summary>17000~17999번</summary>
 <div markdown="1">
+ - [17144번 미세먼지 안녕! - 파이썬](/문제풀이/boj17144)
  - [17496번 스타후르츠 - 파이썬](/문제풀이/boj17496)
 </div>
 </details>
