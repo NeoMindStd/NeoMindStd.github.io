@@ -109,6 +109,7 @@ layout: single
 <details>
 <summary>13000~13999번</summary>
 <div markdown="1">
+ - [13118번 뉴턴과 사과 - 파이썬](/문제풀이/boj13118)
  - [13420번 사칙연산 - 파이썬](/문제풀이/boj13420)
 </div>
 </details>
