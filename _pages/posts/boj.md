@@ -103,6 +103,7 @@ layout: single
 <details>
 <summary>12000~12999번</summary>
 <div markdown="1">
+ - [12095번 가장 오래 걸리는 스도쿠 - 텍스트](/문제풀이/boj12095)
  - [12833번 XORXORXOR - 파이썬](/문제풀이/boj12833)
 </div>
 </details>
