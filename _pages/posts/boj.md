@@ -134,6 +134,7 @@ layout: single
 <div markdown="1">
  - [17144번 미세먼지 안녕! - 파이썬](/문제풀이/boj17144)
  - [17496번 스타후르츠 - 파이썬](/문제풀이/boj17496)
+ - [17912번 License to Launch - 파이썬](/문제풀이/boj17912)
 </div>
 </details>
 <details>
