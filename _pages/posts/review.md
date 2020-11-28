@@ -22,6 +22,9 @@ toc_label: "목차"
 ### 시험,자격증
  - [정보처리기사 2020년 3회 실기 합격!!](/리뷰/engineer-information-processing)
 
+### 구직
+ - [네이버 2020 하반기 신입 공채 합격!!](/리뷰/2020-naver-open-recruitment)
+
 <br>
 
 - - -
