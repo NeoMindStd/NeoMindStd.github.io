@@ -14,7 +14,7 @@ tags:
 
 date: 2020-11-28 KST 21:30 +0900
 
-toc: false
+toc: true
 toc_sticky: true
 toc_label: "목차"
 
