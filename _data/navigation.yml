@@ -22,6 +22,8 @@ main:
          url: "/categories/#문제풀이"
        - title: "Projects"
          url: "/categories/#project"
+       - title: "기타"
+         url: "/categories/#기타"
   - title: "태그"
     url: /tags/
     children:
