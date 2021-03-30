@@ -25,6 +25,9 @@ toc_label: "목차"
 ### 구직
  - [네이버 2020 하반기 신입 공채 합격!!](/리뷰/2020-naver-open-recruitment)
 
+### 독후감
+ - [조엘 온 소프트웨어](/리뷰/joel-on-software)
+
 <br>
 
 - - -
