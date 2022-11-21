@@ -11,7 +11,7 @@ tags:
   - PR
   - 안드로이드
 
-date: 2021-03-30 KST 23:42 +0900
+date: 2022-11-21 KST 20:01 +0900
 
 toc: false
 toc_sticky: true
