@@ -22,6 +22,9 @@ toc_label: "목차"
 ### 여행,액티비티
  - [태종대 체험 스쿠버다이빙 후기](/리뷰/scuba-taejongdae)
 
+### 행사
+ - [2022 지스타 후기](/리뷰/gstar)
+
 ### 시험,자격증
  - [정보처리기사 2020년 3회 실기 합격!!](/리뷰/engineer-information-processing)
 
