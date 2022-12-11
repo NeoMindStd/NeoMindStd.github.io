@@ -54,6 +54,7 @@ layout: single
 <summary>3000~3999번</summary>
 <div markdown="1">
  - [3109번 빵집 - 파이썬](/문제풀이/boj3109)
+ - [3733번 Shares 풀이 with ChatGPT - 파이썬](/문제풀이/boj3733)
 </div>
 </details>
 <details>
