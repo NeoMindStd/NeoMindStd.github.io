@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html lang="ko" data-lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>PRIVACY_POLICY</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; margin: 40px auto; max-width: 900px; line-height: 1.65; padding: 0 16px; }
+    h1, h2 { margin-bottom: 8px; }
+    .toolbar { display: flex; gap: 8px; margin: 16px 0 20px; align-items: center; }
+    .lang-btn { border: 1px solid #bbb; background: #fff; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+    .lang-btn.active { background: #222; color: #fff; border-color: #222; }
+    .home { margin-left: auto; }
+    a { color: #0a58ca; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .lang-en { display: none; }
+    html[data-lang="en"] .lang-ko { display: none; }
+    html[data-lang="en"] .lang-en { display: block; }
+    html[data-lang="ko"] .lang-ko { display: block; }
+    html[data-lang="ko"] .lang-en { display: none; }
+  </style>
+</head>
+<body>
+  <div class="toolbar" role="group" aria-label="Language selector">
+    <button class="lang-btn" id="btn-ko" onclick="setLang('ko')">한국어</button>
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+    <a class="home" href="./index.html">Index</a>
+  </div>
+
+  <section class="lang-ko">
+    <h1>개인정보처리방침 - HorrorWorld</h1>
+    <p><strong>최종 수정일:</strong> 2026-03-09</p>
+    <p>HorrorWorld(이하 "앱")는 공포 스토리 및 이미지 콘텐츠를 제공합니다.</p>
+
+    <h2>1. 제3자 SDK를 통한 데이터 처리</h2>
+    <p>앱은 Firebase Analytics 및 Google Mobile Ads SDK(AdMob)를 사용합니다. 이 서비스들은 분석 및 광고 송출/측정을 위해 광고 ID, 기기/앱 사용 정보, 진단/충돌 관련 신호를 처리할 수 있습니다.</p>
+
+    <h2>2. 앱이 직접 수집하는 데이터</h2>
+    <p>앱은 회원가입을 요구하지 않으며, 앱 UI 내부에서 이름/이메일/전화번호와 같은 직접적인 개인 프로필 데이터를 수집하지 않습니다.</p>
+
+    <h2>3. 콘텐츠 및 네트워크</h2>
+    <p>앱은 GitHub에 호스팅된 프로젝트 공개 콘텐츠 엔드포인트에서 콘텐츠 메타데이터를 불러올 수 있습니다.</p>
+
+    <h2>4. 데이터 공유</h2>
+    <p>Firebase/AdMob 관련 데이터 처리는 Google 서비스 정책 및 약관을 따릅니다.</p>
+
+    <h2>5. 보안</h2>
+    <p>네트워크 통신은 표준 HTTPS/TLS 엔드포인트를 사용합니다.</p>
+
+    <h2>6. 이용자 권리 및 문의</h2>
+    <p>개인정보 또는 법적 요청은 Google Play 스토어 등록정보에 표시된 개발자 이메일로 문의해 주세요.</p>
+
+    <h2>7. 정책 변경</h2>
+    <p>앱 기능 또는 SDK 사용이 변경되면 본 정책도 업데이트될 수 있습니다.</p>
+  </section>
+
+  <section class="lang-en">
+    <h1>Privacy Policy - HorrorWorld</h1>
+    <p><strong>Last updated:</strong> 2026-03-09</p>
+    <p>HorrorWorld ("the App") provides horror story and image content.</p>
+
+    <h2>1. Data Processed by Third-Party SDKs</h2>
+    <p>The App uses Firebase Analytics and Google Mobile Ads SDK (AdMob). These services may process advertising ID, device/app usage data, and diagnostic/crash-related signals for analytics and ad delivery/measurement.</p>
+
+    <h2>2. Data Collected Directly by the App</h2>
+    <p>The App does not require account signup and does not collect direct personal profile data such as name, email, or phone number inside the app UI.</p>
+
+    <h2>3. Content and Network</h2>
+    <p>The App may fetch content metadata from the project's public content endpoint hosted on GitHub.</p>
+
+    <h2>4. Data Sharing</h2>
+    <p>Data handling by Firebase/AdMob follows Google service policies and terms.</p>
+
+    <h2>5. Security</h2>
+    <p>Network communication uses standard HTTPS/TLS endpoints.</p>
+
+    <h2>6. User Rights and Contact</h2>
+    <p>For privacy or legal requests, contact the developer email shown in the Google Play listing.</p>
+
+    <h2>7. Policy Updates</h2>
+    <p>This policy may be updated when app features or SDK usage changes.</p>
+  </section>
+
+  <script>
+    function updateButtons(lang) {
+      document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      updateButtons(lang);
+      localStorage.setItem('hw_docs_lang', lang);
+      const url = new URL(window.location.href);
+      url.searchParams.set('lang', lang);
+      history.replaceState({}, '', url);
+    }
+
+    (function initLang() {
+      const urlLang = new URL(window.location.href).searchParams.get('lang');
+      const savedLang = localStorage.getItem('hw_docs_lang');
+      const browserLang = (navigator.language || '').toLowerCase().startsWith('ko') ? 'ko' : 'en';
+      const lang = (urlLang === 'ko' || urlLang === 'en') ? urlLang : (savedLang || browserLang || 'ko');
+      setLang(lang);
+    })();
+  </script>
+</body>
+</html>

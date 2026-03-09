@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="ko" data-lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>HorrorWorld Play Console Response Docs</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; margin: 40px auto; max-width: 900px; line-height: 1.65; padding: 0 16px; }
+    h1, h2 { margin-top: 0; }
+    .toolbar { display: flex; gap: 8px; margin: 16px 0 20px; }
+    .lang-btn { border: 1px solid #bbb; background: #fff; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+    .lang-btn.active { background: #222; color: #fff; border-color: #222; }
+    .box { border: 1px solid #ddd; border-radius: 10px; padding: 16px; margin: 12px 0; }
+    a { color: #0a58ca; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .lang-en { display: none; }
+    html[data-lang="en"] .lang-ko { display: none; }
+    html[data-lang="en"] .lang-en { display: block; }
+    html[data-lang="ko"] .lang-ko { display: block; }
+    html[data-lang="ko"] .lang-en { display: none; }
+  </style>
+</head>
+<body>
+  <div class="toolbar" role="group" aria-label="Language selector">
+    <button class="lang-btn" id="btn-ko" onclick="setLang('ko')">한국어</button>
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <section class="lang-ko">
+    <h1>HorrorWorld Play Console 대응 문서</h1>
+    <p>업데이트 기준일: 2026-03-09</p>
+    <p>이 페이지는 사이트 목차/내비게이션에 등록하지 않은 비공개 전달용 링크입니다.</p>
+    <div class="box">
+      <h2>문서 목록</h2>
+      <ul>
+        <li><a href="./PLAY_RELEASE_RECOVERY_CHECKLIST.html">PLAY_RELEASE_RECOVERY_CHECKLIST</a></li>
+        <li><a href="./PLAY_DATA_SAFETY_DRAFT.html">PLAY_DATA_SAFETY_DRAFT</a></li>
+        <li><a href="./PRIVACY_POLICY.html">PRIVACY_POLICY</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="lang-en">
+    <h1>HorrorWorld Play Console Response Documents</h1>
+    <p>Last updated: 2026-03-09</p>
+    <p>This page is intentionally unlisted from site navigation and table of contents.</p>
+    <div class="box">
+      <h2>Document List</h2>
+      <ul>
+        <li><a href="./PLAY_RELEASE_RECOVERY_CHECKLIST.html">PLAY_RELEASE_RECOVERY_CHECKLIST</a></li>
+        <li><a href="./PLAY_DATA_SAFETY_DRAFT.html">PLAY_DATA_SAFETY_DRAFT</a></li>
+        <li><a href="./PRIVACY_POLICY.html">PRIVACY_POLICY</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    function updateButtons(lang) {
+      document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      updateButtons(lang);
+      localStorage.setItem('hw_docs_lang', lang);
+      const url = new URL(window.location.href);
+      url.searchParams.set('lang', lang);
+      history.replaceState({}, '', url);
+    }
+
+    (function initLang() {
+      const urlLang = new URL(window.location.href).searchParams.get('lang');
+      const savedLang = localStorage.getItem('hw_docs_lang');
+      const browserLang = (navigator.language || '').toLowerCase().startsWith('ko') ? 'ko' : 'en';
+      const lang = (urlLang === 'ko' || urlLang === 'en') ? urlLang : (savedLang || browserLang || 'ko');
+      setLang(lang);
+    })();
+  </script>
+</body>
+</html>
