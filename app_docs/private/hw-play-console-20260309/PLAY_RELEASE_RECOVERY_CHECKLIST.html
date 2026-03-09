@@ -6,18 +6,11 @@
   <meta name="robots" content="noindex,nofollow,noarchive">
   <title>PLAY_RELEASE_RECOVERY_CHECKLIST</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; margin: 40px auto; max-width: 980px; line-height: 1.65; padding: 0 16px; }
-    h1, h2, h3 { margin-bottom: 8px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; margin: 40px auto; max-width: 900px; line-height: 1.65; padding: 0 16px; }
     .toolbar { display: flex; gap: 8px; margin: 16px 0 20px; align-items: center; }
     .lang-btn { border: 1px solid #bbb; background: #fff; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
     .lang-btn.active { background: #222; color: #fff; border-color: #222; }
     .home { margin-left: auto; }
-    .box { border: 1px solid #ddd; border-radius: 10px; padding: 16px; margin: 12px 0; }
-    .ok { color: #0a7d33; }
-    .todo { color: #a04300; }
-    code { background: #f5f5f5; border-radius: 6px; padding: 2px 6px; }
-    a { color: #0a58ca; text-decoration: none; }
-    a:hover { text-decoration: underline; }
     .lang-en { display: none; }
     html[data-lang="en"] .lang-ko { display: none; }
     html[data-lang="en"] .lang-en { display: block; }
@@ -26,122 +19,34 @@
   </style>
 </head>
 <body>
-  <div class="toolbar" role="group" aria-label="Language selector">
+  <div class="toolbar">
     <button class="lang-btn" id="btn-ko" onclick="setLang('ko')">한국어</button>
     <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
     <a class="home" href="./index.html">Index</a>
   </div>
 
   <section class="lang-ko">
-    <h1>Google Play 복구 및 재출시 체크리스트 (완성본)</h1>
-    <p><strong>기준일:</strong> 2026-03-09</p>
-
-    <div class="box">
-      <h2>1) 검증 완료 항목 (개발 산출물)</h2>
-      <ul>
-        <li class="ok">빌드: <code>./gradlew assembleRelease</code> 성공</li>
-        <li class="ok">릴리즈 머지 매니페스트: <code>targetSdkVersion=36</code>, <code>versionCode=20</code>, <code>com.google.android.gms.permission.AD_ID</code> 포함</li>
-        <li class="ok">의존성 그래프: <code>com.google.android.gms:play-services-ads:25.0.0</code> 확인</li>
-        <li class="ok">Firebase Analytics + AdMob 사용 상태 확인</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <h2>2) Play Console에서 반드시 해야 하는 항목</h2>
-      <ol>
-        <li class="todo">데이터 보안 양식 제출
-          <div>입력 기준은 <a href="./PLAY_DATA_SAFETY_DRAFT.html?lang=ko">PLAY_DATA_SAFETY_DRAFT</a> 사용</div>
-        </li>
-        <li class="todo">스토어 등록정보 개인정보처리방침 URL 등록
-          <div><code>https://neomindstd.github.io/app_docs/private/hw-play-console-20260309/PRIVACY_POLICY.html?lang=ko</code></div>
-        </li>
-        <li class="todo">프로덕션 릴리즈 게시 (versionCode 20) 및 단계적 롤아웃</li>
-      </ol>
-    </div>
-
-    <div class="box">
-      <h2>3) 권장 실행 순서</h2>
-      <ol>
-        <li>App content > Data safety에서 양식 제출</li>
-        <li>Store listing > Privacy policy URL 업데이트</li>
-        <li>Production에 신규 릴리즈 게시 (5% -> 20% -> 100%)</li>
-        <li>Policy status에서 경고 해제 여부 확인</li>
-      </ol>
-    </div>
-
-    <div class="box">
-      <h2>4) 완료 기준 (Definition of Done)</h2>
-      <ul>
-        <li>데이터 보안 이슈가 "해결됨" 또는 경고 미표시 상태</li>
-        <li>프로덕션 가용성 경고(구 target SDK, 구 GMA SDK) 미표시</li>
-        <li>릴리즈 심사 통과 및 프로덕션 배포 상태 정상</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <h2>5) 소유자 확인 필요 정보</h2>
-      <ul>
-        <li class="todo">데이터 삭제 요청 채널이 <code>dwj0705@gmail.com</code>으로 확정되었는지</li>
-        <li class="todo">광고 개인화 설정/동의(해당 시) 운영 정책이 현재 앱 동작과 일치하는지</li>
-        <li class="todo">데이터 보안 양식 제출 완료 스크린샷(또는 상태 화면)</li>
-      </ul>
-    </div>
+    <h1>Play Console 제출 체크리스트</h1>
+    <ol>
+      <li>App content > Data safety 양식 제출</li>
+      <li>Store listing > 개인정보처리방침 URL 설정
+        <div><code>https://neomindstd.github.io/app_docs/private/hw-play-console-20260309/PRIVACY_POLICY.html?lang=ko</code></div>
+      </li>
+      <li>삭제/문의 채널 이메일 확인: <code>dwj0705@gmail.com</code></li>
+      <li>제출 내용이 앱 동작(Firebase Analytics, AdMob)과 일치하는지 확인</li>
+    </ol>
   </section>
 
   <section class="lang-en">
-    <h1>Google Play Recovery and Re-Release Checklist (Final)</h1>
-    <p><strong>Date:</strong> 2026-03-09</p>
-
-    <div class="box">
-      <h2>1) Verified Items (Build Artifacts)</h2>
-      <ul>
-        <li class="ok">Build: <code>./gradlew assembleRelease</code> succeeded</li>
-        <li class="ok">Merged release manifest includes <code>targetSdkVersion=36</code>, <code>versionCode=20</code>, and <code>com.google.android.gms.permission.AD_ID</code></li>
-        <li class="ok">Dependency graph confirms <code>com.google.android.gms:play-services-ads:25.0.0</code></li>
-        <li class="ok">Firebase Analytics + AdMob usage confirmed</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <h2>2) Mandatory Play Console Actions</h2>
-      <ol>
-        <li class="todo">Submit Data safety form
-          <div>Use <a href="./PLAY_DATA_SAFETY_DRAFT.html?lang=en">PLAY_DATA_SAFETY_DRAFT</a> as input guide</div>
-        </li>
-        <li class="todo">Set Privacy policy URL in Store listing
-          <div><code>https://neomindstd.github.io/app_docs/private/hw-play-console-20260309/PRIVACY_POLICY.html?lang=en</code></div>
-        </li>
-        <li class="todo">Publish production release (versionCode 20) and staged rollout</li>
-      </ol>
-    </div>
-
-    <div class="box">
-      <h2>3) Recommended Execution Order</h2>
-      <ol>
-        <li>Submit Data safety form in App content</li>
-        <li>Update Privacy policy URL in Store listing</li>
-        <li>Publish new Production release (5% -> 20% -> 100%)</li>
-        <li>Verify policy warnings are cleared</li>
-      </ol>
-    </div>
-
-    <div class="box">
-      <h2>4) Definition of Done</h2>
-      <ul>
-        <li>Data safety issue is shown as resolved/no warning</li>
-        <li>No warnings for outdated target SDK or GMA SDK</li>
-        <li>Release review approved and production rollout healthy</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <h2>5) Information to Confirm (Owner)</h2>
-      <ul>
-        <li class="todo">Deletion request channel is confirmed as <code>dwj0705@gmail.com</code></li>
-        <li class="todo">Ads personalization/consent operation (if applicable) matches actual app behavior</li>
-        <li class="todo">Screenshot or status capture after Data safety form submission</li>
-      </ul>
-    </div>
+    <h1>Play Console Submission Checklist</h1>
+    <ol>
+      <li>Submit Data safety form in App content</li>
+      <li>Set Privacy policy URL in Store listing
+        <div><code>https://neomindstd.github.io/app_docs/private/hw-play-console-20260309/PRIVACY_POLICY.html?lang=en</code></div>
+      </li>
+      <li>Confirm deletion/contact email: <code>dwj0705@gmail.com</code></li>
+      <li>Ensure declarations match actual app behavior (Firebase Analytics, AdMob)</li>
+    </ol>
   </section>
 
   <script>
@@ -149,7 +54,6 @@
       document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
       document.getElementById('btn-en').classList.toggle('active', lang === 'en');
     }
-
     function setLang(lang) {
       document.documentElement.setAttribute('data-lang', lang);
       updateButtons(lang);
@@ -158,7 +62,6 @@
       url.searchParams.set('lang', lang);
       history.replaceState({}, '', url);
     }
-
     (function initLang() {
       const urlLang = new URL(window.location.href).searchParams.get('lang');
       const savedLang = localStorage.getItem('hw_docs_lang');

@@ -6,15 +6,11 @@
   <meta name="robots" content="noindex,nofollow,noarchive">
   <title>PRIVACY_POLICY</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; margin: 40px auto; max-width: 980px; line-height: 1.65; padding: 0 16px; }
-    h1, h2 { margin-bottom: 8px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; margin: 40px auto; max-width: 900px; line-height: 1.65; padding: 0 16px; }
     .toolbar { display: flex; gap: 8px; margin: 16px 0 20px; align-items: center; }
     .lang-btn { border: 1px solid #bbb; background: #fff; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
     .lang-btn.active { background: #222; color: #fff; border-color: #222; }
     .home { margin-left: auto; }
-    .box { border: 1px solid #ddd; border-radius: 10px; padding: 16px; margin: 12px 0; }
-    a { color: #0a58ca; text-decoration: none; }
-    a:hover { text-decoration: underline; }
     .lang-en { display: none; }
     html[data-lang="en"] .lang-ko { display: none; }
     html[data-lang="en"] .lang-en { display: block; }
@@ -23,7 +19,7 @@
   </style>
 </head>
 <body>
-  <div class="toolbar" role="group" aria-label="Language selector">
+  <div class="toolbar">
     <button class="lang-btn" id="btn-ko" onclick="setLang('ko')">한국어</button>
     <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
     <a class="home" href="./index.html">Index</a>
@@ -31,110 +27,32 @@
 
   <section class="lang-ko">
     <h1>개인정보처리방침 - HorrorWorld</h1>
-    <p><strong>최종 수정일:</strong> 2026-03-09</p>
-
-    <div class="box">
-      <h2>1. 앱 개요</h2>
-      <p>HorrorWorld(이하 "앱")는 공포 스토리 및 이미지 콘텐츠를 제공합니다.</p>
-    </div>
-
-    <div class="box">
-      <h2>2. 처리되는 데이터 항목</h2>
-      <p>앱은 다음 SDK를 사용합니다.</p>
-      <ul>
-        <li>Firebase Analytics (Google)</li>
-        <li>Google Mobile Ads SDK / AdMob (Google)</li>
-      </ul>
-      <p>위 SDK를 통해 광고 ID, 앱 사용 이벤트(앱 상호작용), 기기/앱 식별자 및 진단성 정보가 처리될 수 있습니다.</p>
-    </div>
-
-    <div class="box">
-      <h2>3. 처리 목적</h2>
-      <ul>
-        <li>앱 사용 분석 및 품질 개선</li>
-        <li>광고 제공 및 광고 성과 측정</li>
-        <li>서비스 기능 제공 및 안정성 유지</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <h2>4. 앱이 직접 수집하는 개인 프로필 정보</h2>
-      <p>앱은 회원가입을 요구하지 않으며, 앱 UI를 통해 이름/이메일/전화번호 등 직접적인 개인 프로필 정보를 입력받지 않습니다.</p>
-    </div>
-
-    <div class="box">
-      <h2>5. 네트워크 통신 및 콘텐츠 로드</h2>
-      <p>앱은 HTTPS/TLS 기반 네트워크 통신을 사용하며, GitHub에 호스팅된 공개 콘텐츠 엔드포인트에서 콘텐츠 메타데이터를 불러올 수 있습니다.</p>
-    </div>
-
-    <div class="box">
-      <h2>6. 데이터 공유 및 제3자 처리</h2>
-      <p>Firebase/AdMob 관련 데이터 처리는 Google의 서비스 약관 및 정책에 따릅니다.</p>
-    </div>
-
-    <div class="box">
-      <h2>7. 이용자 요청(삭제/문의)</h2>
-      <p>개인정보 관련 요청(삭제 요청 포함)은 <code>dwj0705@gmail.com</code>으로 접수할 수 있습니다.</p>
-    </div>
-
-    <div class="box">
-      <h2>8. 정책 변경</h2>
-      <p>앱 기능, SDK 구성 또는 정책 요구사항 변경 시 본 방침은 업데이트될 수 있습니다.</p>
-    </div>
+    <p>최종 수정일: 2026-03-09</p>
+    <h2>1. 수집/처리 항목</h2>
+    <p>앱은 Firebase Analytics 및 Google Mobile Ads(AdMob)를 사용하며, 앱 활동 데이터, 광고 ID를 포함한 기기/식별자 정보, 진단 정보가 처리될 수 있습니다.</p>
+    <h2>2. 처리 목적</h2>
+    <p>분석, 광고 제공/측정, 앱 기능 제공 및 안정성 유지.</p>
+    <h2>3. 앱이 직접 수집하는 개인정보</h2>
+    <p>앱은 회원가입을 요구하지 않으며, 앱 UI를 통해 이름/이메일/전화번호를 직접 수집하지 않습니다.</p>
+    <h2>4. 문의 및 삭제 요청</h2>
+    <p>삭제 요청 및 개인정보 문의: <code>dwj0705@gmail.com</code></p>
+    <h2>5. 정책 변경</h2>
+    <p>앱 기능 또는 SDK 구성 변경 시 본 방침이 업데이트될 수 있습니다.</p>
   </section>
 
   <section class="lang-en">
     <h1>Privacy Policy - HorrorWorld</h1>
-    <p><strong>Last updated:</strong> 2026-03-09</p>
-
-    <div class="box">
-      <h2>1. App Overview</h2>
-      <p>HorrorWorld ("the App") provides horror story and image content.</p>
-    </div>
-
-    <div class="box">
-      <h2>2. Data Processed</h2>
-      <p>The App uses the following SDKs:</p>
-      <ul>
-        <li>Firebase Analytics (Google)</li>
-        <li>Google Mobile Ads SDK / AdMob (Google)</li>
-      </ul>
-      <p>Through these SDKs, advertising ID, app interaction events, device/app identifiers, and diagnostic signals may be processed.</p>
-    </div>
-
-    <div class="box">
-      <h2>3. Processing Purposes</h2>
-      <ul>
-        <li>Usage analytics and quality improvement</li>
-        <li>Ad delivery and ad performance measurement</li>
-        <li>Service functionality and operational stability</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <h2>4. Personal Profile Data Collected Directly by the App</h2>
-      <p>The App does not require account signup and does not collect direct profile data such as name, email, or phone number in the app UI.</p>
-    </div>
-
-    <div class="box">
-      <h2>5. Network Communication and Content Fetch</h2>
-      <p>The App uses HTTPS/TLS communication and may fetch content metadata from a public GitHub-hosted content endpoint.</p>
-    </div>
-
-    <div class="box">
-      <h2>6. Data Sharing and Third-Party Processing</h2>
-      <p>Data handling related to Firebase/AdMob follows Google service terms and policies.</p>
-    </div>
-
-    <div class="box">
-      <h2>7. User Requests (Deletion/Contact)</h2>
-      <p>Privacy requests, including deletion requests, can be submitted via <code>dwj0705@gmail.com</code>.</p>
-    </div>
-
-    <div class="box">
-      <h2>8. Policy Updates</h2>
-      <p>This policy may be updated when app features, SDK usage, or policy requirements change.</p>
-    </div>
+    <p>Last updated: 2026-03-09</p>
+    <h2>1. Data Processed</h2>
+    <p>The app uses Firebase Analytics and Google Mobile Ads (AdMob). App activity data, device/identifier data including Advertising ID, and diagnostic data may be processed.</p>
+    <h2>2. Purposes</h2>
+    <p>Analytics, ad delivery/measurement, app functionality, and stability.</p>
+    <h2>3. Personal Data Collected Directly by the App</h2>
+    <p>The app does not require sign-up and does not directly collect name, email, or phone number via app UI.</p>
+    <h2>4. Contact and Deletion Requests</h2>
+    <p>Privacy/deletion contact: <code>dwj0705@gmail.com</code></p>
+    <h2>5. Policy Updates</h2>
+    <p>This policy may be updated when app features or SDK configuration change.</p>
   </section>
 
   <script>
@@ -142,7 +60,6 @@
       document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
       document.getElementById('btn-en').classList.toggle('active', lang === 'en');
     }
-
     function setLang(lang) {
       document.documentElement.setAttribute('data-lang', lang);
       updateButtons(lang);
@@ -151,7 +68,6 @@
       url.searchParams.set('lang', lang);
       history.replaceState({}, '', url);
     }
-
     (function initLang() {
       const urlLang = new URL(window.location.href).searchParams.get('lang');
       const savedLang = localStorage.getItem('hw_docs_lang');
