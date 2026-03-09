@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>PLAY_RELEASE_RECOVERY_CHECKLIST (EN)</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif; margin: 40px auto; max-width: 900px; line-height: 1.65; padding: 0 16px; }
+    h1, h2, h3 { margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Google Play Recovery and Re-Release Checklist (as of 2026-03-09)</h1>
+
+  <h2>1) Account and profile</h2>
+  <ul>
+    <li>Use this checklist after developer profile suspension is cleared.</li>
+    <li>For organization accounts, keep legal name/address/country consistent across Play Console, payments profile, and business documents.</li>
+  </ul>
+
+  <h2>2) Current project build state</h2>
+  <ul>
+    <li>targetSdkVersion: 36 (meets Android 15+ requirement)</li>
+    <li>compileSdk: 36</li>
+    <li>minSdk: 24</li>
+    <li>versionCode: 20</li>
+    <li>versionName: 12.0.1</li>
+    <li>Google Mobile Ads SDK: com.google.android.gms:play-services-ads:25.0.0</li>
+    <li>Firebase Analytics enabled</li>
+    <li>Release build uses R8 minify + resource shrinking</li>
+  </ul>
+
+  <h2>3) Items that must be completed directly in Play Console</h2>
+  <h3>A. Data safety form (required)</h3>
+  <ul>
+    <li>Missing form blocks updates/publication.</li>
+    <li>Because Firebase Analytics + AdMob are used, do not submit as "No data collected".</li>
+    <li>Verify and declare data collection/processing, purposes (analytics/ads), advertising ID usage, encryption in transit, and deletion request channel.</li>
+  </ul>
+
+  <h3>B. Privacy policy URL (Store listing)</h3>
+  <ul>
+    <li>Must be publicly reachable.</li>
+    <li>Must match actual app behavior (analytics + ads + network fetch).</li>
+  </ul>
+
+  <h3>C. Publish a new production release</h3>
+  <ul>
+    <li>Old production warning (versionCode 18, targetSdk 29) is cleared only after a newer compliant production release is published.</li>
+    <li>Internal/closed testing alone may not clear production availability warnings.</li>
+  </ul>
+
+  <h2>4) Suggested rollout</h2>
+  <ol>
+    <li>Internal testing track</li>
+    <li>Closed testing track</li>
+    <li>Production staged rollout (5% -> 20% -> 100%)</li>
+  </ol>
+
+  <h2>5) Post-release checks</h2>
+  <ul>
+    <li>Play policy status: Target API warning cleared, outdated GMA SDK warning cleared, data safety issue cleared.</li>
+    <li>Firebase events visible in DebugView/Analytics dashboard.</li>
+  </ul>
+</body>
+</html>
