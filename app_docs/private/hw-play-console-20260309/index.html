@@ -6,12 +6,14 @@
   <meta name="robots" content="noindex,nofollow,noarchive">
   <title>HorrorWorld Play Console Response Docs</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; margin: 40px auto; max-width: 900px; line-height: 1.65; padding: 0 16px; }
-    h1, h2 { margin-top: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; margin: 40px auto; max-width: 980px; line-height: 1.65; padding: 0 16px; }
+    h1, h2, h3 { margin-top: 0; }
     .toolbar { display: flex; gap: 8px; margin: 16px 0 20px; }
     .lang-btn { border: 1px solid #bbb; background: #fff; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
     .lang-btn.active { background: #222; color: #fff; border-color: #222; }
     .box { border: 1px solid #ddd; border-radius: 10px; padding: 16px; margin: 12px 0; }
+    .ok { color: #0a7d33; }
+    .todo { color: #a04300; }
     a { color: #0a58ca; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .lang-en { display: none; }
@@ -28,30 +30,74 @@
   </div>
 
   <section class="lang-ko">
-    <h1>HorrorWorld Play Console 대응 문서</h1>
-    <p>업데이트 기준일: 2026-03-09</p>
-    <p>이 페이지는 사이트 목차/내비게이션에 등록하지 않은 비공개 전달용 링크입니다.</p>
+    <h1>HorrorWorld Play Console 대응 문서 (완성본)</h1>
+    <p>문서 기준일: 2026-03-09</p>
+    <p>해결 대상 경고: <strong>Google Play 사용자 데이터 정책 - 데이터 보안 양식 누락</strong></p>
+
+    <div class="box">
+      <h2>검증 완료 근거</h2>
+      <ul>
+        <li class="ok">assembleRelease 빌드 성공</li>
+        <li class="ok">릴리즈 머지 매니페스트: targetSdkVersion=36, versionCode=20, AD_ID 포함</li>
+        <li class="ok">의존성 그래프: GMA = com.google.android.gms:play-services-ads:25.0.0 (18.3.0 아님)</li>
+      </ul>
+    </div>
+
     <div class="box">
       <h2>문서 목록</h2>
       <ul>
-        <li><a href="./PLAY_RELEASE_RECOVERY_CHECKLIST.html">PLAY_RELEASE_RECOVERY_CHECKLIST</a></li>
-        <li><a href="./PLAY_DATA_SAFETY_DRAFT.html">PLAY_DATA_SAFETY_DRAFT</a></li>
-        <li><a href="./PRIVACY_POLICY.html">PRIVACY_POLICY</a></li>
+        <li><a href="./PLAY_RELEASE_RECOVERY_CHECKLIST.html?lang=ko">PLAY_RELEASE_RECOVERY_CHECKLIST</a></li>
+        <li><a href="./PLAY_DATA_SAFETY_DRAFT.html?lang=ko">PLAY_DATA_SAFETY_DRAFT (제출 입력 가이드)</a></li>
+        <li><a href="./PRIVACY_POLICY.html?lang=ko">PRIVACY_POLICY</a></li>
       </ul>
+    </div>
+
+    <div class="box">
+      <h2>소유자(당신) 작업 항목</h2>
+      <ol>
+        <li class="todo">Play Console에서 데이터 보안 양식을 본 문서 기준으로 입력 후 제출</li>
+        <li class="todo">개인정보처리방침 URL을 스토어 등록정보에 아래 URL로 지정
+          <div><code>https://neomindstd.github.io/app_docs/private/hw-play-console-20260309/PRIVACY_POLICY.html?lang=ko</code></div>
+        </li>
+        <li class="todo">프로덕션 릴리즈(versionCode 20) 게시 및 단계적 롤아웃 시작</li>
+        <li class="todo">정책 경고 해제 여부 확인 (데이터 보안 이슈 해소)</li>
+      </ol>
     </div>
   </section>
 
   <section class="lang-en">
-    <h1>HorrorWorld Play Console Response Documents</h1>
-    <p>Last updated: 2026-03-09</p>
-    <p>This page is intentionally unlisted from site navigation and table of contents.</p>
+    <h1>HorrorWorld Play Console Response Docs (Finalized)</h1>
+    <p>Document date: 2026-03-09</p>
+    <p>Target warning: <strong>Google Play User Data policy - Missing Data safety form</strong></p>
+
     <div class="box">
-      <h2>Document List</h2>
+      <h2>Verified Evidence</h2>
       <ul>
-        <li><a href="./PLAY_RELEASE_RECOVERY_CHECKLIST.html">PLAY_RELEASE_RECOVERY_CHECKLIST</a></li>
-        <li><a href="./PLAY_DATA_SAFETY_DRAFT.html">PLAY_DATA_SAFETY_DRAFT</a></li>
-        <li><a href="./PRIVACY_POLICY.html">PRIVACY_POLICY</a></li>
+        <li class="ok">assembleRelease build succeeded</li>
+        <li class="ok">Merged release manifest: targetSdkVersion=36, versionCode=20, AD_ID included</li>
+        <li class="ok">Dependency graph: GMA = com.google.android.gms:play-services-ads:25.0.0 (not 18.3.0)</li>
       </ul>
+    </div>
+
+    <div class="box">
+      <h2>Documents</h2>
+      <ul>
+        <li><a href="./PLAY_RELEASE_RECOVERY_CHECKLIST.html?lang=en">PLAY_RELEASE_RECOVERY_CHECKLIST</a></li>
+        <li><a href="./PLAY_DATA_SAFETY_DRAFT.html?lang=en">PLAY_DATA_SAFETY_DRAFT (Submission Input Guide)</a></li>
+        <li><a href="./PRIVACY_POLICY.html?lang=en">PRIVACY_POLICY</a></li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Owner Actions (You)</h2>
+      <ol>
+        <li class="todo">Fill and submit the Data safety form in Play Console using this package</li>
+        <li class="todo">Set the privacy policy URL in Store listing to:
+          <div><code>https://neomindstd.github.io/app_docs/private/hw-play-console-20260309/PRIVACY_POLICY.html?lang=en</code></div>
+        </li>
+        <li class="todo">Publish production release (versionCode 20) and start staged rollout</li>
+        <li class="todo">Confirm policy warning is cleared (Data safety issue resolved)</li>
+      </ol>
     </div>
   </section>
 

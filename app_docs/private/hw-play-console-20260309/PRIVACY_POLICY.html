@@ -6,12 +6,13 @@
   <meta name="robots" content="noindex,nofollow,noarchive">
   <title>PRIVACY_POLICY</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; margin: 40px auto; max-width: 900px; line-height: 1.65; padding: 0 16px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; margin: 40px auto; max-width: 980px; line-height: 1.65; padding: 0 16px; }
     h1, h2 { margin-bottom: 8px; }
     .toolbar { display: flex; gap: 8px; margin: 16px 0 20px; align-items: center; }
     .lang-btn { border: 1px solid #bbb; background: #fff; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
     .lang-btn.active { background: #222; color: #fff; border-color: #222; }
     .home { margin-left: auto; }
+    .box { border: 1px solid #ddd; border-radius: 10px; padding: 16px; margin: 12px 0; }
     a { color: #0a58ca; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .lang-en { display: none; }
@@ -31,55 +32,109 @@
   <section class="lang-ko">
     <h1>개인정보처리방침 - HorrorWorld</h1>
     <p><strong>최종 수정일:</strong> 2026-03-09</p>
-    <p>HorrorWorld(이하 "앱")는 공포 스토리 및 이미지 콘텐츠를 제공합니다.</p>
 
-    <h2>1. 제3자 SDK를 통한 데이터 처리</h2>
-    <p>앱은 Firebase Analytics 및 Google Mobile Ads SDK(AdMob)를 사용합니다. 이 서비스들은 분석 및 광고 송출/측정을 위해 광고 ID, 기기/앱 사용 정보, 진단/충돌 관련 신호를 처리할 수 있습니다.</p>
+    <div class="box">
+      <h2>1. 앱 개요</h2>
+      <p>HorrorWorld(이하 "앱")는 공포 스토리 및 이미지 콘텐츠를 제공합니다.</p>
+    </div>
 
-    <h2>2. 앱이 직접 수집하는 데이터</h2>
-    <p>앱은 회원가입을 요구하지 않으며, 앱 UI 내부에서 이름/이메일/전화번호와 같은 직접적인 개인 프로필 데이터를 수집하지 않습니다.</p>
+    <div class="box">
+      <h2>2. 처리되는 데이터 항목</h2>
+      <p>앱은 다음 SDK를 사용합니다.</p>
+      <ul>
+        <li>Firebase Analytics (Google)</li>
+        <li>Google Mobile Ads SDK / AdMob (Google)</li>
+      </ul>
+      <p>위 SDK를 통해 광고 ID, 앱 사용 이벤트(앱 상호작용), 기기/앱 식별자 및 진단성 정보가 처리될 수 있습니다.</p>
+    </div>
 
-    <h2>3. 콘텐츠 및 네트워크</h2>
-    <p>앱은 GitHub에 호스팅된 프로젝트 공개 콘텐츠 엔드포인트에서 콘텐츠 메타데이터를 불러올 수 있습니다.</p>
+    <div class="box">
+      <h2>3. 처리 목적</h2>
+      <ul>
+        <li>앱 사용 분석 및 품질 개선</li>
+        <li>광고 제공 및 광고 성과 측정</li>
+        <li>서비스 기능 제공 및 안정성 유지</li>
+      </ul>
+    </div>
 
-    <h2>4. 데이터 공유</h2>
-    <p>Firebase/AdMob 관련 데이터 처리는 Google 서비스 정책 및 약관을 따릅니다.</p>
+    <div class="box">
+      <h2>4. 앱이 직접 수집하는 개인 프로필 정보</h2>
+      <p>앱은 회원가입을 요구하지 않으며, 앱 UI를 통해 이름/이메일/전화번호 등 직접적인 개인 프로필 정보를 입력받지 않습니다.</p>
+    </div>
 
-    <h2>5. 보안</h2>
-    <p>네트워크 통신은 표준 HTTPS/TLS 엔드포인트를 사용합니다.</p>
+    <div class="box">
+      <h2>5. 네트워크 통신 및 콘텐츠 로드</h2>
+      <p>앱은 HTTPS/TLS 기반 네트워크 통신을 사용하며, GitHub에 호스팅된 공개 콘텐츠 엔드포인트에서 콘텐츠 메타데이터를 불러올 수 있습니다.</p>
+    </div>
 
-    <h2>6. 이용자 권리 및 문의</h2>
-    <p>개인정보 또는 법적 요청은 Google Play 스토어 등록정보에 표시된 개발자 이메일로 문의해 주세요.</p>
+    <div class="box">
+      <h2>6. 데이터 공유 및 제3자 처리</h2>
+      <p>Firebase/AdMob 관련 데이터 처리는 Google의 서비스 약관 및 정책에 따릅니다.</p>
+    </div>
 
-    <h2>7. 정책 변경</h2>
-    <p>앱 기능 또는 SDK 사용이 변경되면 본 정책도 업데이트될 수 있습니다.</p>
+    <div class="box">
+      <h2>7. 이용자 요청(삭제/문의)</h2>
+      <p>개인정보 관련 요청(삭제 요청 포함)은 Google Play 스토어 등록정보에 표시된 개발자 이메일을 통해 접수할 수 있습니다.</p>
+    </div>
+
+    <div class="box">
+      <h2>8. 정책 변경</h2>
+      <p>앱 기능, SDK 구성 또는 정책 요구사항 변경 시 본 방침은 업데이트될 수 있습니다.</p>
+    </div>
   </section>
 
   <section class="lang-en">
     <h1>Privacy Policy - HorrorWorld</h1>
     <p><strong>Last updated:</strong> 2026-03-09</p>
-    <p>HorrorWorld ("the App") provides horror story and image content.</p>
 
-    <h2>1. Data Processed by Third-Party SDKs</h2>
-    <p>The App uses Firebase Analytics and Google Mobile Ads SDK (AdMob). These services may process advertising ID, device/app usage data, and diagnostic/crash-related signals for analytics and ad delivery/measurement.</p>
+    <div class="box">
+      <h2>1. App Overview</h2>
+      <p>HorrorWorld ("the App") provides horror story and image content.</p>
+    </div>
 
-    <h2>2. Data Collected Directly by the App</h2>
-    <p>The App does not require account signup and does not collect direct personal profile data such as name, email, or phone number inside the app UI.</p>
+    <div class="box">
+      <h2>2. Data Processed</h2>
+      <p>The App uses the following SDKs:</p>
+      <ul>
+        <li>Firebase Analytics (Google)</li>
+        <li>Google Mobile Ads SDK / AdMob (Google)</li>
+      </ul>
+      <p>Through these SDKs, advertising ID, app interaction events, device/app identifiers, and diagnostic signals may be processed.</p>
+    </div>
 
-    <h2>3. Content and Network</h2>
-    <p>The App may fetch content metadata from the project's public content endpoint hosted on GitHub.</p>
+    <div class="box">
+      <h2>3. Processing Purposes</h2>
+      <ul>
+        <li>Usage analytics and quality improvement</li>
+        <li>Ad delivery and ad performance measurement</li>
+        <li>Service functionality and operational stability</li>
+      </ul>
+    </div>
 
-    <h2>4. Data Sharing</h2>
-    <p>Data handling by Firebase/AdMob follows Google service policies and terms.</p>
+    <div class="box">
+      <h2>4. Personal Profile Data Collected Directly by the App</h2>
+      <p>The App does not require account signup and does not collect direct profile data such as name, email, or phone number in the app UI.</p>
+    </div>
 
-    <h2>5. Security</h2>
-    <p>Network communication uses standard HTTPS/TLS endpoints.</p>
+    <div class="box">
+      <h2>5. Network Communication and Content Fetch</h2>
+      <p>The App uses HTTPS/TLS communication and may fetch content metadata from a public GitHub-hosted content endpoint.</p>
+    </div>
 
-    <h2>6. User Rights and Contact</h2>
-    <p>For privacy or legal requests, contact the developer email shown in the Google Play listing.</p>
+    <div class="box">
+      <h2>6. Data Sharing and Third-Party Processing</h2>
+      <p>Data handling related to Firebase/AdMob follows Google service terms and policies.</p>
+    </div>
 
-    <h2>7. Policy Updates</h2>
-    <p>This policy may be updated when app features or SDK usage changes.</p>
+    <div class="box">
+      <h2>7. User Requests (Deletion/Contact)</h2>
+      <p>Privacy requests, including deletion requests, can be submitted via the developer email shown in the Google Play listing.</p>
+    </div>
+
+    <div class="box">
+      <h2>8. Policy Updates</h2>
+      <p>This policy may be updated when app features, SDK usage, or policy requirements change.</p>
+    </div>
   </section>
 
   <script>
