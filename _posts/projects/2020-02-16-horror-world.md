@@ -8,6 +8,9 @@ tags:
   - Project
   - Android
   - Java
+  - Kotlin
+  - Jetpack Compose
+  - MVVM
 
 date: 2020-02-17 KST 02:53 +0900
 
@@ -36,14 +39,16 @@ published: true
 
 ## 프로젝트 개요
 
-호러 테마파크를 주제로 한 괴담, 공포 사진 제공 어플리케이션
+호러 테마파크를 주제로 한 괴담/공포 사진 콘텐츠 앱.
+초기 공개(2015) 이후 2026년에 전체 구조와 UX를 현대화해 재정비했습니다.
 
  - 배포: [플레이 스토어](https://play.google.com/store/apps/details?id=std.neomind.horrorworld)
- - 성과: (2020-02-16 기준) 5,200회 이상 설치, 평점 4.212/5.0 (33명 참여)
+ - 성과: (2026-03-10 기준) Google Play 5K+ 다운로드, 12세 이용가, 광고 포함
+ - 최근 스토어 업데이트: 2026-03-10
 
 ## 프로젝트 개발 정보
 
- - 개발 기간: 2015.07.01. ~ 2015.08.15.
+ - 개발 기간: 2015.07.01. ~ 2015.08.15. (초기 개발), 2026.03 유지보수/리빌드
  - 출시 일자: 2015.08.07.
  - 개발 인원: 1
  - 역할: 설계 및 구현
@@ -54,13 +59,26 @@ published: true
  - '무서운 이야기' 콘텐츠는 읽기 쉽도록 어디까지 읽었었는지를 가시적으로 표시
  - 앱의 이름과 어울리게 유령의 집 같은 테마로 제작
 
+### 2026 리빌드/개선 내역
+
+ - 레거시 UI를 Jetpack Compose + MVVM 구조로 전환
+ - 빌드/배포 체계 현대화(dev/debug/release 트랙 정리, 릴리즈 최적화 및 난독화 정비)
+ - targetSdk 36 기준 대응 및 릴리즈 안정성 보강
+ - 스토리 읽기 UX 개선(스와이프 페이징, 글자 크기/줄간격/배경 어둡기 설정 저장)
+ - 스토리 목록 필터 UX 개선 및 헤더/리스트 가독성 개선
+ - 배너/전면 광고 위치 및 로딩 타이밍 문제 수정(콘텐츠/네비게이션 가림 이슈 해소)
+ - UMP 기반 광고 동의 플로우 적용, 동의 상태 기반 광고 로딩
+ - Firebase Analytics 이벤트/화면 추적 정비
+ - 다국어/로케일 로딩 확장(스토리 자산 및 UI), 원격 콘텐츠 파이프라인 추가
+
 ## 실행 및 개발 환경
 
 |:----:|:----|
 | **<center>개발 O/S</center>** | Windows 8.1 → Windows 10 |
 | **<center>실행 O/S</center>** | Android |
-| **<center>프레임워크</center>** | Android SDK |
-| **<center>개발 언어</center>** | JAVA |
+| **<center>프레임워크</center>** | Android SDK, Jetpack Compose |
+| **<center>아키텍처</center>** | MVVM |
+| **<center>개발 언어</center>** | JAVA → Kotlin |
 | **<center>에디터 / IDE</center>** | Eclipse → Android Studio |
 
 ## 개발 후기
