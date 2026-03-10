@@ -27,6 +27,7 @@ layout: single
 <details>
 <summary>SQL</summary>
 <div markdown="1">
+ - [있었는데요 없었습니다 (59043) 풀이 - MySQL](/문제풀이/programmerssql59043)
 </div>
 </details>
 
