@@ -24,6 +24,7 @@ toc_label: "목차"
  - [브레인 매니저](/project/brain-manager)
  - [휴일 알리미](/project/holinoti)
  - [VR Shooting](/project/vr-shooting)
+ - [Always Opened Secret Rooms](/project/always-opened-secret-rooms)
 
  <br>
 
