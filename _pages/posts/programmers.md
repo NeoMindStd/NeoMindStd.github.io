@@ -18,6 +18,7 @@ layout: single
 <summary>Coding</summary>
 <div markdown="1">
  - [문자열 압축 (60057) 풀이 - 파이썬](/문제풀이/programmers60057)
+ - [키패드 누르기 (67256) 풀이 - 파이썬](/문제풀이/programmers67256)
 </div>
 </details>
 
