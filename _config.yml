@@ -46,9 +46,6 @@ comments:
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
-channel_io:
-  enabled                : false
-  plugin_key             : "ad047a84-1233-42e9-92fb-80c85a33cabd"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"
@@ -107,7 +104,7 @@ social:
 analytics:
   provider               : "google-gtag" # 구글 애널리틱스 등록 false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-55666526-3"
+    tracking_id          : "G-WLWD6B18TY"
     anonymize_ip         : true # true, false (default)
 
 
