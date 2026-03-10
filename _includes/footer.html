@@ -1,4 +1,6 @@
-{% include channel.html %}
+{% if site.channel_io and site.channel_io.enabled %}
+  {% include channel.html %}
+{% endif %}
 <div class="page__footer-follow">
   <ul class="social-icons">
     {% if site.data.ui-text[site.locale].follow_label %}
