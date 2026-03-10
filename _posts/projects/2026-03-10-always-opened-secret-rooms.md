@@ -39,8 +39,7 @@ published: true
 
  - 저장소: [NeoMindStd/AlwaysOpenedSecretRooms](https://github.com/NeoMindStd/AlwaysOpenedSecretRooms)
  - 배포: [Steam Workshop - Always Opened Secret Rooms](https://steamcommunity.com/sharedfiles/filedetails/?id=2489944697)
- - 성과: (2026-03-10 기준) 순 방문자 4,295명, 현재 구독자 2,724명, 현재 즐겨찾기 174명, 평점 5점(33개 평가), 댓글 57개
- - 코멘트: "Good Mod!", "Great for completion marks!" 등 편의성 중심의 긍정 피드백
+ - 성과: (2026-03-10 기준) 누적 방문자 6,449명, 현재 구독자 2,724명, 현재 즐겨찾기 174명, 평점 5점(33개 평가), 댓글 11개
 
 ## 프로젝트 개발 정보
 
