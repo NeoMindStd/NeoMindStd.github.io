@@ -105,7 +105,7 @@ analytics:
   provider               : "google-gtag" # 구글 애널리틱스 등록 false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : "UA-55666526-3"
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : true # true, false (default)
 
 
 # Site Author
@@ -326,9 +326,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: false
-      comments: true
-      share: true
-      related: true
+      comments: false
+      share: false
+      related: false
   
   # _drafts
   - scope:
