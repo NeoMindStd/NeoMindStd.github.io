@@ -11,7 +11,7 @@ tags:
   - Lua
   - The Binding of Isaac
 
-date: 2026-03-10 KST 20:30 +0900
+date: 2026-03-09 KST 23:30 +0900
 
 toc: true
 toc_sticky: true
