@@ -67,12 +67,14 @@ layout: single
 <details>
 <summary>5000~5999번</summary>
 <div markdown="1">
+ - [5430번 AC 풀이 - 파이썬](/문제풀이/boj5430)
  - [5613번 계산기 프로그램 - 파이썬](/문제풀이/boj5613)
 </div>
 </details>
 <details>
 <summary>7000~7999번</summary>
 <div markdown="1">
+ - [7576번 토마토 풀이 - 파이썬](/문제풀이/boj7576)
  - [7662번 이중 우선순위 큐 - 파이썬](/문제풀이/boj7662)
 </div>
 </details>
@@ -85,6 +87,7 @@ layout: single
 <details>
 <summary>9000~9999번</summary>
 <div markdown="1">
+ - [9019번 DSLR 풀이 - 파이썬](/문제풀이/boj9019)
  - [9286번 Gradabase - 파이썬](/문제풀이/boj9286)
  - [9316번 Hello Judge - 파이썬](/문제풀이/boj9316)
  - [9317번 Monitor DPI - 파이썬](/문제풀이/boj9317)
