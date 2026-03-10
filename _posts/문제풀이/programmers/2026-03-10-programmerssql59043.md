@@ -30,7 +30,6 @@ published: true
  - 문제 출처: [프로그래머스 SQL 고득점 Kit](https://school.programmers.co.kr/learn/challenges?order=recent&page=1)
  - 문제 링크: [있었는데요 없었습니다 (59043)](https://school.programmers.co.kr/learn/courses/30/lessons/59043)
  - [문제풀이 코드 GitHub 링크](https://github.com/NeoMindStd/CodingLife/tree/master/programmers/SQL/MySQL)
- - 소스 파일: `programmers/SQL/MySQL/있었는데요 없었습니다.sql`
  - 풀이 DB: MySQL
 
 <br>
