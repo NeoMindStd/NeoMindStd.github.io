@@ -1,0 +1,24 @@
+---
+layout: null
+permalink: /rss.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.name | default: "NeoMind" | xml_escape }}</title>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <description>NeoMind blog RSS feed</description>
+    <language>{{ site.locale | default: "ko-KR" }}</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/rss.xml" rel="self" type="application/rss+xml" />
+    {% for post in site.posts limit:100 %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+      <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <description>{{ post.excerpt | strip_html | normalize_whitespace | xml_escape }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
