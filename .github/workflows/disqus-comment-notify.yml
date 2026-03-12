@@ -1,0 +1,70 @@
+name: Disqus Comment Notify
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    env:
+      DISQUS_FORUM: neomindstd
+      BLOG_SITE_URL: https://neomindstd.github.io
+      SMTP_SERVER: smtp.naver.com
+      SMTP_PORT: "587"
+      SMTP_SECURE: "false"
+      NOTIFY_TO: dwj1996@naver.com
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Restore state cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/disqus-comment-alert/state.json
+          key: disqus-comment-alert-state-${{ github.run_id }}
+          restore-keys: |
+            disqus-comment-alert-state-
+
+      - name: Detect new comments
+        id: detect
+        env:
+          DISQUS_API_KEY: ${{ secrets.DISQUS_API_KEY }}
+        run: |
+          python scripts/disqus_comment_notifier.py \
+            --state-path .cache/disqus-comment-alert/state.json \
+            --text-output .cache/disqus-comment-alert/email.txt \
+            --html-output .cache/disqus-comment-alert/email.html
+
+      - name: Save state cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/disqus-comment-alert/state.json
+          key: disqus-comment-alert-state-${{ github.run_id }}
+
+      - name: Send email
+        if: steps.detect.outputs.has_new_comments == 'true'
+        uses: dawidd6/action-send-mail@v6
+        with:
+          server_address: ${{ env.SMTP_SERVER }}
+          server_port: ${{ env.SMTP_PORT }}
+          secure: ${{ env.SMTP_SECURE }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: ${{ steps.detect.outputs.email_subject }}
+          to: ${{ env.NOTIFY_TO }}
+          from: ${{ secrets.SMTP_USERNAME }}
+          body: file://.cache/disqus-comment-alert/email.txt
+          html_body: file://.cache/disqus-comment-alert/email.html
