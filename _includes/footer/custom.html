@@ -1,3 +1,97 @@
 <!-- start custom footer snippets -->
 
+<script>
+  (function () {
+    function isAdNode(node) {
+      if (!(node instanceof HTMLElement)) return false;
+
+      if (node.classList.contains("adsbygoogle")) return true;
+
+      var id = node.id || "";
+      if (id.indexOf("google_ads_iframe") === 0 || id.indexOf("aswift_") === 0) return true;
+
+      if (node.tagName === "INS" && (node.dataset.adClient || node.dataset.adSlot || node.getAttribute("data-ad-format"))) {
+        return true;
+      }
+
+      if (node.tagName === "IFRAME") {
+        var src = node.getAttribute("src") || "";
+        var name = node.getAttribute("name") || "";
+        if (/googlesyndication|doubleclick|googleads/i.test(src)) return true;
+        if (/google_ads_iframe|aswift/i.test(name)) return true;
+      }
+
+      return false;
+    }
+
+    function isInsideCodeBlock(node) {
+      return !!node.closest("figure.highlight, div.highlighter-rouge, pre, code");
+    }
+
+    function nearestCodeBlock(node) {
+      return node.closest("figure.highlight, div.highlighter-rouge, pre");
+    }
+
+    function moveAdOutsideCode(node) {
+      if (!(node instanceof HTMLElement)) return;
+      if (!isAdNode(node)) return;
+      if (!isInsideCodeBlock(node)) return;
+      if (node.dataset.nmMovedFromCode === "1") return;
+
+      var codeBlock = nearestCodeBlock(node);
+      if (!codeBlock || !codeBlock.parentNode) return;
+
+      var adSlot = document.createElement("div");
+      adSlot.className = "nm-inline-ad-slot nm-inline-ad-slot--from-code";
+      adSlot.setAttribute("aria-label", "advertisement");
+
+      codeBlock.insertAdjacentElement("afterend", adSlot);
+      adSlot.appendChild(node);
+      node.dataset.nmMovedFromCode = "1";
+    }
+
+    function scan(root) {
+      if (!(root instanceof HTMLElement)) return;
+
+      if (isAdNode(root)) {
+        moveAdOutsideCode(root);
+      }
+
+      root.querySelectorAll("ins.adsbygoogle, iframe, div[id^='google_ads_iframe'], div[id^='aswift_']").forEach(function (node) {
+        moveAdOutsideCode(node);
+      });
+    }
+
+    function init() {
+      scan(document.body);
+
+      var observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          mutation.addedNodes.forEach(function (node) {
+            if (node instanceof HTMLElement) {
+              scan(node);
+            }
+          });
+        });
+      });
+
+      observer.observe(document.body, { childList: true, subtree: true });
+
+      // Auto ads can appear a bit later than DOMContentLoaded.
+      setTimeout(function () {
+        scan(document.body);
+      }, 1000);
+      setTimeout(function () {
+        scan(document.body);
+      }, 3000);
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init, { once: true });
+    } else {
+      init();
+    }
+  })();
+</script>
+
 <!-- end custom footer snippets -->

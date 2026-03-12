@@ -199,3 +199,24 @@ body {
     padding: 0.95rem 1rem;
   }
 }
+
+/* Keep ad injections out of code blocks. */
+pre .adsbygoogle,
+code .adsbygoogle,
+.highlight .adsbygoogle,
+pre iframe[src*="googlesyndication"],
+code iframe[src*="googlesyndication"],
+.highlight iframe[src*="googlesyndication"],
+pre div[id^="google_ads_iframe"],
+code div[id^="google_ads_iframe"],
+.highlight div[id^="google_ads_iframe"],
+pre div[id^="aswift_"],
+code div[id^="aswift_"],
+.highlight div[id^="aswift_"] {
+  display: none !important;
+}
+
+.nm-inline-ad-slot--from-code {
+  margin: 1rem 0 1.25rem;
+  clear: both;
+}
