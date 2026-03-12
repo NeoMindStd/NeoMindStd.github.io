@@ -42,6 +42,11 @@ jobs:
         env:
           DISQUS_API_KEY: ${{ secrets.DISQUS_API_KEY }}
         run: |
+          if [ -z "${DISQUS_API_KEY}" ]; then
+            echo "DISQUS_API_KEY secret is empty or missing."
+            exit 1
+          fi
+          echo "DISQUS_API_KEY length: ${#DISQUS_API_KEY}"
           python scripts/disqus_comment_notifier.py \
             --state-path .cache/disqus-comment-alert/state.json \
             --text-output .cache/disqus-comment-alert/email.txt \

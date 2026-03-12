@@ -327,10 +327,14 @@ def write_email_files(text_path: Path, html_path: Path, text_body: str, html_bod
 
 def main() -> int:
     args = parse_args()
-    if not args.forum:
+    forum = (args.forum or "").strip()
+    api_key = (args.api_key or "").strip()
+    site_url = (args.site_url or "").strip() or "https://neomindstd.github.io"
+
+    if not forum:
         print("DISQUS forum is required via --forum or DISQUS_FORUM.", file=sys.stderr)
         return 2
-    if not args.api_key:
+    if not api_key:
         print("DISQUS API key is required via --api-key or DISQUS_API_KEY.", file=sys.stderr)
         return 2
 
@@ -340,8 +344,8 @@ def main() -> int:
     known_comment_id_set = set(known_comment_ids)
 
     raw_posts = fetch_disqus_posts(
-        forum=args.forum,
-        api_key=args.api_key,
+        forum=forum,
+        api_key=api_key,
         limit=args.limit,
         max_pages=args.max_pages,
         timeout_seconds=args.timeout_seconds,
@@ -349,7 +353,7 @@ def main() -> int:
 
     normalized: list[CommentItem] = []
     for raw_post in raw_posts:
-        normalized_comment = normalize_comment(raw_post, args.site_url)
+        normalized_comment = normalize_comment(raw_post, site_url)
         if normalized_comment is not None:
             normalized.append(normalized_comment)
 
@@ -389,9 +393,9 @@ def main() -> int:
 
     if has_new:
         email_comments = new_comments[: args.email_item_limit]
-        email_subject = f"[{args.forum}] New comments: {len(new_comments)}"
-        text_body = render_text_email(args.forum, email_comments, generated_at_utc)
-        html_body = render_html_email(args.forum, email_comments, generated_at_utc)
+        email_subject = f"[{forum}] New comments: {len(new_comments)}"
+        text_body = render_text_email(forum, email_comments, generated_at_utc)
+        html_body = render_html_email(forum, email_comments, generated_at_utc)
         write_email_files(text_path, html_path, text_body, html_body)
 
     append_github_outputs(
