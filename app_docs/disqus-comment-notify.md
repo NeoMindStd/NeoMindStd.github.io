@@ -6,6 +6,10 @@ This repository now includes `.github/workflows/disqus-comment-notify.yml` and
 The workflow runs every 10 minutes, polls Disqus for new approved comments, and
 sends an email with the post link and comment summary.
 
+If Disqus API returns an error (for example, `403 FORBIDDEN` from some runner
+IP ranges), the script automatically falls back to the public RSS feed
+`https://<shortname>.disqus.com/latest.rss`.
+
 ## Required GitHub Secrets
 
 Add these secrets in:

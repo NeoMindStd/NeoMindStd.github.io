@@ -4,12 +4,14 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
 import sys
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from html import escape, unescape
 from pathlib import Path
 from typing import Any
@@ -18,9 +20,11 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 DISQUS_LIST_POSTS_URL = "https://disqus.com/api/3.0/forums/listPosts.json"
+DISQUS_RSS_URL_TEMPLATE = "https://{forum}.disqus.com/latest.rss"
 DEFAULT_STATE_MAX_IDS = 500
 TAG_RE = re.compile(r"<[^>]+>")
 WHITESPACE_RE = re.compile(r"\s+")
+RSS_COMMENT_ID_RE = re.compile(r"#comment-(\d+)")
 
 
 @dataclass(frozen=True)
@@ -54,6 +58,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-pages", type=int, default=5)
     parser.add_argument("--limit", type=int, default=100)
     parser.add_argument("--timeout-seconds", type=int, default=20)
+    parser.add_argument(
+        "--source",
+        choices=["auto", "api", "rss"],
+        default="auto",
+        help="Comment source mode: api, rss, or auto(api->rss fallback).",
+    )
     parser.add_argument("--state-max-ids", type=int, default=DEFAULT_STATE_MAX_IDS)
     parser.add_argument("--email-item-limit", type=int, default=20)
     parser.add_argument(
@@ -79,6 +89,18 @@ def to_epoch_seconds(iso_time: str) -> float:
         return datetime.fromisoformat(iso_time.replace("Z", "+00:00")).timestamp()
     except ValueError:
         return 0.0
+
+
+def pubdate_to_iso_utc(pubdate: str) -> str:
+    if not pubdate:
+        return ""
+    try:
+        dt = parsedate_to_datetime(pubdate)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc).replace(microsecond=0).isoformat()
+    except (TypeError, ValueError):
+        return pubdate
 
 
 def fallback_thread_link(thread: dict[str, Any], site_url: str) -> str:
@@ -134,6 +156,16 @@ def normalize_comment(raw: dict[str, Any], site_url: str) -> CommentItem | None:
         thread_title=thread_title or "Untitled thread",
         thread_link=thread_link,
     )
+
+
+def extract_rss_comment_id(link: str, guid: str, title: str, created_at: str) -> str:
+    for candidate in (link, guid):
+        matched = RSS_COMMENT_ID_RE.search(candidate or "")
+        if matched:
+            return matched.group(1)
+    fallback = f"{link}|{guid}|{title}|{created_at}"
+    digest = hashlib.sha1(fallback.encode("utf-8")).hexdigest()[:16]
+    return f"rss-{digest}"
 
 
 def fetch_disqus_posts(
@@ -197,6 +229,63 @@ def fetch_disqus_posts(
         cursor = next_cursor
 
     return all_posts
+
+
+def fetch_rss_comments(
+    *,
+    forum: str,
+    timeout_seconds: int,
+) -> list[CommentItem]:
+    rss_url = DISQUS_RSS_URL_TEMPLATE.format(forum=forum)
+    request = Request(
+        rss_url,
+        headers={"User-Agent": "NeoMindStd-Disqus-Comment-Notifier/1.0"},
+    )
+    try:
+        with urlopen(request, timeout=timeout_seconds) as response:
+            payload = response.read().decode("utf-8")
+    except HTTPError as exc:
+        raise RuntimeError(
+            f"Disqus RSS request failed with status {exc.code}: {exc.reason}"
+        ) from exc
+    except URLError as exc:
+        raise RuntimeError(f"Disqus RSS request failed: {exc.reason}") from exc
+
+    try:
+        import xml.etree.ElementTree as et
+
+        root = et.fromstring(payload)
+    except Exception as exc:
+        raise RuntimeError(f"Failed to parse Disqus RSS: {exc}") from exc
+
+    channel = root.find("channel")
+    if channel is None:
+        return []
+
+    creator_tag = "{http://purl.org/dc/elements/1.1/}creator"
+    comments: list[CommentItem] = []
+    for item in channel.findall("item"):
+        title = (item.findtext("title") or "").strip() or "Untitled thread"
+        link = (item.findtext("link") or "").strip()
+        guid = (item.findtext("guid") or "").strip()
+        description = item.findtext("description") or ""
+        creator = (item.findtext(creator_tag) or "").strip() or "Anonymous"
+        pubdate = (item.findtext("pubDate") or "").strip()
+        created_at = pubdate_to_iso_utc(pubdate)
+        comment_id = extract_rss_comment_id(link, guid, title, created_at)
+
+        comments.append(
+            CommentItem(
+                comment_id=comment_id,
+                created_at=created_at,
+                author_name=creator,
+                message=strip_html_tags(description),
+                thread_title=title,
+                thread_link=link or f"https://{forum}.disqus.com/latest.rss",
+            )
+        )
+
+    return comments
 
 
 def unique_preserve_order(values: list[str]) -> list[str]:
@@ -343,19 +432,36 @@ def main() -> int:
     known_comment_ids = state.get("known_comment_ids", [])
     known_comment_id_set = set(known_comment_ids)
 
-    raw_posts = fetch_disqus_posts(
-        forum=forum,
-        api_key=api_key,
-        limit=args.limit,
-        max_pages=args.max_pages,
-        timeout_seconds=args.timeout_seconds,
-    )
-
     normalized: list[CommentItem] = []
-    for raw_post in raw_posts:
-        normalized_comment = normalize_comment(raw_post, site_url)
-        if normalized_comment is not None:
-            normalized.append(normalized_comment)
+    source_used = args.source
+    if args.source in {"auto", "api"}:
+        try:
+            raw_posts = fetch_disqus_posts(
+                forum=forum,
+                api_key=api_key,
+                limit=args.limit,
+                max_pages=args.max_pages,
+                timeout_seconds=args.timeout_seconds,
+            )
+            for raw_post in raw_posts:
+                normalized_comment = normalize_comment(raw_post, site_url)
+                if normalized_comment is not None:
+                    normalized.append(normalized_comment)
+            source_used = "api"
+        except RuntimeError as exc:
+            if args.source == "api":
+                raise
+            print(
+                f"Disqus API failed ({exc}). Falling back to RSS feed.",
+                file=sys.stderr,
+            )
+
+    if args.source == "rss" or source_used != "api":
+        normalized = fetch_rss_comments(
+            forum=forum,
+            timeout_seconds=args.timeout_seconds,
+        )
+        source_used = "rss"
 
     new_comments = select_new_comments(normalized, known_comment_id_set)
     next_known_ids = build_next_known_ids(
@@ -376,10 +482,11 @@ def main() -> int:
                 "email_text_path": "",
                 "email_html_path": "",
                 "bootstrap_run": "true",
+                "source_used": source_used,
             },
         )
         print(
-            f"Bootstrap complete. Stored {len(next_known_ids)} known comment ids without sending email."
+            f"Bootstrap complete ({source_used}). Stored {len(next_known_ids)} known comment ids without sending email."
         )
         return 0
 
@@ -407,11 +514,12 @@ def main() -> int:
             "email_text_path": str(text_path),
             "email_html_path": str(html_path),
             "bootstrap_run": "false",
+            "source_used": source_used,
         },
     )
 
     print(
-        f"Fetched={len(normalized)} Known(before)={len(known_comment_ids)} New={len(new_comments)}"
+        f"Source={source_used} Fetched={len(normalized)} Known(before)={len(known_comment_ids)} New={len(new_comments)}"
     )
     return 0
 

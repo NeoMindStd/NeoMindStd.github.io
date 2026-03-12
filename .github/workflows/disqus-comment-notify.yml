@@ -52,6 +52,12 @@ jobs:
             --text-output .cache/disqus-comment-alert/email.txt \
             --html-output .cache/disqus-comment-alert/email.html
 
+      - name: Print detection summary
+        run: |
+          echo "source_used=${{ steps.detect.outputs.source_used }}"
+          echo "new_comments_count=${{ steps.detect.outputs.new_comments_count }}"
+          echo "bootstrap_run=${{ steps.detect.outputs.bootstrap_run }}"
+
       - name: Save state cache
         if: always()
         uses: actions/cache/save@v4

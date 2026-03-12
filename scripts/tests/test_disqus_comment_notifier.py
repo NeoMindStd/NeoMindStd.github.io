@@ -100,6 +100,19 @@ class DisqusCommentNotifierTest(unittest.TestCase):
         next_ids = notifier.build_next_known_ids(latest, ["6", "5", "4"], max_ids=4)
         self.assertEqual(next_ids, ["7", "6", "5", "4"])
 
+    def test_extract_rss_comment_id_from_link(self) -> None:
+        comment_id = notifier.extract_rss_comment_id(
+            "https://neomindstd.github.io/post/#comment-123456",
+            "",
+            "title",
+            "2026-03-12T00:00:00+00:00",
+        )
+        self.assertEqual(comment_id, "123456")
+
+    def test_pubdate_to_iso_utc(self) -> None:
+        iso = notifier.pubdate_to_iso_utc("Wed, 11 Mar 2026 09:29:32 -0000")
+        self.assertEqual(iso, "2026-03-11T09:29:32+00:00")
+
 
 if __name__ == "__main__":
     unittest.main()
