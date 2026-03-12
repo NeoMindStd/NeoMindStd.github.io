@@ -6,6 +6,196 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@1.3.9/dist/web/static/pretendard.css");
 
-// Fonts
-//@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap'); // 나눔 고딕
+/* NeoMind layout tuning */
+:root {
+  --nm-surface: #ffffff;
+  --nm-accent: #1f7f9b;
+  --nm-border: rgba(28, 57, 76, 0.14);
+  --nm-shadow-soft: 0 10px 24px rgba(18, 42, 58, 0.08);
+  --nm-shadow-card: 0 16px 40px rgba(18, 42, 58, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Pretendard Variable", "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  background: linear-gradient(180deg, #f5fbff 0, #ffffff 18rem);
+}
+
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background-color: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid var(--nm-border);
+  backdrop-filter: blur(10px) saturate(130%);
+}
+
+.masthead__inner-wrap {
+  max-width: 1280px;
+  padding-left: clamp(0.75rem, 1.6vw, 1.5rem);
+  padding-right: clamp(0.75rem, 1.6vw, 1.5rem);
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav a.site-title {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.greedy-nav .visible-links a,
+.greedy-nav .dropbtn {
+  font-weight: 700;
+}
+
+#main {
+  padding-top: clamp(1.2rem, 2.2vw, 2rem);
+}
+
+.layout--home #main {
+  max-width: min(1280px, calc(100vw - 2.5rem));
+}
+
+@media (max-width: 1700px) and (min-width: 1200px) {
+  .layout--home #main {
+    max-width: 1100px;
+  }
+}
+
+.layout--home .archive__subtitle {
+  margin-top: 0.25rem;
+  margin-bottom: 0.8rem;
+  font-size: clamp(1.35rem, 2.1vw, 1.8rem);
+  font-weight: 800;
+  color: #32495d;
+}
+
+.layout--home .list__item {
+  margin-bottom: 0.95rem;
+}
+
+.layout--home .archive__item {
+  border: 1px solid var(--nm-border);
+  border-radius: 18px;
+  background: var(--nm-surface);
+  box-shadow: var(--nm-shadow-soft);
+  padding: 1rem 1.2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.layout--home .archive__item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(31, 127, 155, 0.34);
+  box-shadow: var(--nm-shadow-card);
+}
+
+.layout--home .archive__item-title {
+  margin-bottom: 0.45rem;
+  line-height: 1.28;
+}
+
+.layout--home .archive__item-title a {
+  color: var(--nm-accent);
+  text-decoration: none;
+}
+
+.layout--home .archive__item-title a:hover {
+  color: #0d6a86;
+}
+
+.layout--home .archive__item-excerpt {
+  color: #495d6f;
+}
+
+.layout--home .page__meta {
+  color: #6d8091;
+}
+
+.sidebar {
+  padding-right: 0.25rem;
+}
+
+.sidebar .author__content,
+.sidebar .author__urls-wrapper {
+  border: 1px solid var(--nm-border);
+  border-radius: 16px;
+  background: var(--nm-surface);
+  box-shadow: var(--nm-shadow-soft);
+  padding: 1rem;
+}
+
+.sidebar .author__urls-wrapper {
+  margin-top: 0.75rem;
+}
+
+.sidebar .author__avatar img {
+  border: 4px solid rgba(31, 127, 155, 0.16);
+  box-shadow: 0 8px 24px rgba(16, 35, 50, 0.16);
+}
+
+.sidebar .hitcounter {
+  display: block;
+  margin: 0.75rem auto 0;
+  border-radius: 12px;
+}
+
+.author__urls li {
+  margin-bottom: 0.35rem;
+}
+
+.author__urls a {
+  color: #435b70;
+}
+
+.author__urls a:hover {
+  color: #0d6a86;
+}
+
+@media (min-width: 1024px) {
+  .sidebar.sticky {
+    top: 6.2rem;
+  }
+}
+
+/* Keep breathing room for bottom anchor ads on medium/small viewports */
+@media (max-width: 1700px) {
+  body {
+    padding-bottom: clamp(2.2rem, 3.8vw, 4.5rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .masthead__inner-wrap {
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+  }
+
+  .layout--home #main {
+    max-width: 100%;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .layout--home .archive,
+  .layout--home .sidebar {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .layout--home .sidebar {
+    margin-bottom: 1.1rem;
+  }
+
+  .layout--home .archive__item {
+    border-radius: 14px;
+    padding: 0.95rem 1rem;
+  }
+}
