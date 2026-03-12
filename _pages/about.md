@@ -2,6 +2,8 @@
 title: "NeoMind 블로그"
 permalink: /about/
 layout: single
+excerpt: "코딩 테스트 풀이, 안드로이드 앱 개발, IT/게임 리뷰를 다루는 NeoMind 블로그 소개 페이지입니다."
+description: "코딩 테스트 풀이, 안드로이드 앱 개발, IT/게임 리뷰를 다루는 NeoMind 블로그 소개 페이지입니다."
 ---
 
 ## NeoMind 블로그

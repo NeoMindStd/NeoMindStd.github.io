@@ -2,6 +2,8 @@
 title: "프로젝트 목록"
 permalink: /projects/
 layout: single
+excerpt: "안드로이드 앱 프로젝트와 개인 개발 프로젝트를 정리한 포트폴리오 목록입니다. 호러 월드(Horror World) 포함 주요 결과물을 확인할 수 있습니다."
+description: "안드로이드 앱 프로젝트와 개인 개발 프로젝트를 정리한 포트폴리오 목록입니다. 호러 월드(Horror World) 포함 주요 결과물을 확인할 수 있습니다."
 
 toc: true
 toc_sticky: true

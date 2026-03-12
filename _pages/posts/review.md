@@ -2,6 +2,8 @@
 title: "각종 리뷰"
 permalink: /reviews/
 layout: single
+excerpt: "IT 기기, 행사, 제품, 서비스에 대한 리뷰를 모아둔 페이지입니다. 실제 사용 경험과 핵심 포인트를 정리합니다."
+description: "IT 기기, 행사, 제품, 서비스에 대한 리뷰를 모아둔 페이지입니다. 실제 사용 경험과 핵심 포인트를 정리합니다."
 
 toc: true
 toc_sticky: true

@@ -10,6 +10,22 @@
   });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NeoMind 블로그",
+  "url": "{{ '/' | absolute_url }}",
+  "inLanguage": "ko-KR",
+  "description": "백준·프로그래머스 문제풀이와 안드로이드 프로젝트 개발 기록을 공유하는 NeoMind 블로그",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ '/search/?q={search_term_string}' | absolute_url }}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 <!-- favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/{{ site.favicon_dir }}/apple-touch-icon.png">
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{ site.url }}/{{ site.favicon_dir }}/favicon.ico" />

@@ -2,6 +2,8 @@
 title: "기타"
 permalink: /etc/
 layout: single
+excerpt: "오픈소스 기여, 개발 메모, 기타 기술 아카이브를 모아둔 페이지입니다."
+description: "오픈소스 기여, 개발 메모, 기타 기술 아카이브를 모아둔 페이지입니다."
 
 toc: true
 toc_sticky: true
