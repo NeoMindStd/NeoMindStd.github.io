@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko" data-lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>PRIVACY_POLICY</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; margin: 40px auto; max-width: 920px; line-height: 1.65; padding: 0 16px; }
+    .toolbar { display: flex; gap: 8px; margin: 16px 0 20px; align-items: center; }
+    .lang-btn { border: 1px solid #bbb; background: #fff; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+    .lang-btn.active { background: #222; color: #fff; border-color: #222; }
+    .home { margin-left: auto; }
+    .lang-en { display: none; }
+    html[data-lang="en"] .lang-ko { display: none; }
+    html[data-lang="en"] .lang-en { display: block; }
+    html[data-lang="ko"] .lang-ko { display: block; }
+    html[data-lang="ko"] .lang-en { display: none; }
+    ul { margin-top: 8px; }
+    code { word-break: break-all; }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button class="lang-btn" id="btn-ko" onclick="setLang('ko')">한국어</button>
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+    <a class="home" href="/projects/">Projects</a>
+  </div>
+
+  <section class="lang-ko">
+    <h1>개인정보처리방침 - Siren Soundboard</h1>
+    <p>최종 수정일: 2026-03-13</p>
+    <p>본 방침은 안드로이드 앱 <strong>Siren Soundboard (패키지명: std.neomind.sirenpackage)</strong>의 개인정보 처리 기준을 설명합니다.</p>
+
+    <h2>1. 처리하는 정보</h2>
+    <p>앱은 다음 정보를 처리할 수 있습니다.</p>
+    <ul>
+      <li><strong>Firebase Analytics</strong>: 화면 조회, 재생 시작/종료, 재생 모드, 테마 변경, 재생 템포/볼륨(값 범위), 재생 지속시간 등 앱 사용 이벤트</li>
+      <li><strong>Google Mobile Ads (AdMob)</strong>: 광고 제공/성과 측정을 위한 광고 식별자(AD_ID), 기기 및 앱 상호작용 정보, 진단 정보</li>
+      <li><strong>로컬 설정 정보</strong>: 반복 재생 여부, 마스터/개별 볼륨, 템포, 테마 설정(기기 내부 SharedPreferences 저장)</li>
+      <li><strong>통화 상태 정보(권한 허용 시)</strong>: 수신/통화 중/대기 상태를 로컬에서 확인하여 재생을 자동 일시정지/재개</li>
+    </ul>
+
+    <h2>2. 처리 목적</h2>
+    <ul>
+      <li>앱 기능 제공 및 사용자 설정 유지</li>
+      <li>사용성 개선을 위한 익명/가명 통계 분석</li>
+      <li>광고 제공, 빈도 제어, 성과 측정</li>
+      <li>통화 중 오디오 충돌 방지</li>
+    </ul>
+
+    <h2>3. 앱이 직접 수집하는 개인정보</h2>
+    <p>앱은 회원가입 기능이 없으며, 앱 UI를 통해 이름/이메일/전화번호를 직접 입력받아 수집하지 않습니다.</p>
+
+    <h2>4. 권한 사용 안내</h2>
+    <ul>
+      <li><code>READ_PHONE_STATE</code>: 통화 상태에 따라 사이렌 재생 제어</li>
+      <li><code>com.google.android.gms.permission.AD_ID</code>: 맞춤형/일반 광고 제공 및 측정</li>
+      <li><code>WRITE_SETTINGS</code>: 사용자가 선택한 사이렌을 시스템 알림음/벨소리로 설정</li>
+      <li><code>WRITE_EXTERNAL_STORAGE</code>(Android 9 이하): 시스템 사운드 설정 보조 처리</li>
+      <li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>: Firebase/AdMob 통신 및 네트워크 상태 확인</li>
+    </ul>
+
+    <h2>5. 제3자 제공 및 국외 이전</h2>
+    <p>앱은 Google이 제공하는 Firebase Analytics 및 AdMob SDK를 사용합니다. 관련 데이터 처리는 Google 정책을 따릅니다.</p>
+    <ul>
+      <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+      <li>Firebase data processing: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+    </ul>
+
+    <h2>6. 보관 기간 및 삭제</h2>
+    <ul>
+      <li>앱 내부 설정값은 기기 로컬에 저장되며, 앱 삭제 또는 앱 데이터 삭제 시 제거됩니다.</li>
+      <li>Firebase/AdMob를 통해 처리되는 데이터의 보관 기간은 각 서비스 제공자의 정책을 따릅니다.</li>
+    </ul>
+
+    <h2>7. 문의</h2>
+    <p>개인정보 관련 문의 및 삭제 요청: <code>dwj0705@gmail.com</code></p>
+
+    <h2>8. 정책 변경</h2>
+    <p>앱 기능, SDK 구성 또는 법령 변경 시 본 방침은 업데이트될 수 있습니다.</p>
+  </section>
+
+  <section class="lang-en">
+    <h1>Privacy Policy - Siren Soundboard</h1>
+    <p>Last updated: 2026-03-13</p>
+    <p>This policy explains how the Android app <strong>Siren Soundboard (package: std.neomind.sirenpackage)</strong> processes data.</p>
+
+    <h2>1. Data Processed</h2>
+    <ul>
+      <li><strong>Firebase Analytics</strong>: screen views, playback start/end, playback mode, theme changes, playback tempo/volume ranges, and playback duration events</li>
+      <li><strong>Google Mobile Ads (AdMob)</strong>: Advertising ID (AD_ID), device/app interaction data, and diagnostic data for ad delivery and measurement</li>
+      <li><strong>Local settings</strong>: loop mode, master/item volume, tempo, and theme preferences (stored in SharedPreferences on device)</li>
+      <li><strong>Call state data (when permission is granted)</strong>: ringing/off-hook/idle state used locally to pause/resume playback</li>
+    </ul>
+
+    <h2>2. Purposes</h2>
+    <ul>
+      <li>Providing app functionality and keeping user settings</li>
+      <li>Anonymous/pseudonymous usage analytics for product improvement</li>
+      <li>Ad delivery, frequency control, and performance measurement</li>
+      <li>Preventing audio conflicts during calls</li>
+    </ul>
+
+    <h2>3. Personal Data Collected Directly by the App</h2>
+    <p>The app does not require sign-up and does not directly collect name, email, or phone number through app UI.</p>
+
+    <h2>4. Permission Usage</h2>
+    <ul>
+      <li><code>READ_PHONE_STATE</code>: control playback based on call status</li>
+      <li><code>com.google.android.gms.permission.AD_ID</code>: ad delivery and measurement</li>
+      <li><code>WRITE_SETTINGS</code>: set selected sirens as system ringtone/notification</li>
+      <li><code>WRITE_EXTERNAL_STORAGE</code> (Android 9 and below): support legacy system-sound setting flow</li>
+      <li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>: Firebase/AdMob connectivity and network checks</li>
+    </ul>
+
+    <h2>5. Third-Party Processing</h2>
+    <p>The app uses Google Firebase Analytics and AdMob SDKs. Related data processing follows Google policies.</p>
+    <ul>
+      <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+      <li>Firebase data processing: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+    </ul>
+
+    <h2>6. Retention and Deletion</h2>
+    <ul>
+      <li>Local app settings remain on device and are removed when the app or app data is deleted.</li>
+      <li>Data processed by Firebase/AdMob is retained according to each provider's policy.</li>
+    </ul>
+
+    <h2>7. Contact</h2>
+    <p>Privacy/deletion contact: <code>dwj0705@gmail.com</code></p>
+
+    <h2>8. Policy Updates</h2>
+    <p>This policy may be updated when app features, SDK configuration, or legal requirements change.</p>
+  </section>
+
+  <script>
+    function updateButtons(lang) {
+      document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      updateButtons(lang);
+      localStorage.setItem('sp_docs_lang', lang);
+      const url = new URL(window.location.href);
+      url.searchParams.set('lang', lang);
+      history.replaceState({}, '', url);
+    }
+    (function initLang() {
+      const urlLang = new URL(window.location.href).searchParams.get('lang');
+      const savedLang = localStorage.getItem('sp_docs_lang');
+      const browserLang = (navigator.language || '').toLowerCase().startsWith('ko') ? 'ko' : 'en';
+      const lang = (urlLang === 'ko' || urlLang === 'en') ? urlLang : (savedLang || browserLang || 'ko');
+      setLang(lang);
+    })();
+  </script>
+</body>
+</html>

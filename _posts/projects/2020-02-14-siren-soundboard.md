@@ -36,6 +36,7 @@ published: true
 
  - 배포: [플레이 스토어](https://play.google.com/store/apps/details?id=std.neomind.sirenpackage)
  - 성과: (2020-02-14 기준) 2,780회 이상 설치, 평점 4.429/5.0 (21명 참여)
+ - 개인정보 처리방침: [보기](/app_docs/private/sirenpackage-play-console-20260313/PRIVACY_POLICY.html)
 
 ## 프로젝트 개발 정보
 
