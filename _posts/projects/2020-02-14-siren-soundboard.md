@@ -32,9 +32,12 @@ published: true
 
 ## 실행 화면
 
-![](/assets/images/posts/projects/siren-soundboard/main.png){: width="320px"}
+![](/assets/images/posts/projects/siren-soundboard/screen-main-ko-20260313.jpg){: width="240px"}
+![](/assets/images/posts/projects/siren-soundboard/screen-detail-ko-20260313.jpg){: width="240px"}
+![](/assets/images/posts/projects/siren-soundboard/screen-main-en-20260313.jpg){: width="240px"}
+![](/assets/images/posts/projects/siren-soundboard/screen-detail-en-20260313.jpg){: width="240px"}
 
-최근 UI(다국어/상세 메뉴/시스템 사운드 설정 포함)는 2026 리빌드 버전 기준으로 개선되었습니다.
+한국어/영어 메인 화면과 상세 메뉴 화면(2026-03-13 캡처)입니다.
 
 ## 프로젝트 개요
 
