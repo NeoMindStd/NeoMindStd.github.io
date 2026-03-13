@@ -26,7 +26,7 @@ url                      : "https://neomindstd.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "NeoMindStd/NeoMindStd.github.io"
 teaser                   : #"assets/images/profile.jpg"
-logo                     : "assets/images/profile.jpg"
+logo                     : "assets/images/logo-transparent.png"
 favicon_dir              : "assets/images/favicon"
 masthead_title           : "네오마인드"  # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)

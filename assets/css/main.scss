@@ -80,6 +80,18 @@ body {
   font-weight: 700;
 }
 
+.greedy-nav .site-logo img {
+  background: transparent;
+  border-radius: 999px;
+  display: block;
+}
+
+.masthead__menu-item .dropbtn,
+.masthead__menu-item .dropbtn:hover,
+.masthead__menu-item .dropbtn:focus {
+  background-color: transparent !important;
+}
+
 .theme-toggle {
   align-items: center;
   background: var(--nm-surface);
@@ -277,6 +289,12 @@ code div[id^="aswift_"],
   clear: both;
 }
 
+.toc .active > a,
+.toc .active a {
+  background-color: rgba(31, 127, 155, 0.13);
+  color: #21475f;
+}
+
 /* Runtime dark mode */
 html[data-theme="dark"] {
   background-color: #0f1621;
@@ -360,6 +378,25 @@ html[data-theme="dark"] select {
   background-color: #121b28;
   border-color: var(--nm-border);
   color: #deebf8;
+}
+
+html[data-theme="dark"] .toc {
+  border-color: rgba(136, 160, 183, 0.32);
+}
+
+html[data-theme="dark"] .toc .nav__title {
+  background: #6f7d8d;
+  color: #f0f7ff;
+}
+
+html[data-theme="dark"] .toc__menu a {
+  border-bottom-color: rgba(136, 160, 183, 0.3);
+}
+
+html[data-theme="dark"] .toc .active > a,
+html[data-theme="dark"] .toc .active a {
+  background-color: rgba(102, 202, 232, 0.2);
+  color: #ebf9ff;
 }
 
 html[data-theme="dark"] table {
