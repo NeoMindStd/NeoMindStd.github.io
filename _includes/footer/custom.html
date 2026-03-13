@@ -94,4 +94,104 @@
   })();
 </script>
 
+<script>
+  (function () {
+    var storageKey = "nm-theme-preference";
+    var mediaQuery = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+
+    function getStoredTheme() {
+      try {
+        return localStorage.getItem(storageKey);
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function setStoredTheme(theme) {
+      try {
+        localStorage.setItem(storageKey, theme);
+      } catch (error) {
+        // Ignore storage errors and continue with in-memory behavior.
+      }
+    }
+
+    function resolveTheme(storedTheme) {
+      if (storedTheme === "light" || storedTheme === "dark") {
+        return storedTheme;
+      }
+
+      if (mediaQuery && mediaQuery.matches) {
+        return "dark";
+      }
+
+      return "light";
+    }
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      document.documentElement.style.colorScheme = theme;
+    }
+
+    function updateThemeButtons(theme) {
+      var nextTitle = theme === "dark" ? "라이트 모드로 전환" : "다크 모드로 전환";
+      var nextIcon = theme === "dark" ? "☀" : "🌙";
+
+      document.querySelectorAll("[data-theme-toggle]").forEach(function (button) {
+        button.setAttribute("aria-label", nextTitle);
+        button.setAttribute("title", nextTitle);
+
+        var icon = button.querySelector(".theme-toggle__icon");
+        if (icon) {
+          icon.textContent = nextIcon;
+        }
+      });
+    }
+
+    function syncWithPreference() {
+      var storedTheme = getStoredTheme();
+      var resolved = resolveTheme(storedTheme);
+      applyTheme(resolved);
+      updateThemeButtons(resolved);
+    }
+
+    function bindThemeToggle() {
+      document.querySelectorAll("[data-theme-toggle]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          var current = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+          var next = current === "dark" ? "light" : "dark";
+
+          setStoredTheme(next);
+          applyTheme(next);
+          updateThemeButtons(next);
+        });
+      });
+    }
+
+    if (mediaQuery) {
+      var onSystemThemeChanged = function () {
+        var storedTheme = getStoredTheme();
+        if (storedTheme !== "light" && storedTheme !== "dark") {
+          syncWithPreference();
+        }
+      };
+
+      if (typeof mediaQuery.addEventListener === "function") {
+        mediaQuery.addEventListener("change", onSystemThemeChanged);
+      } else if (typeof mediaQuery.addListener === "function") {
+        mediaQuery.addListener(onSystemThemeChanged);
+      }
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", function () {
+        syncWithPreference();
+        bindThemeToggle();
+      }, { once: true });
+    } else {
+      syncWithPreference();
+      bindThemeToggle();
+    }
+  })();
+</script>
+
 <!-- end custom footer snippets -->

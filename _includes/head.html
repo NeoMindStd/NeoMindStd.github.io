@@ -10,6 +10,26 @@
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
+<script>
+  (function () {
+    var storageKey = "nm-theme-preference";
+    var storedTheme = null;
+
+    try {
+      storedTheme = localStorage.getItem(storageKey);
+    } catch (error) {
+      storedTheme = null;
+    }
+
+    var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var resolvedTheme = (storedTheme === "light" || storedTheme === "dark")
+      ? storedTheme
+      : (prefersDark ? "dark" : "light");
+
+    document.documentElement.setAttribute("data-theme", resolvedTheme);
+    document.documentElement.style.colorScheme = resolvedTheme;
+  })();
+</script>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">

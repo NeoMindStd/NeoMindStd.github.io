@@ -52,6 +52,10 @@
             {% assign counter = counter | plus: 1 %}
           {%- endfor -%}
         </ul>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환" title="테마 전환">
+          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+          <span class="visually-hidden">Toggle theme</span>
+        </button>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>

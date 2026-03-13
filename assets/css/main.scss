@@ -10,11 +10,35 @@
 
 /* NeoMind layout tuning */
 :root {
+  --nm-body-bg: linear-gradient(180deg, #f5fbff 0, #ffffff 18rem);
+  --nm-text-body: #2f3d4b;
   --nm-surface: #ffffff;
   --nm-accent: #1f7f9b;
   --nm-border: rgba(28, 57, 76, 0.14);
+  --nm-masthead-bg: rgba(255, 255, 255, 0.88);
   --nm-shadow-soft: 0 10px 24px rgba(18, 42, 58, 0.08);
   --nm-shadow-card: 0 16px 40px rgba(18, 42, 58, 0.12);
+  --nm-home-subtitle: #32495d;
+  --nm-item-excerpt: #495d6f;
+  --nm-page-meta: #6d8091;
+  --nm-author-link: #435b70;
+  --nm-author-link-hover: #0d6a86;
+}
+
+html[data-theme="dark"] {
+  --nm-body-bg: linear-gradient(180deg, #0c121b 0, #111a24 18rem);
+  --nm-text-body: #d5e2ee;
+  --nm-surface: #151d28;
+  --nm-accent: #66cae8;
+  --nm-border: rgba(138, 157, 176, 0.28);
+  --nm-masthead-bg: rgba(14, 21, 32, 0.9);
+  --nm-shadow-soft: 0 12px 28px rgba(0, 0, 0, 0.42);
+  --nm-shadow-card: 0 20px 44px rgba(0, 0, 0, 0.54);
+  --nm-home-subtitle: #e2edf8;
+  --nm-item-excerpt: #b8cade;
+  --nm-page-meta: #9fb3c7;
+  --nm-author-link: #c2d3e6;
+  --nm-author-link-hover: #8ddcff;
 }
 
 html {
@@ -23,14 +47,15 @@ html {
 
 body {
   font-family: "Pretendard Variable", "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  background: linear-gradient(180deg, #f5fbff 0, #ffffff 18rem);
+  background: var(--nm-body-bg);
+  color: var(--nm-text-body);
 }
 
 .masthead {
   position: sticky;
   top: 0;
   z-index: 30;
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: var(--nm-masthead-bg);
   border-bottom: 1px solid var(--nm-border);
   backdrop-filter: blur(10px) saturate(130%);
 }
@@ -55,6 +80,37 @@ body {
   font-weight: 700;
 }
 
+.theme-toggle {
+  align-items: center;
+  background: var(--nm-surface);
+  border: 1px solid var(--nm-border);
+  border-radius: 999px;
+  box-shadow: var(--nm-shadow-soft);
+  color: var(--nm-accent);
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.1rem;
+  justify-content: center;
+  margin-left: 0.35rem;
+  padding: 0;
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+  width: 2.1rem;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--nm-accent);
+  outline-offset: 2px;
+}
+
+.theme-toggle__icon {
+  display: block;
+  line-height: 1;
+}
+
 #main {
   padding-top: clamp(1.2rem, 2.2vw, 2rem);
 }
@@ -74,7 +130,7 @@ body {
   margin-bottom: 0.8rem;
   font-size: clamp(1.35rem, 2.1vw, 1.8rem);
   font-weight: 800;
-  color: #32495d;
+  color: var(--nm-home-subtitle);
 }
 
 .layout--home .list__item {
@@ -111,11 +167,11 @@ body {
 }
 
 .layout--home .archive__item-excerpt {
-  color: #495d6f;
+  color: var(--nm-item-excerpt);
 }
 
 .layout--home .page__meta {
-  color: #6d8091;
+  color: var(--nm-page-meta);
 }
 
 .sidebar {
@@ -151,11 +207,11 @@ body {
 }
 
 .author__urls a {
-  color: #435b70;
+  color: var(--nm-author-link);
 }
 
 .author__urls a:hover {
-  color: #0d6a86;
+  color: var(--nm-author-link-hover);
 }
 
 @media (min-width: 1024px) {
@@ -219,4 +275,130 @@ code div[id^="aswift_"],
 .nm-inline-ad-slot--from-code {
   margin: 1rem 0 1.25rem;
   clear: both;
+}
+
+/* Runtime dark mode */
+html[data-theme="dark"] {
+  background-color: #0f1621;
+}
+
+html[data-theme="dark"] .greedy-nav,
+html[data-theme="dark"] .greedy-nav .visible-links,
+html[data-theme="dark"] .greedy-nav .visible-links a,
+html[data-theme="dark"] .greedy-nav .dropbtn,
+html[data-theme="dark"] .greedy-nav .site-title,
+html[data-theme="dark"] .greedy-nav .search__toggle,
+html[data-theme="dark"] .greedy-nav .greedy-nav__toggle {
+  color: #e8f0f8;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links,
+html[data-theme="dark"] .dropdown-content {
+  background: #121b28;
+  border: 1px solid var(--nm-border);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.42);
+}
+
+html[data-theme="dark"] .dropdown-content a {
+  color: #d8e6f5;
+}
+
+html[data-theme="dark"] .dropdown-content a:hover {
+  background-color: #1c2838;
+}
+
+html[data-theme="dark"] .page__title,
+html[data-theme="dark"] .archive__item-title a,
+html[data-theme="dark"] .author__name,
+html[data-theme="dark"] .page__content h1,
+html[data-theme="dark"] .page__content h2,
+html[data-theme="dark"] .page__content h3,
+html[data-theme="dark"] .page__content h4,
+html[data-theme="dark"] .page__content h5,
+html[data-theme="dark"] .page__content h6 {
+  color: #eaf2fb;
+}
+
+html[data-theme="dark"] .layout--home .archive__item-title a:hover {
+  color: #b8efff;
+}
+
+html[data-theme="dark"] .page__content,
+html[data-theme="dark"] .archive__item-excerpt,
+html[data-theme="dark"] .author__bio,
+html[data-theme="dark"] .page__meta,
+html[data-theme="dark"] .pagination--pager,
+html[data-theme="dark"] .toc .nav__title,
+html[data-theme="dark"] .toc__menu a {
+  color: #b8cade;
+}
+
+html[data-theme="dark"] .pagination--pager {
+  background: #172232;
+  border-color: var(--nm-border);
+}
+
+html[data-theme="dark"] .pagination--pager:hover {
+  background: #1f2c3f;
+  color: #eef6ff;
+}
+
+html[data-theme="dark"] a {
+  color: #8ddcff;
+}
+
+html[data-theme="dark"] a:hover {
+  color: #b6ecff;
+}
+
+html[data-theme="dark"] .toc,
+html[data-theme="dark"] .notice,
+html[data-theme="dark"] blockquote,
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  background-color: #121b28;
+  border-color: var(--nm-border);
+  color: #deebf8;
+}
+
+html[data-theme="dark"] table {
+  border-color: var(--nm-border);
+}
+
+html[data-theme="dark"] th,
+html[data-theme="dark"] td {
+  border-color: var(--nm-border);
+}
+
+html[data-theme="dark"] thead,
+html[data-theme="dark"] tbody tr:nth-child(odd) {
+  background-color: #151f2c;
+}
+
+html[data-theme="dark"] :not(pre) > code {
+  background: #1b2635;
+  border: 1px solid var(--nm-border);
+  color: #e9f2fb;
+}
+
+html[data-theme="dark"] div.highlighter-rouge,
+html[data-theme="dark"] figure.highlight,
+html[data-theme="dark"] pre.highlight,
+html[data-theme="dark"] .highlight pre,
+html[data-theme="dark"] .highlight {
+  background: #0d1521;
+  border-color: var(--nm-border);
+}
+
+html[data-theme="dark"] .search-content,
+html[data-theme="dark"] .search-content .search-input,
+html[data-theme="dark"] .search-content input {
+  background: #101926;
+  color: #e4eef9;
+}
+
+html[data-theme="dark"] .page__footer {
+  background: #0f1724;
+  color: #9db2c8;
 }
