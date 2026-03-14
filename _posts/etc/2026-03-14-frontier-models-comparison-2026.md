@@ -45,6 +45,15 @@ published: true
 
 ![](/assets/images/posts/etc/frontier-models-comparison-2026/matrix.svg)
 
+<p>
+  <img src="/assets/images/posts/etc/frontier-models-comparison-2026/openai-official.png" width="240px" alt="OpenAI official image"/>
+  <img src="/assets/images/posts/etc/frontier-models-comparison-2026/gemini-official.png" width="240px" alt="Google Gemini official image"/>
+  <img src="/assets/images/posts/etc/claude-code-guide/claude-code-official.png" width="240px" alt="Anthropic Claude Code official image"/>
+  <img src="/assets/images/posts/etc/frontier-models-comparison-2026/grok-official.webp" width="240px" alt="xAI Grok official image"/>
+</p>
+
+_왼쪽부터 OpenAI, Google Gemini, Anthropic Claude Code, xAI Grok 공식 이미지_
+
 # 먼저 결론부터
 
 빠르게 고르면 대체로 이렇게 볼 수 있습니다.
