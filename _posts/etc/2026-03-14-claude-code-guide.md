@@ -13,7 +13,7 @@ tags:
   - Claude Code
   - 코딩에이전트
 date: 2026-03-14 14:19:00 +09:00
-permalink: /??/claude-code-guide/
+permalink: /기타/claude-code-guide/
 
 toc: true
 toc_sticky: true

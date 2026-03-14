@@ -13,7 +13,7 @@ tags:
   - 에이전트
   - Tool Use
 date: 2026-03-14 14:11:00 +09:00
-permalink: /??/what-is-mcp/
+permalink: /기타/what-is-mcp/
 
 toc: true
 toc_sticky: true

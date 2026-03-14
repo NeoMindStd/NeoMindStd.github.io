@@ -14,7 +14,7 @@ tags:
   - GPT
   - 코딩에이전트
 date: 2026-03-14 14:18:00 +09:00
-permalink: /??/gpt-codex-guide/
+permalink: /기타/gpt-codex-guide/
 
 toc: true
 toc_sticky: true

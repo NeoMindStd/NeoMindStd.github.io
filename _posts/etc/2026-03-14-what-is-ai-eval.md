@@ -14,7 +14,7 @@ tags:
   - Agent
   - Prompt Engineering
 date: 2026-03-14 17:15:00 +09:00
-permalink: /??/what-is-ai-eval/
+permalink: /기타/what-is-ai-eval/
 header:
   og_image: /assets/images/posts/etc/what-is-ai-eval/social.png
   teaser: /assets/images/posts/etc/what-is-ai-eval/social.png

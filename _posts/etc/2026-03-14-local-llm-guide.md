@@ -15,7 +15,7 @@ tags:
   - LM Studio
   - llama.cpp
 date: 2026-03-14 14:16:00 +09:00
-permalink: /??/local-llm-guide/
+permalink: /기타/local-llm-guide/
 
 toc: true
 toc_sticky: true

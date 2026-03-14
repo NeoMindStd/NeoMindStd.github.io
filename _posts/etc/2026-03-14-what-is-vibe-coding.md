@@ -15,7 +15,7 @@ tags:
   - Claude Code
   - Copilot
 date: 2026-03-14 17:16:00 +09:00
-permalink: /??/what-is-vibe-coding/
+permalink: /기타/what-is-vibe-coding/
 header:
   og_image: /assets/images/posts/etc/what-is-vibe-coding/social.png
   teaser: /assets/images/posts/etc/what-is-vibe-coding/social.png

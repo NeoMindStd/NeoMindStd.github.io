@@ -14,7 +14,7 @@ tags:
   - Retrieval
   - Vector Store
 date: 2026-03-14 17:44:00 +09:00
-permalink: /??/what-is-rag/
+permalink: /기타/what-is-rag/
 header:
   og_image: /assets/images/posts/etc/what-is-rag/social.png
   teaser: /assets/images/posts/etc/what-is-rag/social.png

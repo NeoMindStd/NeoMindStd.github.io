@@ -14,7 +14,7 @@ tags:
   - GitHub
   - 코딩에이전트
 date: 2026-03-14 14:21:00 +09:00
-permalink: /??/github-copilot-guide/
+permalink: /기타/github-copilot-guide/
 
 toc: true
 toc_sticky: true

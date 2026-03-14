@@ -15,7 +15,7 @@ tags:
   - Gemini
   - Claude
 date: 2026-03-14 17:39:00 +09:00
-permalink: /??/what-is-deep-research/
+permalink: /기타/what-is-deep-research/
 header:
   og_image: /assets/images/posts/etc/what-is-deep-research/social.png
   teaser: /assets/images/posts/etc/what-is-deep-research/social.png

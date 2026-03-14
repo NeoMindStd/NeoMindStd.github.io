@@ -15,7 +15,7 @@ tags:
   - 강화학습
   - 유전알고리즘
 date: 2026-03-14 14:10:00 +09:00
-permalink: /??/ai-types-history/
+permalink: /기타/ai-types-history/
 
 toc: true
 toc_sticky: true
