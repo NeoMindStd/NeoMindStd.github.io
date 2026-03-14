@@ -5,6 +5,7 @@ description: "AI 에이전트의 Skill 개념을 프롬프트, 룰, 메모리, M
 
 categories:
   - 기타
+  - AI
 tags:
   - 기타
   - AI

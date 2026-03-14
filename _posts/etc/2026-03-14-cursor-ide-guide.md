@@ -5,6 +5,7 @@ description: "Cursor IDE의 핵심 개념, Tab/Chat/Edit 흐름, Rules 시스템
 
 categories:
   - 기타
+  - AI
 tags:
   - 기타
   - AI

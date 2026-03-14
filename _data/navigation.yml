@@ -20,6 +20,8 @@ main:
          url: "/categories/#리뷰"
        - title: "문제풀이"
          url: "/categories/#문제풀이"
+       - title: "AI"
+         url: "/categories/#ai"
        - title: "Projects"
          url: "/categories/#project"
        - title: "기타"

@@ -5,6 +5,7 @@ description: "AI 에이전트 보안의 핵심 개념인 prompt injection, tool 
 
 categories:
   - 기타
+  - AI
 tags:
   - 기타
   - AI

@@ -5,6 +5,7 @@ description: "GitHub Copilot의 현재 위치, 인라인 제안과 채팅을 넘
 
 categories:
   - 기타
+  - AI
 tags:
   - 기타
   - AI

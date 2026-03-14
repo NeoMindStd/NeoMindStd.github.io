@@ -5,6 +5,7 @@ description: "RAG(Retrieval-Augmented Generation)의 개념, 어떻게 동작하
 
 categories:
   - 기타
+  - AI
 tags:
   - 기타
   - AI

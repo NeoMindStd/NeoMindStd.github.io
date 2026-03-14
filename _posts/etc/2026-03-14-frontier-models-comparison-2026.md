@@ -5,6 +5,7 @@ description: "ChatGPT/OpenAI, Gemini, Claude, Grok 계열의 최신 프론티어
 
 categories:
   - 기타
+  - AI
 tags:
   - 기타
   - AI

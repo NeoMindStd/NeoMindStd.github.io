@@ -5,6 +5,7 @@ description: "Apple Silicon의 unified memory architecture, CPU/GPU/Neural Engin
 
 categories:
   - 기타
+  - AI
 tags:
   - 기타
   - AI

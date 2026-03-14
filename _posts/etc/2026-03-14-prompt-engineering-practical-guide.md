@@ -5,6 +5,7 @@ description: "좋은 프롬프트의 구조, 역할·목표·맥락·제약·출
 
 categories:
   - 기타
+  - AI
 tags:
   - 기타
   - AI

@@ -5,6 +5,7 @@ description: "OpenClaw의 개념, 채팅 기반 에이전트 워크스페이스 
 
 categories:
   - 기타
+  - AI
 tags:
   - 기타
   - AI
