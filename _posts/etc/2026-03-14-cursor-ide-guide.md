@@ -32,6 +32,12 @@ published: true
 코드 완성만 잘하는 에디터가 아니라,  
 **에디터 안에서 채팅, 수정, 규칙, 백그라운드 작업을 함께 묶는 작업 환경**에 가깝습니다.
 
+<p>
+  <img src="/assets/images/posts/etc/cursor-ide-guide/cursor-official.svg" width="140px" alt="Cursor official logo"/>
+</p>
+
+_Cursor 공식 로고_
+
 # Cursor를 이해할 때 중요한 세 가지
 
 공식 문서 흐름을 기준으로 보면 Cursor는 대략 아래 세 축으로 보면 이해가 쉽습니다.
