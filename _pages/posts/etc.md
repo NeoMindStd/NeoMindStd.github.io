@@ -20,6 +20,21 @@ toc_label: "목차"
 
 실무에서 직접 겪은 운영 이슈와 해결 과정을 중심으로 정리합니다.
 
+### AI / LLM / 에이전트
+ - [AI의 종류와 역사: 머신러닝, 신경망, 강화학습, 유전알고리즘 한 번에 정리](/기타/ai-types-history/)
+ - [MCP란 무엇인가? AI 에이전트의 USB-C를 이해하는 가장 쉬운 설명](/기타/what-is-mcp/)
+ - [CLI란 무엇인가? 개발자와 AI 에이전트가 터미널을 사랑하는 이유](/기타/what-is-cli/)
+ - [AI 에이전트의 Skill이란 무엇인가? 프롬프트 묶음이 아니라 실행 가능한 작업 단위](/기타/ai-agent-skills/)
+ - [프롬프트를 어떻게 써야 AI가 잘 일할까? 실전 프롬프트 엔지니어링 가이드](/기타/prompt-engineering-practical-guide/)
+ - [2026 프론티어 모델 비교: ChatGPT, Gemini, Claude, Grok를 어떻게 고를까](/기타/frontier-models-comparison-2026/)
+ - [로컬 LLM 시작 가이드: Ollama, LM Studio, llama.cpp를 어떻게 고를까](/기타/local-llm-guide/)
+ - [OpenClaw란 무엇인가? 채팅 앱 안에 에이전트 워크스페이스를 넣는 방식](/기타/openclaw-overview/)
+ - [GPT Codex란 무엇인가? Codex 앱, CLI, 클라우드 샌드박스까지](/기타/gpt-codex-guide/)
+ - [Claude Code란 무엇인가? 터미널에서 움직이는 코딩 에이전트 이해하기](/기타/claude-code-guide/)
+ - [Cursor IDE 완전정리: Rules, Background Agents, Tab 경험은 무엇이 다른가](/기타/cursor-ide-guide/)
+ - [GitHub Copilot 완전정리: 인라인 완성에서 코딩 에이전트까지](/기타/github-copilot-guide/)
+ - [AI 에이전트 보안 입문: 프롬프트 인젝션, 툴 권한, 데이터 유출을 어떻게 봐야 할까](/기타/agent-security-prompt-injection/)
+
 ### 블로그 운영/앱 운영
  - [Google Play app-ads.txt 적용 방법과 반영 체크리스트](/기타/google-play-app-ads-txt-checklist/)
  - [Jetpack Compose + AdMob 전면 광고 겹침 문제 해결기](/기타/compose-admob-interstitial-overlap-fix/)
