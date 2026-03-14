@@ -1,0 +1,16 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860">
+  <rect width="1400" height="860" fill="#111827"/>
+  <text x="90" y="110" fill="#f9fafb" font-size="54" font-family="Segoe UI, Arial" font-weight="700">이미지 생성 툴 선택 기준</text>
+  <text x="90" y="160" fill="#9ca3af" font-size="24" font-family="Segoe UI, Arial">예쁜 결과 vs 대화형 편집 vs 상업 사용 감각</text>
+  <line x1="180" y1="240" x2="180" y2="760" stroke="#374151" stroke-width="4"/>
+  <line x1="180" y1="760" x2="1220" y2="760" stroke="#374151" stroke-width="4"/>
+  <circle cx="430" cy="510" r="96" fill="#14b8a6" opacity="0.92"/>
+  <circle cx="760" cy="390" r="108" fill="#8b5cf6" opacity="0.9"/>
+  <circle cx="1030" cy="470" r="102" fill="#ef4444" opacity="0.9"/>
+  <text x="353" y="505" fill="#fff" font-size="34" font-family="Segoe UI, Arial" font-weight="700">ChatGPT</text>
+  <text x="345" y="545" fill="#ccfbf1" font-size="22" font-family="Segoe UI, Arial">수정 지시가 편함</text>
+  <text x="660" y="385" fill="#fff" font-size="34" font-family="Segoe UI, Arial" font-weight="700">Midjourney</text>
+  <text x="665" y="425" fill="#ede9fe" font-size="22" font-family="Segoe UI, Arial">미감 중심</text>
+  <text x="955" y="465" fill="#fff" font-size="34" font-family="Segoe UI, Arial" font-weight="700">Firefly</text>
+  <text x="937" y="505" fill="#fee2e2" font-size="22" font-family="Segoe UI, Arial">상업 실무</text>
+</svg>
