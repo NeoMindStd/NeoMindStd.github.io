@@ -1,6 +1,7 @@
 ---
 title:  "[리뷰/구직] 네이버 2020 하반기 신입 공채 합격!!"
 excerpt: "구직 리뷰"
+description: "구직 리뷰"
 
 categories:
   - 리뷰

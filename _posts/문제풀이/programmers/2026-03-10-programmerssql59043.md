@@ -1,6 +1,7 @@
 ---
 title:  "[프로그래머스/SQL] 있었는데요 없었습니다(59043) 풀이"
 excerpt: "MySQL을 이용한 프로그래머스 SQL 고득점 Kit 문제풀이"
+description: "MySQL을 이용한 프로그래머스 SQL 고득점 Kit 문제풀이"
 
 categories:
   - 문제풀이

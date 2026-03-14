@@ -1,6 +1,7 @@
 ---
 title:  "[프로그래머스/SQL] 오랜 기간 보호한 동물(1)(59044) 풀이"
 excerpt: "MySQL을 이용한 프로그래머스 SQL 문제풀이"
+description: "MySQL을 이용한 프로그래머스 SQL 문제풀이"
 
 categories:
   - 문제풀이

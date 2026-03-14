@@ -1,6 +1,7 @@
 ---
 title:  "[리뷰/여행,액티비티] 태종대 체험 스쿠버다이빙 후기"
 excerpt: "여행,액티비티 리뷰"
+description: "여행,액티비티 리뷰"
 
 categories:
   - 리뷰

@@ -1,6 +1,7 @@
 ---
 title:  "[프로젝트] 애니북 놀이터"
 excerpt: "크로마키, 프레임별 편집 기능을 제공하고 여러 장의 사진을 찍어 StopMotion 영상으로 변환 및 재생하는 안드로이드 어플리케이션"
+description: "크로마키, 프레임별 편집 기능을 제공하고 여러 장의 사진을 찍어 StopMotion 영상으로 변환 및 재생하는 안드로이드 어플리케이션"
 
 categories:
   - Project

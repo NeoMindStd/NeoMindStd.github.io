@@ -1,6 +1,7 @@
 ---
 title:  "[리뷰/시험,자격증] 정보처리기사 2020년 3회 실기 합격!!"
 excerpt: "시험, 자격증 리뷰"
+description: "시험, 자격증 리뷰"
 
 categories:
   - 리뷰

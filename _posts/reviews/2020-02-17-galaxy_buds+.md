@@ -1,6 +1,7 @@
 ---
 title:  "[리뷰/IT] 갤럭시 버즈 플러스 화이트 예약구매 후기 + 여러 기기 동시 사용법"
 excerpt: "IT 제품 리뷰"
+description: "IT 제품 리뷰"
 
 categories:
   - 리뷰

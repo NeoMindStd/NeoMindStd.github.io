@@ -1,6 +1,7 @@
 ---
 title:  "[리뷰/독후감] 조엘 온 소프트웨어"
 excerpt: "조엘 온 소프트웨어를 읽고서..."
+description: "조엘 온 소프트웨어를 읽고서..."
 
 categories:
   - 리뷰

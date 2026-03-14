@@ -1,0 +1,44 @@
+name: Site Health Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/site-health-report.yml"
+      - "scripts/site_health_check.py"
+      - "robots.txt"
+      - "sitemap.xml"
+
+permissions:
+  contents: read
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run site health check
+        run: |
+          python scripts/site_health_check.py \
+            --base-url https://neomindstd.github.io \
+            --report-path .cache/site-health-report.json
+
+      - name: Upload health report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-health-report
+          path: |
+            .cache/site-health-report.json
+            .cache/site-health-summary.md

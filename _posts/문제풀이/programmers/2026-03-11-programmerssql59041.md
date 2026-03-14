@@ -1,6 +1,7 @@
 ---
 title:  "[프로그래머스/SQL] 동명 동물 수 찾기(59041) 풀이"
 excerpt: "MySQL을 이용한 프로그래머스 SQL 문제풀이"
+description: "MySQL을 이용한 프로그래머스 SQL 문제풀이"
 
 categories:
   - 문제풀이

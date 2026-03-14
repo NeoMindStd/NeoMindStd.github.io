@@ -1,6 +1,7 @@
 ---
 title:  "[프로그래머스/SQL] 모든 레코드 조회하기(59034) 풀이"
 excerpt: "MySQL을 이용한 프로그래머스 SQL 문제풀이"
+description: "MySQL을 이용한 프로그래머스 SQL 문제풀이"
 
 categories:
   - 문제풀이

@@ -1,6 +1,7 @@
 ---
 title:  "[프로젝트] Always Opened Secret Rooms"
 excerpt: "The Binding of Isaac: Repentance용 편의성 모드. 새 게임 시작 시 X-ray Vision을 자동 지급해 비밀방 입구를 항상 확인할 수 있게 합니다."
+description: "The Binding of Isaac: Repentance용 편의성 모드. 새 게임 시작 시 X-ray Vision을 자동 지급해 비밀방 입구를 항상 확인할 수 있게 합니다."
 
 categories:
   - Project

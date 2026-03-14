@@ -1,6 +1,7 @@
 ---
 title:  "[프로그래머스/SQL] 여러 기준으로 정렬하기(59404) 풀이"
 excerpt: "MySQL을 이용한 프로그래머스 SQL 문제풀이"
+description: "MySQL을 이용한 프로그래머스 SQL 문제풀이"
 
 categories:
   - 문제풀이

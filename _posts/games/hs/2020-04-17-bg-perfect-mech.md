@@ -1,6 +1,7 @@
 ---
 title:  "[게임/하스스톤] 전장 완성형 기계죽메덱"
 excerpt: "완성형 덱"
+description: "완성형 덱"
 
 categories:
   - 게임

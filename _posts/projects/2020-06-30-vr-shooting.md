@@ -1,6 +1,7 @@
 ---
 title:  "[프로젝트] VR Shooting"
 excerpt: "오두막이 있는 골짜기에 갇힌 주인공이 무한히 몰려오는 Zombear와 Zombunny에 맞서 탄약과 체력을 보급하며 최대한 오래 생존하는 게임"
+description: "오두막이 있는 골짜기에 갇힌 주인공이 무한히 몰려오는 Zombear와 Zombunny에 맞서 탄약과 체력을 보급하며 최대한 오래 생존하는 게임"
 
 categories:
   - Project
