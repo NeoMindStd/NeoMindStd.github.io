@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect width="1400" height="900" fill="#0f172a"/>
+  <text x="80" y="120" fill="#f8fafc" font-size="56" font-family="Segoe UI, Arial" font-weight="700">창작 AI 선택 맵</text>
+  <text x="80" y="170" fill="#94a3b8" font-size="24" font-family="Segoe UI, Arial">무엇을 만들고 싶은지에 따라 고르는 가장 쉬운 기준</text>
+  <line x1="180" y1="250" x2="180" y2="780" stroke="#334155" stroke-width="4"/>
+  <line x1="180" y1="780" x2="1230" y2="780" stroke="#334155" stroke-width="4"/>
+  <text x="100" y="270" fill="#64748b" font-size="24" font-family="Segoe UI, Arial">제어</text>
+  <text x="1180" y="840" fill="#64748b" font-size="24" font-family="Segoe UI, Arial">대중성</text>
+  <circle cx="420" cy="560" r="90" fill="#2563eb" opacity="0.88"/>
+  <text x="380" y="550" fill="#fff" font-size="30" font-family="Segoe UI, Arial" font-weight="700">Suno</text>
+  <text x="365" y="590" fill="#dbeafe" font-size="20" font-family="Segoe UI, Arial">음악</text>
+  <circle cx="620" cy="500" r="96" fill="#0f766e" opacity="0.9"/>
+  <text x="560" y="490" fill="#fff" font-size="28" font-family="Segoe UI, Arial" font-weight="700">ChatGPT</text>
+  <text x="565" y="530" fill="#ccfbf1" font-size="20" font-family="Segoe UI, Arial">이미지</text>
+  <circle cx="860" cy="430" r="102" fill="#9333ea" opacity="0.9"/>
+  <text x="815" y="420" fill="#fff" font-size="32" font-family="Segoe UI, Arial" font-weight="700">Veo</text>
+  <text x="795" y="460" fill="#f3e8ff" font-size="20" font-family="Segoe UI, Arial">영상</text>
+  <circle cx="1080" cy="350" r="88" fill="#dc2626" opacity="0.9"/>
+  <text x="1030" y="340" fill="#fff" font-size="30" font-family="Segoe UI, Arial" font-weight="700">Runway</text>
+  <text x="1038" y="380" fill="#fee2e2" font-size="20" font-family="Segoe UI, Arial">편집</text>
+</svg>
