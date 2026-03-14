@@ -47,9 +47,9 @@ LM Studio는 CLI보다 GUI가 익숙한 사람에게 가장 편한 로컬 AI 앱
 
 # 공식 사이트와 다운로드 경로
 
-- 공식 사이트: [https://lmstudio.ai/](https://lmstudio.ai/)
-- 다운로드/접속 경로: [https://lmstudio.ai/download](https://lmstudio.ai/download)
-- 공식 문서: [https://lmstudio.ai/docs/app](https://lmstudio.ai/docs/app)
+- 공식 사이트: [LM Studio 공식 사이트](https://lmstudio.ai/)
+- 다운로드/접속 경로: [LM Studio 다운로드 페이지](https://lmstudio.ai/download)
+- 공식 문서: [LM Studio 앱 문서](https://lmstudio.ai/docs/app)
 
 # 지원 환경과 설치 방법
 
@@ -70,18 +70,11 @@ Linux는 공식 다운로드 페이지에서 AppImage나 배포 형식에 맞는
 
 # 기본 사용법
 
-LM Studio는 CLI보다 GUI가 익숙한 사람에게 가장 편한 로컬 AI 앱입니다. 모델 카탈로그를 둘러보고, GGUF 계열 모델을 내려받고, 바로 채팅하거나 로컬 서버
-모드로 다른 앱과 연결하는 흐름이 한 화면 안에서 정리됩니다.
+LM Studio는 Model Catalog, Chat, Local Server 세 화면만 익혀도 핵심 사용 흐름이 거의 끝납니다. 처음에는 모델 하나만 내려받아 채팅으로 성격을 보고, 그다음 필요할 때만 로컬 서버를 켜는 편이 덜 복잡합니다.
 
 1. 앱을 설치한 뒤 Model Catalog에서 원하는 모델을 찾고 내려받습니다.
 2. Chat 탭에서 바로 테스트하거나, Developers 메뉴의 로컬 서버 기능을 켭니다.
 3. 필요하면 OpenAI 호환 엔드포인트 형태로 다른 앱과 연결합니다.
-
-```bash
-1. 앱 실행
-2. Model Catalog에서 모델 다운로드
-3. Chat 또는 Local Server로 테스트
-```
 
 # 어떤 사람에게 잘 맞나
 

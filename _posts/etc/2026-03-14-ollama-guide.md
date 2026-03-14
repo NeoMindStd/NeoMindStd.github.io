@@ -47,9 +47,9 @@ Ollama의 장점은 모델 받아서 바로 돌리는 경험이 매우 짧다는
 
 # 공식 사이트와 다운로드 경로
 
-- 공식 사이트: [https://ollama.com/](https://ollama.com/)
-- 다운로드/접속 경로: [https://ollama.com/download](https://ollama.com/download)
-- 공식 문서: [https://ollama.com/library](https://ollama.com/library)
+- 공식 사이트: [Ollama 공식 사이트](https://ollama.com/)
+- 다운로드/접속 경로: [Ollama 다운로드 페이지](https://ollama.com/download)
+- 공식 문서: [Ollama 모델 라이브러리](https://ollama.com/library)
 
 # 지원 환경과 설치 방법
 
@@ -70,8 +70,7 @@ Linux는 공식 설치 스크립트인 `curl -fsSL https://ollama.com/install.sh
 
 # 기본 사용법
 
-Ollama의 장점은 모델 받아서 바로 돌리는 경험이 매우 짧다는 점입니다. 클라우드 API 대신 로컬에서 모델을 내려받아 채팅하거나, 로컬 OpenAI 호환 API처럼
-연결하는 흐름까지 자연스럽게 이어집니다.
+Ollama는 처음부터 큰 모델을 욕심내기보다, 작은 모델 하나를 내려받아 속도와 메모리 체감을 보는 쪽이 훨씬 실전적입니다. `pull`과 `run` 두 명령만 익혀도 로컬 러너로서의 성격이 금방 보입니다.
 
 1. 설치가 끝나면 `ollama pull`로 원하는 모델을 먼저 내려받습니다.
 2. `ollama run`으로 바로 대화하거나 테스트 프롬프트를 실행합니다.
