@@ -143,6 +143,41 @@
   }
 </script>
 
+{% if page.date %}
+  {%- assign article_modified_time = page.last_modified_at | default: page.date -%}
+  {%- assign article_image = page_large_image | default: page_teaser_image | default: site_og_image -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": {{ page.title | default: site.title | markdownify | strip_html | strip_newlines | jsonify }},
+      "description": {{ seo_description | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ article_modified_time | date_to_xmlschema | jsonify }},
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": {{ canonical_url | jsonify }}
+      },
+      "url": {{ canonical_url | jsonify }},
+      {% if article_image %}
+      "image": [{{ article_image | jsonify }}],
+      {% endif %}
+      "author": {
+        "@type": "Person",
+        "name": {{ author.name | default: site.name | jsonify }}
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ site.name | jsonify }}{% if site_og_image %},
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ site_og_image | jsonify }}
+        }{% endif %}
+      }
+    }
+  </script>
+{% endif %}
+
 {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 {% endif %}

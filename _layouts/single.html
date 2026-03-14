@@ -55,6 +55,31 @@ layout: default
           </aside>
         {% endif %}
         {{ content }}
+        {% assign show_hub_cta = false %}
+        {% if page.collection == "posts" %}
+          {% if page.categories contains "문제풀이" or page.categories contains "Project" or page.categories contains "기타" %}
+            {% assign show_hub_cta = true %}
+          {% endif %}
+        {% endif %}
+        {% if show_hub_cta %}
+          <div class="nm-post-hub-cta">
+            <h4>다음 읽을거리</h4>
+            <p>관련 허브 페이지에서 같은 주제의 글을 이어서 확인할 수 있습니다.</p>
+            <ul>
+              {% if page.categories contains "문제풀이" %}
+                <li><a href="/boj/">백준 문제풀이 허브</a></li>
+                <li><a href="/programmers/">프로그래머스 문제풀이 허브</a></li>
+              {% endif %}
+              {% if page.categories contains "Project" %}
+                <li><a href="/projects/">프로젝트 목록 허브</a></li>
+              {% endif %}
+              {% if page.categories contains "기타" %}
+                <li><a href="/etc/">기타 기술/운영 아카이브</a></li>
+              {% endif %}
+              <li><a href="/series/">전체 연재 목록</a></li>
+            </ul>
+          </div>
+        {% endif %}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 

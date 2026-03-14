@@ -2,8 +2,8 @@
 title: "프로그래머스 문제 풀이 모음"
 permalink: /programmers/
 layout: single
-excerpt: "프로그래머스 코딩 테스트 문제 풀이 모음입니다. 문제 접근 방식, 구현 포인트, 코드 해설을 함께 정리합니다."
-description: "프로그래머스 코딩 테스트 문제 풀이 모음입니다. 문제 접근 방식, 구현 포인트, 코드 해설을 함께 정리합니다."
+excerpt: "프로그래머스 코딩테스트/SQL 문제 풀이를 모아둔 허브입니다. 문제 접근, 구현 포인트, 코드 해설을 함께 정리합니다."
+description: "프로그래머스 코딩테스트/SQL 문제 풀이를 모아둔 허브입니다. 문제 접근, 구현 포인트, 코드 해설을 함께 정리합니다."
 ---
 
 - - -
@@ -14,6 +14,8 @@ description: "프로그래머스 코딩 테스트 문제 풀이 모음입니다.
 
 ### [Programmers Challenges](https://school.programmers.co.kr/learn/challenges?order=recent&page=1)
 ### [CodingLife Programmers Repository](https://github.com/NeoMindStd/CodingLife/tree/master/programmers)
+
+코딩 문제와 SQL 문제를 분리해 필요한 풀이를 빠르게 찾을 수 있게 구성했습니다.
 
 ### 코딩 문제
 <details>

@@ -226,6 +226,33 @@ body {
   color: var(--nm-author-link-hover);
 }
 
+.nm-post-hub-cta {
+  margin-top: 1.4rem;
+  margin-bottom: 1.2rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--nm-border);
+  border-radius: 14px;
+  background: rgba(31, 127, 155, 0.07);
+}
+
+.nm-post-hub-cta h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+.nm-post-hub-cta p {
+  margin: 0 0 0.65rem;
+  font-size: 0.92rem;
+}
+
+.nm-post-hub-cta ul {
+  margin: 0;
+}
+
+.nm-post-hub-cta li {
+  margin: 0.2rem 0;
+}
+
 @media (min-width: 1024px) {
   .sidebar.sticky {
     top: 6.2rem;
@@ -397,6 +424,11 @@ html[data-theme="dark"] .toc .active > a,
 html[data-theme="dark"] .toc .active a {
   background-color: rgba(102, 202, 232, 0.2);
   color: #ebf9ff;
+}
+
+html[data-theme="dark"] .nm-post-hub-cta {
+  background: rgba(41, 88, 124, 0.24);
+  border-color: rgba(136, 160, 183, 0.32);
 }
 
 html[data-theme="dark"] table {
