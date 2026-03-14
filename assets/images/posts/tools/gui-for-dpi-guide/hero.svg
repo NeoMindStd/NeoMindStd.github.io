@@ -1,19 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">GoodbyeDPI</title>
+  <desc id="desc">Deep Packet Inspection circumvention utility for Windows</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0078D4"/>
+      <stop offset="0%" stop-color="#071421" />
+      <stop offset="100%" stop-color="#123b5b" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#44d7ff" />
+      <stop offset="100%" stop-color="#9ef27b" />
     </linearGradient>
   </defs>
-  <rect width="1280" height="720" fill="url(#bg)"/>
-  <rect x="48" y="48" width="1184" height="624" rx="36" fill="rgba(15,23,42,0.45)" stroke="rgba(255,255,255,0.16)"/>
-  <text x="80" y="140" font-size="34" fill="#cbd5e1" font-family="Arial">Tools Guide</text>
-  <text x="80" y="230" font-size="72" fill="#ffffff" font-family="Arial" font-weight="700">GUI for DPI (Windows 10 DPI Fix)</text>
-  <rect x="80" y="250" rx="18" ry="18" width="188" height="46" fill="rgba(255,255,255,0.13)"/><text x="98" y="280" font-size="24" fill="#f8fafc" font-family="Arial">Windows</text>
-  <text x="80" y="360" font-size="28" fill="#e2e8f0" font-family="Arial">Official site, download path, OS support, install flow, and basic usage</text>
-  <circle cx="980" cy="250" r="150" fill="rgba(255,255,255,0.08)"/>
-  <circle cx="980" cy="250" r="94" fill="rgba(255,255,255,0.12)"/>
-  <circle cx="980" cy="250" r="34" fill="rgba(255,255,255,0.85)"/>
-  <rect x="850" y="436" width="260" height="18" rx="9" fill="rgba(255,255,255,0.25)"/>
-  <rect x="790" y="498" width="380" height="14" rx="7" fill="rgba(255,255,255,0.18)"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="918" cy="186" r="146" fill="#0b2034" stroke="#1ed2ff" stroke-width="4" opacity="0.8" />
+  <circle cx="918" cy="186" r="96" fill="none" stroke="#9ef27b" stroke-width="12" opacity="0.7" />
+  <path d="M806 300 C866 230, 970 230, 1030 300" fill="none" stroke="#44d7ff" stroke-width="10" stroke-linecap="round" opacity="0.8" />
+  <path d="M780 340 C858 252, 978 252, 1056 340" fill="none" stroke="#9ef27b" stroke-width="10" stroke-linecap="round" opacity="0.55" />
+  <rect x="72" y="78" width="494" height="474" rx="28" fill="#0b1a2a" stroke="#1f4f74" stroke-width="2" />
+  <text x="110" y="172" font-size="78" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700">GoodbyeDPI</text>
+  <text x="110" y="238" font-size="28" fill="#b3cce0" font-family="Segoe UI, Arial, sans-serif">Windows packet filtering tool for bypassing DPI-based blocks</text>
+  <rect x="110" y="290" width="210" height="54" rx="27" fill="#103551" />
+  <text x="150" y="324" font-size="24" fill="#dff7ff" font-family="Segoe UI, Arial, sans-serif">Windows 7-11</text>
+  <rect x="338" y="290" width="194" height="54" rx="27" fill="#103551" />
+  <text x="386" y="324" font-size="24" fill="#dff7ff" font-family="Segoe UI, Arial, sans-serif">Admin required</text>
+  <path d="M110 404 L514 404" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" />
+  <text x="110" y="462" font-size="32" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="600">Quick start from the official Releases page</text>
 </svg>
