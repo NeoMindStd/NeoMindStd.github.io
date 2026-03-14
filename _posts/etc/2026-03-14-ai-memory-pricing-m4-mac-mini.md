@@ -33,6 +33,10 @@ published: true
 
 요즘 `램이 왜 이렇게 비싸지?`, `SSD 업그레이드 왜 이렇게 아프지?`, `M4 Mac mini는 시작가는 괜찮은데 원하는 사양으로 올리면 왜 갑자기 비싸지?` 같은 말을 자주 듣습니다.
 
+![](/assets/images/posts/etc/ai-memory-pricing-m4-mac-mini/apple-mac-mini-official.jpg)
+
+_Apple Newsroom의 Mac mini 공식 이미지_
+
 이 체감은 단순히 "애플이 비싸서" 한 줄로 끝낼 문제가 아닙니다.  
 2026년 시점에는 **AI 데이터센터용 메모리 경쟁**, **HBM 중심의 수급 재편**, **로컬 LLM 때문에 더 높은 메모리 구성이 필요한 현실**, **애플의 BTO 업그레이드 구조**가 한 번에 겹쳐져 있습니다.
 
