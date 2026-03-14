@@ -21,6 +21,8 @@ toc_label: "목차"
 실무에서 직접 겪은 운영 이슈와 해결 과정을 중심으로 정리합니다.
 
 ### AI / LLM / 에이전트
+ - [Apple Silicon 통합 메모리는 왜 로컬 LLM에 유리할까? VRAM 관점으로 이해하기](/기타/apple-silicon-unified-memory-local-llm/)
+ - [램·SSD·M4 Mac mini는 왜 비싸게 느껴질까? AI 시대 메모리 가격의 이유](/기타/ai-memory-pricing-m4-mac-mini/)
  - [AI의 종류와 역사: 머신러닝, 신경망, 강화학습, 유전알고리즘 한 번에 정리](/기타/ai-types-history/)
  - [MCP란 무엇인가? AI 에이전트의 USB-C를 이해하는 가장 쉬운 설명](/기타/what-is-mcp/)
  - [CLI란 무엇인가? 개발자와 AI 에이전트가 터미널을 사랑하는 이유](/기타/what-is-cli/)
