@@ -1,0 +1,51 @@
+<svg width="1400" height="820" viewBox="0 0 1400 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="70" x2="1270" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101B2A"/>
+      <stop offset="1" stop-color="#16283E"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="280" y1="180" x2="1120" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#71F0CD"/>
+      <stop offset="0.55" stop-color="#8DD0FF"/>
+      <stop offset="1" stop-color="#7B8FFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="820" rx="40" fill="url(#bg)"/>
+  <text x="700" y="104" text-anchor="middle" fill="#F3F8FE" font-size="48" font-weight="700" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Deep Research Loop</text>
+  <text x="700" y="146" text-anchor="middle" fill="#CADDEF" font-size="26" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">계획, 탐색, 재검색, 비교, 정리의 반복</text>
+
+  <circle cx="700" cy="430" r="240" stroke="url(#ring)" stroke-width="14" stroke-linecap="round" stroke-dasharray="770 44"/>
+  <path d="M944 278L1026 260L996 340" stroke="#78D8FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g>
+    <circle cx="700" cy="430" r="106" fill="#0F1A28" stroke="#6C9DE0"/>
+    <text x="700" y="418" text-anchor="middle" fill="#F3F8FF" font-size="34" font-weight="700" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Research</text>
+    <text x="700" y="458" text-anchor="middle" fill="#CCE5FF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">iterate and synthesize</text>
+  </g>
+
+  <g>
+    <rect x="170" y="384" width="210" height="92" rx="24" fill="#112134" stroke="#4D789B"/>
+    <text x="275" y="436" text-anchor="middle" fill="#F0F7FF" font-size="28" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">1. 계획</text>
+  </g>
+
+  <g>
+    <rect x="454" y="196" width="210" height="92" rx="24" fill="#112134" stroke="#4D789B"/>
+    <text x="559" y="248" text-anchor="middle" fill="#F0F7FF" font-size="28" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">2. 탐색</text>
+  </g>
+
+  <g>
+    <rect x="824" y="228" width="210" height="92" rx="24" fill="#112134" stroke="#4D789B"/>
+    <text x="929" y="280" text-anchor="middle" fill="#F0F7FF" font-size="28" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">3. 재검색</text>
+  </g>
+
+  <g>
+    <rect x="846" y="560" width="210" height="92" rx="24" fill="#112134" stroke="#4D789B"/>
+    <text x="951" y="612" text-anchor="middle" fill="#F0F7FF" font-size="28" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">4. 비교</text>
+  </g>
+
+  <g>
+    <rect x="446" y="590" width="210" height="92" rx="24" fill="#112134" stroke="#4D789B"/>
+    <text x="551" y="642" text-anchor="middle" fill="#F0F7FF" font-size="28" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">5. 정리</text>
+  </g>
+</svg>

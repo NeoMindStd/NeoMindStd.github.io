@@ -1,0 +1,41 @@
+<svg width="1400" height="800" viewBox="0 0 1400 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="70" x2="1270" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A28"/>
+      <stop offset="1" stop-color="#16283E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="800" rx="40" fill="url(#bg)"/>
+  <text x="700" y="104" text-anchor="middle" fill="#F4F9FF" font-size="48" font-weight="700" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Chat, Search, Deep Research</text>
+  <text x="700" y="148" text-anchor="middle" fill="#CCDFEF" font-size="26" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">겉보기는 비슷하지만 작업 단위가 다르다</text>
+
+  <g>
+    <rect x="110" y="230" width="340" height="360" rx="30" fill="#16324A" stroke="#5E9BC9"/>
+    <text x="280" y="292" text-anchor="middle" fill="#F2F8FF" font-size="36" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">일반 채팅</text>
+    <text x="280" y="352" text-anchor="middle" fill="#D5EAFB" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">빠른 질문과 빠른 답</text>
+    <text x="280" y="420" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">짧은 응답</text>
+    <text x="280" y="466" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">탐색 거의 없음</text>
+    <text x="280" y="512" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">즉시성 우선</text>
+  </g>
+
+  <g>
+    <rect x="530" y="230" width="340" height="360" rx="30" fill="#153247" stroke="#69B4B9"/>
+    <text x="700" y="292" text-anchor="middle" fill="#F2F8FF" font-size="36" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">웹검색 답변</text>
+    <text x="700" y="352" text-anchor="middle" fill="#D5EAFB" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">몇 개 자료를 찾아 요약</text>
+    <text x="700" y="420" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">최신성 반영</text>
+    <text x="700" y="466" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">깊이는 제한적</text>
+    <text x="700" y="512" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">빠른 조사 보조</text>
+  </g>
+
+  <g>
+    <rect x="950" y="230" width="340" height="360" rx="30" fill="#142C44" stroke="#7A8BE8"/>
+    <text x="1120" y="292" text-anchor="middle" fill="#F2F8FF" font-size="36" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">딥리서치</text>
+    <text x="1120" y="352" text-anchor="middle" fill="#D5EAFB" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">계획하고 재검색하고 비교</text>
+    <text x="1120" y="420" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">장문 결과</text>
+    <text x="1120" y="466" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">출처와 구조화</text>
+    <text x="1120" y="512" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">조사형 업무 최적화</text>
+  </g>
+
+  <text x="700" y="694" text-anchor="middle" fill="#D2E5F7" font-size="28" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">딥리서치는 검색 결과를 읽는 모드가 아니라, 조사 루프를 실행하는 모드에 가깝다</text>
+</svg>

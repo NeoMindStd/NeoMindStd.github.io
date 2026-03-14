@@ -1,0 +1,40 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="140" y1="90" x2="1460" y2="810" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1724"/>
+      <stop offset="0.55" stop-color="#162640"/>
+      <stop offset="1" stop-color="#0E1522"/>
+    </linearGradient>
+    <linearGradient id="card" x1="300" y1="180" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111D2E"/>
+      <stop offset="1" stop-color="#17304A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="460" y1="470" x2="1120" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#71F0CD"/>
+      <stop offset="0.55" stop-color="#8FD0FF"/>
+      <stop offset="1" stop-color="#7A8FFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1290" cy="160" r="180" fill="#1A4168" fill-opacity="0.22"/>
+  <circle cx="230" cy="740" r="220" fill="#153655" fill-opacity="0.18"/>
+
+  <rect x="300" y="180" width="1000" height="540" rx="42" fill="url(#card)" stroke="#314D6C"/>
+
+  <text x="408" y="298" fill="#F3F8FE" font-size="76" font-weight="700" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">딥리서치란 무엇인가?</text>
+  <text x="408" y="356" fill="#BED8F1" font-size="34" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">AI가 답변을 넘어 조사하는 방식</text>
+
+  <path d="M468 470H1120" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="468" cy="470" r="18" fill="#71F0CD"/>
+  <circle cx="686" cy="470" r="18" fill="#82E0EB"/>
+  <circle cx="904" cy="470" r="18" fill="#8CBFFF"/>
+  <circle cx="1120" cy="470" r="18" fill="#7A8FFF"/>
+  <text x="468" y="514" text-anchor="middle" fill="#DDF3FF" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Plan</text>
+  <text x="686" y="514" text-anchor="middle" fill="#DDF3FF" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Search</text>
+  <text x="904" y="514" text-anchor="middle" fill="#DDF3FF" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Compare</text>
+  <text x="1120" y="514" text-anchor="middle" fill="#DDF3FF" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Report</text>
+
+  <rect x="440" y="582" width="730" height="82" rx="24" fill="#0F1723" stroke="#456A8E"/>
+  <text x="805" y="634" text-anchor="middle" fill="#EDF7FF" font-size="30" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">chat to research workflow</text>
+</svg>
