@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" fill="none">
+  <rect width="1600" height="760" rx="36" fill="#0F172A"/>
+  <text x="90" y="96" fill="#F8FAFC" font-size="42" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">AI History Timeline</text>
+  <text x="90" y="138" fill="#CBD5E1" font-size="24" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">규칙 기반 AI에서 LLM과 에이전트까지 이어지는 큰 흐름</text>
+  <path d="M130 380H1470" stroke="#94A3B8" stroke-opacity="0.25" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="180" cy="380" r="22" fill="#38BDF8"/>
+  <circle cx="410" cy="380" r="22" fill="#60A5FA"/>
+  <circle cx="690" cy="380" r="22" fill="#2DD4BF"/>
+  <circle cx="940" cy="380" r="22" fill="#A78BFA"/>
+  <circle cx="1180" cy="380" r="22" fill="#F59E0B"/>
+  <circle cx="1400" cy="380" r="22" fill="#FB7185"/>
+  <text x="140" y="330" fill="#E2E8F0" font-size="26" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">1950s</text>
+  <text x="115" y="440" fill="#F8FAFC" font-size="28" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">상징적 AI</text>
+  <text x="115" y="474" fill="#CBD5E1" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">탐색, 추론, 규칙 기반</text>
+  <text x="365" y="330" fill="#E2E8F0" font-size="26" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">1980s</text>
+  <text x="330" y="440" fill="#F8FAFC" font-size="28" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">전문가 시스템</text>
+  <text x="330" y="474" fill="#CBD5E1" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">도메인 규칙의 집약</text>
+  <text x="648" y="330" fill="#E2E8F0" font-size="26" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">1990s~2010s</text>
+  <text x="610" y="440" fill="#F8FAFC" font-size="28" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">머신러닝 확산</text>
+  <text x="610" y="474" fill="#CBD5E1" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">데이터 기반 일반화</text>
+  <text x="888" y="330" fill="#E2E8F0" font-size="26" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">2012+</text>
+  <text x="865" y="440" fill="#F8FAFC" font-size="28" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">딥러닝 급성장</text>
+  <text x="865" y="474" fill="#CBD5E1" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">신경망, 비전, 음성</text>
+  <text x="1128" y="330" fill="#E2E8F0" font-size="26" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">2017+</text>
+  <text x="1108" y="440" fill="#F8FAFC" font-size="28" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">Transformer / LLM</text>
+  <text x="1108" y="474" fill="#CBD5E1" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">긴 문맥과 생성 모델</text>
+  <text x="1360" y="330" fill="#E2E8F0" font-size="26" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">2024~2026</text>
+  <text x="1322" y="440" fill="#F8FAFC" font-size="28" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">에이전트 시대</text>
+  <text x="1322" y="474" fill="#CBD5E1" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">Tool use, memory, MCP</text>
+</svg>
