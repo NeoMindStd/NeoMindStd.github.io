@@ -47,9 +47,9 @@ published: true
 
 ![Runway 공식 이미지](/assets/images/posts/etc/ai-video-generation-guide-2026/runway-official.png)
 
-# 먼저 결론부터
+# 빠른 답
 
-2026년 기준으로 빠르게 보면 이렇게 이해할 수 있습니다.
+2026년 기준으로 빠르게 보면 아래처럼 이해하면 됩니다.
 
 - 콘셉트 영상과 비주얼 아이디어를 빠르게 보고 싶으면: Sora
 - 구글 생태계와 모델 성능 흐름을 같이 보고 싶으면: Veo

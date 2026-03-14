@@ -38,6 +38,12 @@ published: true
 
 ![공식 페이지 이미지](/assets/images/posts/etc/gemini-cli-guide/official.png)
 
+# 빠른 답
+
+- Gemini CLI는 터미널에서 Gemini를 다루는 공식 CLI 에이전트입니다.
+- 가장 가볍게 시작하려면 `npx @google/gemini-cli`, 계속 쓸 거면 전역 설치나 Homebrew가 편합니다.
+- 셸 명령, 파일 작업, MCP 연결까지 같이 다루고 싶을 때 특히 잘 맞고, IDE 중심 작업이면 Cursor나 Copilot이 더 직관적일 수 있습니다.
+
 # 어떤 도구인가
 
 Gemini CLI는 터미널 한복판에서 프롬프트, 파일 작업, 셸 명령, 웹 가져오기, MCP 도구 연결을 같이 다루는 타입의 에이전트입니다. 코드베이스를 훑어보게 하거나,

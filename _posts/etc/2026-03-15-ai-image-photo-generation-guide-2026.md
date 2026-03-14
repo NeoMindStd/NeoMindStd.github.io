@@ -41,15 +41,15 @@ published: true
 
 ![Adobe Firefly 로고](/assets/images/posts/etc/ai-image-photo-generation-guide-2026/firefly-logo.png)
 
-# 먼저 결론부터
+# 빠른 답
 
-일반 사용자 기준으로 빠르게 고르면 이렇게 볼 수 있습니다.
+일반 사용자 기준으로 빠르게 고르면 아래처럼 정리할 수 있습니다.
 
 - 대화하듯 이미지를 만들고 수정하고 싶으면: ChatGPT 이미지
 - 미감과 스타일, 일러스트 감성이 중요하면: Midjourney
 - 상업용 편집 흐름과 실무 감각이 중요하면: Firefly
 
-이 셋은 다 "그림을 만든다"는 점은 같지만, 실제로 쓰는 느낌이 꽤 다릅니다.
+이 셋은 다 "그림을 만든다"는 점은 같지만, 실제 작업 흐름과 수정 방식은 꽤 다릅니다.
 
 # 공식 사이트와 접근 경로
 

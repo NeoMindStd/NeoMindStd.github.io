@@ -38,6 +38,12 @@ published: true
 
 ![공식 페이지 이미지](/assets/images/posts/etc/codex-cli-guide/official.png)
 
+# 빠른 답
+
+- Codex CLI는 OpenAI 코딩 에이전트를 터미널에서 바로 쓰는 공식 경로입니다.
+- 대표 설치는 `npm install -g @openai/codex`이고, 이후 ChatGPT 로그인이나 API 키 인증으로 바로 시작할 수 있습니다.
+- 저장소 단위 수정과 실행 흐름에 강하고, 가벼운 자동완성 위주라면 Copilot이 더 단순하게 맞을 수 있습니다.
+
 # 어떤 도구인가
 
 Codex CLI는 터미널에서 바로 코딩 에이전트를 부른다는 감각이 핵심입니다. OpenAI 공식 문서 기준으로 ChatGPT 계정 로그인 또는

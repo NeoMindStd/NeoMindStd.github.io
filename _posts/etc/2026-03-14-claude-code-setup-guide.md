@@ -39,6 +39,12 @@ published: true
 
 ![공식 페이지 이미지](/assets/images/posts/etc/claude-code-setup-guide/official.png)
 
+# 빠른 답
+
+- Claude Code는 Anthropic의 터미널 코딩 에이전트입니다.
+- 가장 빠른 설치는 공식 스크립트나 Homebrew 경로이고, Windows는 WSL 기준으로 접근하는 편이 안정적입니다.
+- 긴 문맥을 읽으며 설명형으로 협업하는 데 강하지만, GUI 중심 편집이 더 중요하면 Cursor가 더 편할 수 있습니다.
+
 # 어떤 도구인가
 
 Claude Code는 긴 문맥과 설명형 협업 감각이 강한 코딩 에이전트입니다. 리포지토리 맥락을 읽고, 파일을 수정하고, 테스트를 돌리고, Memory와 Hooks 같은

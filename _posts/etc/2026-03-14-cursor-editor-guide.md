@@ -38,6 +38,12 @@ published: true
 
 ![공식 페이지 이미지](/assets/images/posts/etc/cursor-editor-guide/official.png)
 
+# 빠른 답
+
+- Cursor는 VS Code에 가까운 작업감 위에 AI 에이전트를 얹은 에디터입니다.
+- 핵심은 자동완성 하나보다 Agent, Chat, Rules를 조합해 코드베이스 작업 전체를 맡기는 데 있습니다.
+- IDE 안에서 오래 머무는 개발자에게 특히 잘 맞고, 터미널 중심이면 Claude Code나 Codex CLI가 더 잘 맞을 수 있습니다.
+
 # 어떤 도구인가
 
 Cursor의 핵심은 단순 자동완성보다 Agent와 Rules 조합입니다. Tab은 속도를 올리고, Chat과 Agent는 문맥을 넓히고, Rules는 팀 규칙과 코딩

@@ -40,6 +40,12 @@ published: true
 
 ![공식 페이지 이미지](/assets/images/posts/etc/ollama-guide/official.png)
 
+# 빠른 답
+
+- Ollama는 로컬 LLM을 가장 쉽게 시작하는 러너 중 하나입니다.
+- 설치 후 `ollama run`만으로 바로 모델을 받아 체험할 수 있어서 입문 장벽이 낮습니다.
+- 프라이버시와 오프라인 테스트에는 좋지만, 실제 속도와 모델 선택 폭은 PC 메모리와 GPU 사양 영향을 크게 받습니다.
+
 # 어떤 도구인가
 
 Ollama의 장점은 모델 받아서 바로 돌리는 경험이 매우 짧다는 점입니다. 클라우드 API 대신 로컬에서 모델을 내려받아 채팅하거나, 로컬 OpenAI 호환 API처럼

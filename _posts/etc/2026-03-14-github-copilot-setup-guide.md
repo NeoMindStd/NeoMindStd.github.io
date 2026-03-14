@@ -36,6 +36,12 @@ published: true
 
 ![공식 페이지 이미지](/assets/images/posts/etc/github-copilot-setup-guide/official.png)
 
+# 빠른 답
+
+- GitHub Copilot은 가장 넓은 툴 호환성을 가진 대중형 AI 코딩 도구입니다.
+- VS Code나 JetBrains에서 바로 시작하는 진입성이 강점이고, 팀 표준 도구로도 무난합니다.
+- 긴 자율 작업을 많이 맡기려면 Cursor Agent나 Codex, Claude Code 계열이 더 적극적일 수 있습니다.
+
 # 어떤 도구인가
 
 Copilot은 가장 넓은 툴 호환성이 강점입니다. 팀마다 에디터가 달라도 같은 서비스 계정과 정책으로 묶기 쉽고, 자동완성, 채팅, 요즘의 에이전트형 기능까지 하나의
