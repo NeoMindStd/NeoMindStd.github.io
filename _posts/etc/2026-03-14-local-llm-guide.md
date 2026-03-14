@@ -33,6 +33,13 @@ published: true
 `로컬 LLM`은 말 그대로 내 PC나 내 서버에서 직접 돌리는 언어 모델입니다.  
 요즘 다시 주목받는 이유는 간단합니다.
 
+<p>
+  <img src="/assets/images/posts/etc/local-llm-guide/ollama-official.png" width="430px" alt="Ollama official image"/>
+  <img src="/assets/images/posts/etc/local-llm-guide/lmstudio-official.png" width="430px" alt="LM Studio official image"/>
+</p>
+
+_Ollama와 LM Studio의 공식 이미지_
+
 - 민감한 데이터를 외부로 보내고 싶지 않다
 - 속도나 비용을 스스로 통제하고 싶다
 - 오프라인 또는 사내 환경에서 쓰고 싶다
