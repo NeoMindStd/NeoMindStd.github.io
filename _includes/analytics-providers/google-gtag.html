@@ -6,4 +6,58 @@
   gtag('js', new Date());
 
   gtag('config', '{{ site.analytics.google.tracking_id }}', { 'anonymize_ip': {{ site.analytics.google.anonymize_ip | default: false }}});
+
+  (function () {
+    var referrer = document.referrer || "";
+    var params = new URLSearchParams(window.location.search || "");
+    var utmSource = (params.get("utm_source") || "").toLowerCase();
+    var aiSources = [
+      { name: "chatgpt", hosts: ["chatgpt.com", "chat.openai.com", "openai.com"], utm: ["chatgpt.com"] },
+      { name: "claude", hosts: ["claude.ai"] },
+      { name: "perplexity", hosts: ["perplexity.ai"] },
+      { name: "gemini", hosts: ["gemini.google.com", "gemini.googleusercontent.com"] },
+      { name: "copilot", hosts: ["copilot.microsoft.com"] },
+      { name: "grok", hosts: ["grok.com", "x.com"] }
+    ];
+    var matchedName = "";
+    var matchedHost = "";
+
+    if (utmSource) {
+      aiSources.some(function (source) {
+        if ((source.utm || []).indexOf(utmSource) !== -1) {
+          matchedName = source.name;
+          matchedHost = utmSource;
+          return true;
+        }
+        return false;
+      });
+    }
+
+    if (!matchedName && referrer) {
+      try {
+        var hostname = new URL(referrer).hostname.toLowerCase();
+        aiSources.some(function (source) {
+          if ((source.hosts || []).some(function (host) {
+            return hostname === host || hostname.endsWith("." + host);
+          })) {
+            matchedName = source.name;
+            matchedHost = hostname;
+            return true;
+          }
+          return false;
+        });
+      } catch (error) {
+      }
+    }
+
+    if (!matchedName || typeof gtag !== "function") {
+      return;
+    }
+
+    gtag("event", "ai_referral_visit", {
+      ai_source: matchedName,
+      ai_referrer_host: matchedHost,
+      non_interaction: true
+    });
+  })();
 </script>

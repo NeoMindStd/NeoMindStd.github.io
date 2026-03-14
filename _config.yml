@@ -20,7 +20,7 @@ title                    : "NeoMind Studio™"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "NeoMind"
-description              : "내 포트폴리오 겸 블로그"
+description              : "AI, 개발도구, 안드로이드, 블로그 운영, 알고리즘 문제풀이를 다루는 NeoMind의 개발 블로그"
 url                      : "https://neomindstd.github.io"
 # url                      : "http://localhost:4000"
 baseurl                  : # the subpath of your site, e.g. "/blog"

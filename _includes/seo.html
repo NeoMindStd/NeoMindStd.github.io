@@ -81,6 +81,8 @@
 
 <title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
 <meta name="description" content="{{ seo_description }}">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 
 {% if author.name %}
   <meta name="author" content="{{ author.name | default: author }}">
@@ -125,6 +127,14 @@
 
 {% if page.date %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% if page.categories and page.categories[0] %}
+    <meta property="article:section" content="{{ page.categories[0] | escape_once }}">
+  {% endif %}
+  {% if page.tags %}
+    {% for tag in page.tags %}
+      <meta property="article:tag" content="{{ tag | escape_once }}">
+    {% endfor %}
+  {% endif %}
 {% endif %}
 
 {% if og_type == "article" and page.last_modified_at %}
@@ -169,6 +179,7 @@
 {% if page.date %}
   {%- assign article_modified_time = page.last_modified_at | default: page.date -%}
   {%- assign article_image = page_large_image | default: page_teaser_image | default: site_og_image -%}
+  {%- assign article_keywords = page.tags | join: ', ' -%}
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -184,6 +195,12 @@
       "url": {{ canonical_url | jsonify }},
       {% if article_image %}
       "image": [{{ article_image | jsonify }}],
+      {% endif %}
+      {% if page.tags %}
+      "keywords": {{ article_keywords | jsonify }},
+      {% endif %}
+      {% if page.categories and page.categories[0] %}
+      "articleSection": {{ page.categories[0] | jsonify }},
       {% endif %}
       "author": {
         "@type": "Person",
