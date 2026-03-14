@@ -1,0 +1,16 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860">
+  <rect width="1400" height="860" fill="#111827"/>
+  <text x="90" y="110" fill="#f9fafb" font-size="54" font-family="Segoe UI, Arial" font-weight="700">영상 생성 툴 선택 맵</text>
+  <text x="90" y="160" fill="#9ca3af" font-size="24" font-family="Segoe UI, Arial">아이디어 생성, 쇼트 제어, 후반 편집까지 어디에 강한가</text>
+  <line x1="180" y1="240" x2="180" y2="760" stroke="#374151" stroke-width="4"/>
+  <line x1="180" y1="760" x2="1220" y2="760" stroke="#374151" stroke-width="4"/>
+  <circle cx="420" cy="500" r="98" fill="#14b8a6" opacity="0.92"/>
+  <circle cx="760" cy="400" r="108" fill="#3b82f6" opacity="0.9"/>
+  <circle cx="1040" cy="470" r="102" fill="#ef4444" opacity="0.9"/>
+  <text x="365" y="495" fill="#fff" font-size="34" font-family="Segoe UI, Arial" font-weight="700">Sora</text>
+  <text x="327" y="535" fill="#ccfbf1" font-size="22" font-family="Segoe UI, Arial">시각적 아이디어</text>
+  <text x="705" y="395" fill="#fff" font-size="34" font-family="Segoe UI, Arial" font-weight="700">Veo</text>
+  <text x="666" y="435" fill="#dbeafe" font-size="22" font-family="Segoe UI, Arial">모델 성능/생태계</text>
+  <text x="955" y="465" fill="#fff" font-size="34" font-family="Segoe UI, Arial" font-weight="700">Runway</text>
+  <text x="942" y="505" fill="#fee2e2" font-size="22" font-family="Segoe UI, Arial">편집 연계</text>
+</svg>
