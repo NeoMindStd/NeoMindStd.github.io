@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0f1f"/>
+      <stop offset="100%" stop-color="#36144d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1300" cy="180" r="220" fill="#f472b6" opacity="0.18"/>
+  <text x="110" y="190" fill="#fff7ed" font-size="80" font-family="Segoe UI, Arial" font-weight="700">음악 생성 AI 비교</text>
+  <text x="110" y="280" fill="#f5d0fe" font-size="34" font-family="Segoe UI, Arial">Suno, Udio, 그리고 창팝 시대의 감각</text>
+  <rect x="110" y="390" width="430" height="210" rx="32" fill="#7e22ce" opacity="0.9"/>
+  <rect x="600" y="390" width="430" height="210" rx="32" fill="#db2777" opacity="0.9"/>
+  <text x="180" y="485" fill="#fff" font-size="52" font-family="Segoe UI, Arial" font-weight="700">Suno</text>
+  <text x="180" y="545" fill="#fae8ff" font-size="24" font-family="Segoe UI, Arial">대중성, 빠른 완성, 밈 확산</text>
+  <text x="670" y="485" fill="#fff" font-size="52" font-family="Segoe UI, Arial" font-weight="700">Udio</text>
+  <text x="670" y="545" fill="#fce7f3" font-size="24" font-family="Segoe UI, Arial">세밀한 편집, 음색·구성 감각</text>
+  <text x="110" y="730" fill="#c4b5fd" font-size="28" font-family="Segoe UI, Arial">국내 밈 문화와 연결해 보면 왜 일반인 유입이 큰지 감이 잡힌다</text>
+</svg>

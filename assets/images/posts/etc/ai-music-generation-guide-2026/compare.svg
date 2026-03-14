@@ -1,0 +1,15 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850">
+  <rect width="1400" height="850" fill="#111827"/>
+  <text x="90" y="110" fill="#f9fafb" font-size="54" font-family="Segoe UI, Arial" font-weight="700">Suno vs Udio</text>
+  <text x="90" y="160" fill="#9ca3af" font-size="24" font-family="Segoe UI, Arial">일반 사용자 입장에서 체감되는 차이만 빠르게 정리</text>
+  <rect x="90" y="240" width="560" height="460" rx="28" fill="#4c1d95"/>
+  <rect x="750" y="240" width="560" height="460" rx="28" fill="#9d174d"/>
+  <text x="150" y="320" fill="#fff" font-size="44" font-family="Segoe UI, Arial" font-weight="700">Suno</text>
+  <text x="150" y="390" fill="#e9d5ff" font-size="26" font-family="Segoe UI, Arial">- 빠르게 결과가 나와서 처음 쓰기 쉽다</text>
+  <text x="150" y="450" fill="#e9d5ff" font-size="26" font-family="Segoe UI, Arial">- 밈, 쇼츠, 데모송에 잘 맞는다</text>
+  <text x="150" y="510" fill="#e9d5ff" font-size="26" font-family="Segoe UI, Arial">- 프롬프트 감각이 결과 차이를 크게 만든다</text>
+  <text x="810" y="320" fill="#fff" font-size="44" font-family="Segoe UI, Arial" font-weight="700">Udio</text>
+  <text x="810" y="390" fill="#fce7f3" font-size="26" font-family="Segoe UI, Arial">- 조금 더 음악 제작 툴 같은 느낌</text>
+  <text x="810" y="450" fill="#fce7f3" font-size="26" font-family="Segoe UI, Arial">- 구조와 분위기를 세밀하게 다듬기 좋다</text>
+  <text x="810" y="510" fill="#fce7f3" font-size="26" font-family="Segoe UI, Arial">- 반복 편집을 감수하면 완성도가 좋아진다</text>
+</svg>
