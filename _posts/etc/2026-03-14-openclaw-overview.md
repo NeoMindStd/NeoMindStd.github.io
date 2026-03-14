@@ -32,6 +32,10 @@ published: true
 사용자들이 흔히 "오픈클로"라고 부르는 `OpenClaw` 계열 도구는,  
 한마디로 말하면 **채팅 인터페이스 안에 실제 워크스페이스를 가진 에이전트를 넣는 방식**에 가깝습니다.
 
+![](/assets/images/posts/etc/openclaw-overview/openclaw-official.png)
+
+_OpenClaw GitHub 저장소의 공식 Open Graph 이미지_
+
 기존 챗봇이 답변만 잘하는 데 그쳤다면, OpenClaw 같은 흐름은 한 단계 더 나아가:
 
 - 파일을 가진 작업 공간
