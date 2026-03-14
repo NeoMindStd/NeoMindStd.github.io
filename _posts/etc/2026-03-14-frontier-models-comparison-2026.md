@@ -14,6 +14,9 @@ tags:
   - Claude
   - Grok
 date: 2026-03-14 14:15:00 +09:00
+header:
+  og_image: /assets/images/posts/etc/frontier-models-comparison-2026/openai-official.png
+  teaser: /assets/images/posts/etc/frontier-models-comparison-2026/openai-official.png
 
 toc: true
 toc_sticky: true
