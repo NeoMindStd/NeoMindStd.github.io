@@ -1,0 +1,34 @@
+<svg width="1400" height="840" viewBox="0 0 1400 840" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="60" x2="1270" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1A27"/>
+      <stop offset="1" stop-color="#16273D"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="840" rx="40" fill="url(#bg)"/>
+  <text x="700" y="102" text-anchor="middle" fill="#F2F8FF" font-size="48" font-weight="700" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">What Are You Actually Evaluating?</text>
+  <text x="700" y="146" text-anchor="middle" fill="#C7DCEF" font-size="26" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">모델 하나보다 시스템 전체를 본다</text>
+
+  <g>
+    <rect x="276" y="210" width="848" height="92" rx="28" fill="#17354A" stroke="#68A3C8"/>
+    <text x="700" y="266" text-anchor="middle" fill="#F5FAFF" font-size="34" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Final Answer Quality</text>
+  </g>
+
+  <g>
+    <rect x="318" y="336" width="764" height="92" rx="28" fill="#143247" stroke="#67A9B9"/>
+    <text x="700" y="392" text-anchor="middle" fill="#F5FAFF" font-size="34" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Retrieval / Context Quality</text>
+  </g>
+
+  <g>
+    <rect x="362" y="462" width="676" height="92" rx="28" fill="#112C42" stroke="#7194D9"/>
+    <text x="700" y="518" text-anchor="middle" fill="#F5FAFF" font-size="34" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Tool Calls / Agent Trace</text>
+  </g>
+
+  <g>
+    <rect x="406" y="588" width="588" height="92" rx="28" fill="#10263A" stroke="#6BC7C7"/>
+    <text x="700" y="644" text-anchor="middle" fill="#F5FAFF" font-size="34" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Safety / Policy / Cost / Latency</text>
+  </g>
+
+  <text x="700" y="760" text-anchor="middle" fill="#D2E3F4" font-size="28" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">에이전트로 갈수록 정답만이 아니라 경로와 운영성까지 평가해야 한다</text>
+</svg>
