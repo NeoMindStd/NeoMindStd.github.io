@@ -31,3 +31,6 @@ __pycache__/
 .sass-cache
 _asset_bundler_cache
 _site
+
+# Local runtime/cache artifacts
+.cache/
