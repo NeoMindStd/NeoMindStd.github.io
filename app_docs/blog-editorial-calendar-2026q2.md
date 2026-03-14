@@ -17,12 +17,13 @@ NeoMind 블로그의 문제풀이 편중 구조를 유지하면서 검색 유입
 | 4 | Jekyll SEO 개선기: 메타데이터, robots.txt, 구조화 데이터 | `jekyll-seo-metadata-robots-structured-data` | 기타 | published |
 | 5 | 레거시 안드로이드 앱을 Compose + MVVM으로 리빌드한 과정 | `legacy-android-compose-mvvm-rebuild` | 기타 | published |
 | 6 | Minimal Mistakes 다크모드 토글 적용기 | `minimal-mistakes-dark-mode-toggle` | 기타 | published |
-| 7 | AdMob 수익 최적화를 위한 배너/전면/리워드 배치 회고 | `admob-placement-retrospective` | 기타 | queued |
-| 8 | Firebase Analytics 이벤트 설계: 앱 운영 기준으로 다시 잡기 | `firebase-analytics-event-design` | 기타 | queued |
-| 9 | Disqus API 403 대응: RSS 폴백 설계와 운영 포인트 | `disqus-api-403-rss-fallback` | 기타 | queued |
-| 10 | 호러 월드 리빌드 회고: 오래된 앱을 다시 살릴 때 체크한 것들 | `horror-world-rebuild-retrospective` | 기타 | queued |
-| 11 | 사이렌 사운드보드 UX 개선기: 반복/속도/볼륨 설계 | `siren-soundboard-ux-design` | 기타 | queued |
-| 12 | 900+ 문제풀이 블로그의 허브 페이지/내부링크 설계 기록 | `boj-hub-internal-linking` | 기타 | queued |
+| 7 | AdMob 수익 최적화를 위한 배너/전면/리워드 배치 회고 | `admob-placement-retrospective` | 기타 | published |
+| 8 | Firebase Analytics 이벤트 설계: 앱 운영 기준으로 다시 잡기 | `firebase-analytics-event-design` | 기타 | published |
+| 9 | Disqus API 403 대응: RSS 폴백 설계와 운영 포인트 | `disqus-api-403-rss-fallback` | 기타 | published |
+| 10 | 호러 월드 리빌드 회고: 오래된 앱을 다시 살릴 때 체크한 것들 | `horror-world-rebuild-retrospective` | 기타 | published |
+| 11 | 사이렌 사운드보드 UX 개선기: 반복/속도/볼륨 설계 | `siren-soundboard-ux-design` | 기타 | published |
+| 12 | 900+ 문제풀이 블로그의 허브 페이지/내부링크 설계 기록 | `boj-hub-internal-linking` | 기타 | published |
+| 13 | 문제풀이 포스트를 얇지 않게 만드는 템플릿: 문제 요약, 접근, 복잡도, 함정 | `boj-problem-solving-template` | 기타 | published |
 
 ## Published URLs
 
@@ -32,3 +33,10 @@ NeoMind 블로그의 문제풀이 편중 구조를 유지하면서 검색 유입
 - `/기타/jekyll-seo-metadata-robots-structured-data/`
 - `/기타/legacy-android-compose-mvvm-rebuild/`
 - `/기타/minimal-mistakes-dark-mode-toggle/`
+- `/기타/admob-placement-retrospective/`
+- `/기타/firebase-analytics-event-design/`
+- `/기타/disqus-api-403-rss-fallback/`
+- `/기타/horror-world-rebuild-retrospective/`
+- `/기타/siren-soundboard-ux-design/`
+- `/기타/boj-hub-internal-linking/`
+- `/기타/boj-problem-solving-template/`
