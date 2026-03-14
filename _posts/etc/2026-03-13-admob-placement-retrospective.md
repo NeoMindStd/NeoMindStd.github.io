@@ -12,7 +12,7 @@ tags:
   - AdMob
   - 광고
   - 수익화
-date: 2026-03-13 18:00:00 +09:00
+date: 2026-03-14 13:01:00 +09:00
 
 toc: true
 toc_sticky: true

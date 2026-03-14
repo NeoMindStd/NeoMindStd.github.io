@@ -12,7 +12,7 @@ tags:
   - GitHub Actions
   - Python
   - 자동화
-date: 2026-03-13 18:10:00 +09:00
+date: 2026-03-14 13:03:00 +09:00
 
 toc: true
 toc_sticky: true

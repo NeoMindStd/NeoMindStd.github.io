@@ -12,7 +12,7 @@ tags:
   - UX
   - Audio
   - SirenSoundboard
-date: 2026-03-13 18:20:00 +09:00
+date: 2026-03-14 13:05:00 +09:00
 
 toc: true
 toc_sticky: true
