@@ -32,6 +32,10 @@ published: true
 핵심은 "Claude를 터미널에서 쓴다"가 아니라,  
 **터미널이라는 개발자 작업 표면 위에서 코드 탐색, 수정, 테스트, 커밋 흐름을 자연스럽게 연결한다**는 점입니다.
 
+![](/assets/images/posts/etc/claude-code-guide/claude-code-official.png)
+
+_Anthropic Claude Code 공식 문서의 대표 이미지_
+
 # Claude Code를 한 줄로 보면
 
 Anthropic 공식 문서 표현을 따르면 Claude Code는 terminal-based agentic coding tool입니다.  
