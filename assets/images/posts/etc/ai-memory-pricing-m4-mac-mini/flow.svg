@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860" fill="none">
+  <rect width="1600" height="860" rx="36" fill="#111827"/>
+  <text x="90" y="100" fill="#F8FAFC" font-size="42" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">Why Higher-spec Mac mini Feels Expensive</text>
+  <text x="90" y="142" fill="#CBD5E1" font-size="24" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">AI 시대 메모리 수급 변화와 Apple의 구성 구조가 한 지점에서 만난다</text>
+  <rect x="120" y="240" width="280" height="150" rx="28" fill="#7C2D12"/>
+  <rect x="500" y="240" width="280" height="150" rx="28" fill="#9A3412"/>
+  <rect x="880" y="240" width="280" height="150" rx="28" fill="#C2410C"/>
+  <rect x="1260" y="240" width="220" height="150" rx="28" fill="#EA580C"/>
+  <text x="260" y="300" text-anchor="middle" fill="#FFF7ED" font-size="30" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">AI 데이터센터</text>
+  <text x="260" y="338" text-anchor="middle" fill="#FFEDD5" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">HBM, DDR5, eSSD 수요 확대</text>
+  <text x="640" y="300" text-anchor="middle" fill="#FFF7ED" font-size="30" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">메모리 수급 재편</text>
+  <text x="640" y="338" text-anchor="middle" fill="#FFEDD5" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">DRAM/NAND 가격 압력</text>
+  <text x="1020" y="300" text-anchor="middle" fill="#FFF7ED" font-size="30" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">로컬 LLM 수요</text>
+  <text x="1020" y="338" text-anchor="middle" fill="#FFEDD5" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">24GB / 512GB를 더 빨리 찾음</text>
+  <text x="1370" y="300" text-anchor="middle" fill="#FFF7ED" font-size="30" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">체감 가격 상승</text>
+  <text x="1370" y="338" text-anchor="middle" fill="#FFEDD5" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">BTO 구성이 빨리 커짐</text>
+  <path d="M400 315H500" stroke="#FDBA74" stroke-width="12" stroke-linecap="round"/>
+  <path d="M780 315H880" stroke="#FDBA74" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1160 315H1260" stroke="#FDBA74" stroke-width="12" stroke-linecap="round"/>
+  <rect x="160" y="540" width="1280" height="170" rx="32" fill="#1F2937" stroke="#FB923C" stroke-width="3"/>
+  <text x="220" y="602" fill="#F8FAFC" font-size="34" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">Mac mini 가격 체감이 커지는 핵심</text>
+  <text x="220" y="650" fill="#E5E7EB" font-size="26" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">1) 시작가는 공격적이어도 2) AI/개발용 실사용 구성은 더 높은 메모리와 SSD를 요구하고 3) Apple Silicon은 나중 증설이 어려워 구매 시점의 선택 비용이 크게 느껴진다.</text>
+</svg>
