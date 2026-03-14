@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F2937"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="240" y1="140" x2="920" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.10"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1600" height="900">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1270" cy="180" r="220" fill="#34D399" fill-opacity="0.25" filter="url(#blur)"/>
+  <circle cx="1320" cy="760" r="260" fill="#ffffff" fill-opacity="0.09" filter="url(#blur)"/>
+  <circle cx="260" cy="760" r="220" fill="#34D399" fill-opacity="0.18" filter="url(#blur)"/>
+  <rect x="90" y="90" width="1420" height="720" rx="42" fill="#0B1220" fill-opacity="0.20" stroke="#ffffff" stroke-opacity="0.12"/>
+  <rect x="140" y="142" width="160" height="42" rx="21" fill="#ffffff" fill-opacity="0.12"/>
+  <text x="170" y="171" fill="#F8FAFC" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">NeoMind AI Notes</text>
+  <text x="140" y="285" fill="#F8FAFC" font-size="68" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">OpenClaw란 무엇인가</text>
+  <text x="140" y="370" fill="#F8FAFC" font-size="68" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">채팅형 에이전트 워크스페이스</text>
+  <text x="140" y="460" fill="#DCE8F7" font-size="28" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">Slack, Discord, CLI 안에서 Skill과 Workspace를 묶는 구조</text>
+  <rect x="140" y="548" width="176" height="52" rx="26" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="332" y="548" width="176" height="52" rx="26" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="524" y="548" width="176" height="52" rx="26" fill="#ffffff" fill-opacity="0.12"/>
+  <text x="194" y="582" text-anchor="middle" fill="#F8FAFC" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">OpenClaw</text>
+  <text x="420" y="582" text-anchor="middle" fill="#F8FAFC" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">Workspace</text>
+  <text x="612" y="582" text-anchor="middle" fill="#F8FAFC" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">Skills</text>
+  <path d="M1050 310C1140 280 1230 300 1290 358C1350 416 1364 502 1328 578C1292 654 1205 712 1110 705C1015 698 934 635 908 547C882 459 912 373 985 330" stroke="#F8FAFC" stroke-opacity="0.26" stroke-width="26" stroke-linecap="round"/>
+  <path d="M1040 330C1112 282 1208 274 1284 312" stroke="#34D399" stroke-width="18" stroke-linecap="round"/>
+  <path d="M920 690H1330" stroke="#F8FAFC" stroke-opacity="0.20" stroke-width="14" stroke-linecap="round"/>
+  <path d="M960 630H1258" stroke="#F8FAFC" stroke-opacity="0.14" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="1188" cy="438" r="84" fill="url(#accent)" stroke="#ffffff" stroke-opacity="0.28"/>
+  <circle cx="1188" cy="438" r="32" fill="#0B1220" fill-opacity="0.45" stroke="#ffffff" stroke-opacity="0.24"/>
+</svg>
