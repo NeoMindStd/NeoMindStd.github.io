@@ -22,6 +22,8 @@ main:
          url: "/categories/#문제풀이"
        - title: "AI"
          url: "/categories/#ai"
+       - title: "Tools"
+         url: "/categories/#tools"
        - title: "Projects"
          url: "/categories/#project"
        - title: "기타"
