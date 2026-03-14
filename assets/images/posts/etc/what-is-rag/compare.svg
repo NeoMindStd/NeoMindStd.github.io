@@ -1,0 +1,41 @@
+<svg width="1400" height="860" viewBox="0 0 1400 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="70" x2="1270" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A28"/>
+      <stop offset="1" stop-color="#16283E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="860" rx="40" fill="url(#bg)"/>
+  <text x="700" y="102" text-anchor="middle" fill="#F4F9FF" font-size="48" font-weight="700" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">RAG vs Fine-tuning vs Memory</text>
+  <text x="700" y="146" text-anchor="middle" fill="#CCDFEF" font-size="26" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">비슷해 보이지만 바꾸는 대상이 다르다</text>
+
+  <g>
+    <rect x="120" y="236" width="340" height="430" rx="30" fill="#16324A" stroke="#5E9BC9"/>
+    <text x="290" y="298" text-anchor="middle" fill="#F2F8FF" font-size="36" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">RAG</text>
+    <text x="290" y="360" text-anchor="middle" fill="#D5EAFB" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">지식을 런타임에 가져온다</text>
+    <text x="290" y="438" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">최신 문서</text>
+    <text x="290" y="484" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">사내 지식</text>
+    <text x="290" y="530" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">출처 기반 답변</text>
+  </g>
+
+  <g>
+    <rect x="530" y="236" width="340" height="430" rx="30" fill="#153247" stroke="#69B4B9"/>
+    <text x="700" y="298" text-anchor="middle" fill="#F2F8FF" font-size="36" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">파인튜닝</text>
+    <text x="700" y="360" text-anchor="middle" fill="#D5EAFB" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">모델 행동 패턴을 바꾼다</text>
+    <text x="700" y="438" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">형식과 스타일</text>
+    <text x="700" y="484" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">특정 태스크 적응</text>
+    <text x="700" y="530" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">자주 바뀌는 지식엔 약함</text>
+  </g>
+
+  <g>
+    <rect x="940" y="236" width="340" height="430" rx="30" fill="#142C44" stroke="#7A8BE8"/>
+    <text x="1110" y="298" text-anchor="middle" fill="#F2F8FF" font-size="36" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">메모리</text>
+    <text x="1110" y="360" text-anchor="middle" fill="#D5EAFB" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">사용자/세션 정보를 유지한다</text>
+    <text x="1110" y="438" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">선호와 이력</text>
+    <text x="1110" y="484" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">개인화</text>
+    <text x="1110" y="530" text-anchor="middle" fill="#BED8EF" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">문서 검색과는 다름</text>
+  </g>
+
+  <text x="700" y="760" text-anchor="middle" fill="#D2E5F7" font-size="28" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">RAG는 지식을 연결하고, 파인튜닝은 행동을 바꾸고, 메모리는 관계를 유지한다</text>
+</svg>

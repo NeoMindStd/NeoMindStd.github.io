@@ -1,0 +1,50 @@
+<svg width="1400" height="820" viewBox="0 0 1400 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="70" x2="1270" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101B2A"/>
+      <stop offset="1" stop-color="#16283E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="820" rx="40" fill="url(#bg)"/>
+  <text x="700" y="102" text-anchor="middle" fill="#F4F9FF" font-size="48" font-weight="700" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">RAG Pipeline</text>
+  <text x="700" y="144" text-anchor="middle" fill="#CCDFEF" font-size="26" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">문서를 검색 가능한 형태로 만들고, 질문 때 다시 꺼내 쓴다</text>
+
+  <g>
+    <rect x="92" y="264" width="190" height="104" rx="26" fill="#16324A" stroke="#5E9BC9"/>
+    <text x="187" y="322" text-anchor="middle" fill="#F2F8FF" font-size="30" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">문서</text>
+  </g>
+
+  <g>
+    <rect x="350" y="264" width="190" height="104" rx="26" fill="#153247" stroke="#69B4B9"/>
+    <text x="445" y="322" text-anchor="middle" fill="#F2F8FF" font-size="30" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">청킹</text>
+  </g>
+
+  <g>
+    <rect x="608" y="264" width="190" height="104" rx="26" fill="#142C44" stroke="#7A8BE8"/>
+    <text x="703" y="322" text-anchor="middle" fill="#F2F8FF" font-size="30" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">임베딩</text>
+  </g>
+
+  <g>
+    <rect x="866" y="264" width="190" height="104" rx="26" fill="#143149" stroke="#7A9FE8"/>
+    <text x="961" y="322" text-anchor="middle" fill="#F2F8FF" font-size="30" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">벡터 스토어</text>
+  </g>
+
+  <g>
+    <rect x="1118" y="264" width="190" height="104" rx="26" fill="#142C44" stroke="#8E85FF"/>
+    <text x="1213" y="322" text-anchor="middle" fill="#F2F8FF" font-size="30" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">검색</text>
+  </g>
+
+  <path d="M282 316H350" stroke="#85DDF5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M540 316H608" stroke="#85DDF5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M798 316H866" stroke="#85DDF5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1056 316H1118" stroke="#85DDF5" stroke-width="8" stroke-linecap="round"/>
+
+  <g>
+    <rect x="500" y="520" width="400" height="120" rx="32" fill="#0F1723" stroke="#4F78A0"/>
+    <text x="700" y="578" text-anchor="middle" fill="#F2F8FF" font-size="34" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">LLM 답변 생성</text>
+    <text x="700" y="616" text-anchor="middle" fill="#C9E2F8" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">검색된 근거를 넣고 답하게 한다</text>
+  </g>
+
+  <path d="M1213 368C1213 472 1014 550 900 570" stroke="#71EED2" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 12"/>
+</svg>
