@@ -48,14 +48,6 @@ Git Bash는 Windows에서 Git CLI를 비교적 자연스럽게 쓰게 해 주는
 
 공식 다운로드 페이지에서 Windows용 설치 파일이나 패키지를 내려받아 설치합니다. 설치가 끝나면 첫 실행과 버전 확인을 한 번 진행하는 편이 좋습니다. 줄바꿈 변환과 PATH 노출 범위를 설치 시점에 잘 고르면 이후 마찰이 줄어듭니다.
 
-## macOS
-
-현재 공식 macOS 배포를 확인하기 어렵습니다. Git Bash 자체는 Windows용 구성입니다.
-
-## Linux
-
-현재 공식 Linux 배포를 확인하기 어렵습니다. Git Bash 자체는 Windows용 구성입니다.
-
 # 기본 사용법
 
 1. Git Bash를 열고 `git --version`으로 설치 상태를 먼저 확인합니다.
