@@ -65,6 +65,18 @@
       adRoot.dataset.nmMovedFromCode = "1";
     }
 
+    function liftAdOutOfTextBlock(node) {
+      var adRoot = getAdRoot(node);
+      if (!adRoot) return;
+      if (adRoot.dataset.nmLiftedFromText === "1") return;
+
+      var textBlock = adRoot.closest(".page__content p, .page__content blockquote");
+      if (!textBlock || !textBlock.parentNode) return;
+
+      textBlock.insertAdjacentElement("afterend", adRoot);
+      adRoot.dataset.nmLiftedFromText = "1";
+    }
+
     function collectAdRoots(root) {
       if (!(root instanceof HTMLElement)) return [];
 
@@ -287,6 +299,7 @@
 
       collectAdRoots(root).forEach(function (node) {
         moveAdOutsideCode(node);
+        liftAdOutOfTextBlock(node);
       });
     }
 
