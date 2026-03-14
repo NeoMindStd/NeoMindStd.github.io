@@ -11,32 +11,26 @@ layout: archive
   {% endif %}
 {% endfor %}
 
-<ul class="taxonomy__index">
+<div class="nm-tag-cloud" id="nm-tag-cloud">
   {% for i in (1..tags_max) reversed %}
     {% for tag in site.tags %}
       {% if tag[1].size == i %}
-        <li>
-          <a href="#{{ tag[0] | slugify }}">
-            <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
-          </a>
-        </li>
+        {% capture tag_url %}{% include tag-url.html tag=tag[0] %}{% endcapture %}
+        <a href="{{ tag_url | strip }}" class="nm-tag-chip" data-tag="{{ tag[0] }}">
+          <span class="nm-tag-chip__label">{{ tag[0] }}</span>
+          <span class="taxonomy__count">{{ i }}</span>
+        </a>
       {% endif %}
     {% endfor %}
   {% endfor %}
-</ul>
+</div>
 
-{% for i in (1..tags_max) reversed %}
-  {% for tag in site.tags %}
-    {% if tag[1].size == i %}
-      <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ tag[0] }}</h2>
-        <div class="entries-{{ page.entries_layout | default: 'list' }}">
-          {% for post in tag.last %}
-            {% include archive-single.html type=page.entries_layout %}
-          {% endfor %}
-        </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-      </section>
-    {% endif %}
-  {% endfor %}
-{% endfor %}
+<div id="nm-tag-results" class="nm-tag-results" data-index-url="{{ '/assets/data/tag-posts.json' | relative_url }}">
+  <div class="notice--info">??? ???? ?? ??? ?? ?????.</div>
+</div>
+
+<noscript>
+  <div class="notice--warning">??? ? ?? ??? ??????? ?? ??? ?????.</div>
+</noscript>
+
+<script src="{{ '/assets/js/tag-archive.js' | relative_url }}"></script>

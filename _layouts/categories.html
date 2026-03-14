@@ -11,32 +11,26 @@ layout: archive
   {% endif %}
 {% endfor %}
 
-<ul class="taxonomy__index">
+<div class="nm-category-grid">
   {% for i in (1..categories_max) reversed %}
     {% for category in site.categories %}
       {% if category[1].size == i %}
-        <li>
-          <a href="#{{ category[0] | slugify }}">
-            <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+        {% assign category_meta = site.data.categories | where: "name", category[0] | first %}
+        {% capture category_url %}{% include category-url.html category=category[0] %}{% endcapture %}
+        <article class="nm-category-card">
+          <a href="{{ category_url | strip }}" class="nm-category-card__link">
+            <div class="nm-category-card__header">
+              <h2 class="nm-category-card__title">{{ category[0] }}</h2>
+              <span class="taxonomy__count">{{ i }}</span>
+            </div>
+            {% if category_meta and category_meta.description %}
+              <p class="nm-category-card__description">{{ category_meta.description }}</p>
+            {% else %}
+              <p class="nm-category-card__description">? ????? ?? ?? ?? ??? ? ? ????.</p>
+            {% endif %}
           </a>
-        </li>
+        </article>
       {% endif %}
     {% endfor %}
   {% endfor %}
-</ul>
-
-{% for i in (1..categories_max) reversed %}
-  {% for category in site.categories %}
-    {% if category[1].size == i %}
-      <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ category[0] }}</h2>
-        <div class="entries-{{ page.entries_layout | default: 'list' }}">
-          {% for post in category.last %}
-            {% include archive-single.html type=page.entries_layout %}
-          {% endfor %}
-        </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-      </section>
-    {% endif %}
-  {% endfor %}
-{% endfor %}
+</div>

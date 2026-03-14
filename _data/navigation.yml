@@ -1,35 +1,26 @@
 # main links
 main:
-  # - title: "Home"
-  #   url: /index
-    # url: http://localhost:4000
-  # - title: "알아보기"
-  #  url: /about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  - title: "연재 목록"
+  - title: "?? ??"
     url: /series/
-  - title: "카테고리"
+  - title: "????"
     url: /categories/
     children:
-       - title: "게임"
-         url: "/categories/#게임"
-       - title: "리뷰"
-         url: "/categories/#리뷰"
-       - title: "문제풀이"
-         url: "/categories/#문제풀이"
+       - title: "??"
+         url: "/categories/games/"
+       - title: "??"
+         url: "/categories/review/"
+       - title: "????"
+         url: "/categories/problem-solving/"
        - title: "AI"
-         url: "/categories/#ai"
+         url: "/categories/ai/"
        - title: "Tools"
-         url: "/categories/#tools"
-       - title: "Projects"
-         url: "/categories/#project"
-       - title: "기타"
-         url: "/categories/#기타"
-  - title: "태그"
+         url: "/categories/tools/"
+       - title: "Project"
+         url: "/categories/project/"
+       - title: "??"
+         url: "/categories/etc/"
+  - title: "??"
     url: /tags/
     children:
-  - title: "사이트맵"
+  - title: "????"
     url: /sitemap.xml

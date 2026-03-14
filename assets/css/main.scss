@@ -494,3 +494,109 @@ html[data-theme="dark"] .page__footer {
   background: #0f1724;
   color: #9db2c8;
 }
+
+.nm-category-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.nm-category-card {
+  margin: 0;
+}
+
+.nm-category-card__link {
+  display: block;
+  height: 100%;
+  padding: 1.15rem 1.2rem;
+  border: 1px solid var(--nm-border);
+  border-radius: 18px;
+  background: var(--nm-surface);
+  box-shadow: var(--nm-shadow-soft);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.nm-category-card__link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(31, 127, 155, 0.34);
+  box-shadow: var(--nm-shadow-card);
+}
+
+.nm-category-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.nm-category-card__title {
+  margin: 0;
+  color: var(--nm-accent);
+  font-size: 1.1rem;
+}
+
+.nm-category-card__description {
+  margin: 0;
+  color: var(--nm-item-excerpt);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.nm-category-summary {
+  margin-top: 0.2rem;
+  margin-bottom: 1.1rem;
+  color: var(--nm-page-meta);
+}
+
+.nm-tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.4rem;
+}
+
+.nm-tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.58rem 0.82rem;
+  border: 1px solid var(--nm-border);
+  border-radius: 999px;
+  background: var(--nm-surface);
+  color: var(--nm-text-body);
+  text-decoration: none;
+  box-shadow: var(--nm-shadow-soft);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.nm-tag-chip:hover,
+.nm-tag-chip.is-active {
+  transform: translateY(-1px);
+  border-color: rgba(31, 127, 155, 0.34);
+  box-shadow: var(--nm-shadow-card);
+  color: var(--nm-accent);
+}
+
+.nm-tag-chip__label {
+  font-weight: 700;
+}
+
+.nm-tag-results {
+  margin-top: 1.75rem;
+}
+
+.nm-tag-results__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nm-tag-results__meta {
+  margin: 0;
+  color: var(--nm-page-meta);
+}

@@ -1,12 +1,4 @@
-{% case site.category_archive.type %}
-  {% when "liquid" %}
-    {% assign path_type = "#" %}
-  {% when "jekyll-archives" %}
-    {% assign path_type = nil %}
-{% endcase %}
-
 {% if page.collection != 'posts' %}
-  {% assign path_type = nil %}
   {% assign crumb_path = '/' %}
 {% else %}
   {% assign crumb_path = site.category_archive.path %}
@@ -29,7 +21,13 @@
       {% else %}
         {% assign i = i | plus: 1 %}
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path | relative_url }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
+          {% if page.collection == 'posts' and forloop.first and page.categories and page.categories.size > 0 %}
+            {% assign category_word = page.categories[0] %}
+            {% capture category_url %}{% include category-url.html category=category_word %}{% endcapture %}
+            <a href="{{ category_url | strip }}" itemprop="item"><span itemprop="name">{{ category_word }}</span></a>
+          {% else %}
+            <a href="{{ crumb | downcase | replace: '%20', '-' | prepend: crumb_path | relative_url }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
+          {% endif %}
           <meta itemprop="position" content="{{ i }}" />
         </li>
         <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>

@@ -1,0 +1,6 @@
+{% assign category_meta = site.data.categories | where: "name", include.category | first %}
+{% if category_meta %}
+  {{ site.category_archive.path | append: category_meta.slug | append: "/" | relative_url }}
+{% else %}
+  {{ site.category_archive.path | append: include.category | slugify | append: "/" | relative_url }}
+{% endif %}
