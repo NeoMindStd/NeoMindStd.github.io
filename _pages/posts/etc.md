@@ -21,6 +21,16 @@ toc_label: "목차"
 실무에서 직접 겪은 운영 이슈와 해결 과정을 중심으로 정리합니다.
 
 ### AI / LLM / 에이전트
+ - [GitHub Copilot 설치와 사용법: VS Code, JetBrains, 웹에서 바로 쓰기](/기타/github-copilot-setup-guide/)
+ - [Cursor 설치와 사용법: AI 에디터에서 Agent, Tab, Rules 제대로 쓰기](/기타/cursor-editor-guide/)
+ - [Claude Code 설치와 사용법: Anthropic 코딩 에이전트를 터미널에 붙이는 법](/기타/claude-code-setup-guide/)
+ - [Codex CLI 설치와 사용법: 터미널에서 OpenAI 코딩 에이전트 시작하기](/기타/codex-cli-guide/)
+ - [GPT Codex 앱 사용 가이드: 브라우저, Windows 앱, IDE 확장까지](/기타/codex-app-guide/)
+ - [OpenClaw 설치와 사용법: 개인 AI 비서를 채팅 앱에 붙이는 법](/기타/openclaw-guide/)
+ - [Open WebUI 설치와 사용법: Docker와 pip로 셀프호스팅 AI 워크스페이스 만들기](/기타/open-webui-guide/)
+ - [LM Studio 설치와 사용법: 데스크톱에서 로컬 AI 모델을 가장 쉽게 다루는 법](/기타/lm-studio-guide/)
+ - [Ollama 설치와 사용법: Windows, macOS, Linux에서 로컬 LLM 바로 돌리기](/기타/ollama-guide/)
+ - [Gemini CLI 설치와 사용법: 터미널에서 구글 Gemini 에이전트 시작하기](/기타/gemini-cli-guide/)
  - [RAG란 무엇인가? 검색, 파인튜닝, 메모리와 어떻게 다른가](/기타/what-is-rag/)
  - [딥리서치란 무엇인가? AI가 답변을 넘어 조사하는 방식](/기타/what-is-deep-research/)
  - [Vibe Coding이란 무엇인가? 왜 뜨고 어디까지 믿어야 할까](/기타/what-is-vibe-coding/)
