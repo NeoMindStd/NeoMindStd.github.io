@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0d1728"/>
+      <stop offset="1" stop-color="#241812"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1240" cy="230" r="190" fill="#d4a27f" fill-opacity="0.18"/>
+  <circle cx="1330" cy="680" r="250" fill="#d4a27f" fill-opacity="0.10"/>
+  <rect x="130" y="122" width="170" height="54" rx="27" fill="white" fill-opacity="0.10"/>
+  <text x="165" y="157" fill="#f8fafc" font-size="26" font-family="Segoe UI, Arial, sans-serif" font-weight="700">CLI Agent</text>
+  <text x="130" y="300" fill="#f8fafc" font-size="86" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Claude Code</text>
+  <text x="130" y="388" fill="#cbd5e1" font-size="34" font-family="Segoe UI, Arial, sans-serif">Anthropic terminal coding agent</text>
+  <rect x="130" y="500" width="540" height="220" rx="34" fill="white" fill-opacity="0.06" stroke="white" stroke-opacity="0.10"/>
+  <rect x="180" y="560" width="160" height="18" rx="9" fill="#d4a27f"/>
+  <rect x="180" y="608" width="410" height="18" rx="9" fill="#94a3b8" fill-opacity="0.45"/>
+  <rect x="180" y="648" width="330" height="18" rx="9" fill="#94a3b8" fill-opacity="0.28"/>
+  <rect x="180" y="688" width="190" height="18" rx="9" fill="#94a3b8" fill-opacity="0.18"/>
+  <rect x="946" y="184" width="390" height="510" rx="42" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.12"/>
+  <rect x="998" y="255" width="154" height="18" rx="9" fill="#d4a27f" fill-opacity="0.95"/>
+  <rect x="998" y="313" width="230" height="18" rx="9" fill="#cbd5e1" fill-opacity="0.55"/>
+  <rect x="998" y="353" width="182" height="18" rx="9" fill="#cbd5e1" fill-opacity="0.32"/>
+  <rect x="998" y="434" width="286" height="120" rx="26" fill="#d4a27f" fill-opacity="0.18"/>
+  <rect x="998" y="590" width="124" height="18" rx="9" fill="#cbd5e1" fill-opacity="0.40"/>
+</svg>
