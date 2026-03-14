@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" fill="none">
+  <rect width="1600" height="760" rx="36" fill="#082F49"/>
+  <text x="90" y="96" fill="#F8FAFC" font-size="42" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">Local LLM Stack</text>
+  <text x="90" y="138" fill="#CFFAFE" font-size="24" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">하드웨어, 런타임, 모델, API/UI를 층으로 나눠 보면 입문이 쉬워진다</text>
+  <rect x="130" y="200" width="1340" height="90" rx="24" fill="#164E63"/>
+  <rect x="180" y="320" width="1240" height="90" rx="24" fill="#0F766E"/>
+  <rect x="230" y="440" width="1140" height="90" rx="24" fill="#0E7490"/>
+  <rect x="280" y="560" width="1040" height="90" rx="24" fill="#155E75"/>
+  <text x="800" y="256" text-anchor="middle" fill="#F8FAFC" font-size="34" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">Hardware / VRAM / RAM</text>
+  <text x="800" y="376" text-anchor="middle" fill="#F8FAFC" font-size="34" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">Runtime: llama.cpp, Ollama engine</text>
+  <text x="800" y="496" text-anchor="middle" fill="#F8FAFC" font-size="34" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">Model Weights: Llama, Qwen, Mistral...</text>
+  <text x="800" y="616" text-anchor="middle" fill="#F8FAFC" font-size="34" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">App / API / UI: Ollama CLI, LM Studio, local server</text>
+</svg>
