@@ -1,0 +1,35 @@
+<svg width="1400" height="760" viewBox="0 0 1400 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1270" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A28"/>
+      <stop offset="1" stop-color="#17283D"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="210" y1="380" x2="1190" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#70F0CD"/>
+      <stop offset="0.5" stop-color="#8BD0FF"/>
+      <stop offset="1" stop-color="#7E8FFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="760" rx="40" fill="url(#bg)"/>
+  <text x="700" y="110" text-anchor="middle" fill="#F3F8FE" font-size="48" font-weight="700" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Vibe Coding Spectrum</text>
+  <text x="700" y="152" text-anchor="middle" fill="#C9DDF0" font-size="26" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">보조에서 위임으로 갈수록 vibe coding에 가까워진다</text>
+
+  <rect x="180" y="338" width="1040" height="88" rx="44" fill="#0E1520" stroke="#35506D"/>
+  <path d="M225 382H1175" stroke="url(#bar)" stroke-width="12" stroke-linecap="round"/>
+
+  <circle cx="290" cy="382" r="20" fill="#70F0CD"/>
+  <circle cx="540" cy="382" r="20" fill="#7FE0E8"/>
+  <circle cx="840" cy="382" r="20" fill="#8DBFFF"/>
+  <circle cx="1110" cy="382" r="20" fill="#7E8FFF"/>
+
+  <text x="290" y="442" text-anchor="middle" fill="#E4F6FF" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">autocomplete</text>
+  <text x="540" y="442" text-anchor="middle" fill="#E4F6FF" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">snippet assist</text>
+  <text x="840" y="442" text-anchor="middle" fill="#E4F6FF" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">multi-file agent</text>
+  <text x="1110" y="442" text-anchor="middle" fill="#E4F6FF" font-size="24" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">delegated build</text>
+
+  <text x="290" y="528" text-anchor="middle" fill="#BFD7EB" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">사람이 구현 중심</text>
+  <text x="1110" y="528" text-anchor="middle" fill="#BFD7EB" font-size="22" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">사람이 감독 중심</text>
+
+  <text x="700" y="650" text-anchor="middle" fill="#D2E5F7" font-size="28" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">핵심은 AI 사용 여부가 아니라 구현 책임이 어느 정도 이동했는가다</text>
+</svg>

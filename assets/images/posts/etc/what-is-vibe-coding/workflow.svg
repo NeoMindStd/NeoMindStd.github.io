@@ -1,0 +1,42 @@
+<svg width="1400" height="820" viewBox="0 0 1400 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1260" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101B2A"/>
+      <stop offset="1" stop-color="#16283E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="820" rx="40" fill="url(#bg)"/>
+  <text x="700" y="102" text-anchor="middle" fill="#F4F9FF" font-size="48" font-weight="700" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">How Vibe Coding Feels in Practice</text>
+  <text x="700" y="144" text-anchor="middle" fill="#CBDEEF" font-size="26" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">설명, 위임, 실행, 리뷰의 루프가 짧아진다</text>
+
+  <g>
+    <rect x="120" y="250" width="220" height="110" rx="28" fill="#16324A" stroke="#5E9BC9"/>
+    <text x="230" y="308" text-anchor="middle" fill="#F2F8FF" font-size="32" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Describe</text>
+    <text x="230" y="340" text-anchor="middle" fill="#C6E0F7" font-size="20" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">기능과 의도를 말한다</text>
+  </g>
+
+  <g>
+    <rect x="430" y="250" width="220" height="110" rx="28" fill="#143245" stroke="#68B5B9"/>
+    <text x="540" y="308" text-anchor="middle" fill="#F2F8FF" font-size="32" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Delegate</text>
+    <text x="540" y="340" text-anchor="middle" fill="#C6E0F7" font-size="20" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">에이전트가 구현한다</text>
+  </g>
+
+  <g>
+    <rect x="740" y="250" width="220" height="110" rx="28" fill="#143147" stroke="#739AE0"/>
+    <text x="850" y="308" text-anchor="middle" fill="#F2F8FF" font-size="32" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Run</text>
+    <text x="850" y="340" text-anchor="middle" fill="#C6E0F7" font-size="20" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">명령과 테스트를 돌린다</text>
+  </g>
+
+  <g>
+    <rect x="1050" y="250" width="220" height="110" rx="28" fill="#142C44" stroke="#7B8BE8"/>
+    <text x="1160" y="308" text-anchor="middle" fill="#F2F8FF" font-size="32" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">Review</text>
+    <text x="1160" y="340" text-anchor="middle" fill="#C6E0F7" font-size="20" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">diff와 경계를 점검한다</text>
+  </g>
+
+  <path d="M340 305H430" stroke="#85DDF5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M650 305H740" stroke="#85DDF5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M960 305H1050" stroke="#85DDF5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1160 402C1160 518 1010 614 700 614C390 614 240 518 240 402" stroke="#71EED2" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 12"/>
+  <text x="700" y="664" text-anchor="middle" fill="#D6EBFA" font-size="28" font-family="'Segoe UI', 'Malgun Gothic', sans-serif">빠른 루프는 장점이지만, 후반으로 갈수록 사람의 검토 강도를 올려야 한다</text>
+</svg>
