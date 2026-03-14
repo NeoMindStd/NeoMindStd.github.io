@@ -32,13 +32,36 @@
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
 {%- endif -%}
 
-{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image -%}
+{%- assign page_body_image = nil -%}
+{%- assign page_content_for_image = page.content | default: "" -%}
+{%- assign page_asset_chunks = page_content_for_image | split: '/assets/' -%}
+{%- for asset_chunk in page_asset_chunks offset: 1 -%}
+  {%- assign image_extension = nil -%}
+  {%- if asset_chunk contains '.png' -%}
+    {%- assign image_extension = '.png' -%}
+  {%- elsif asset_chunk contains '.jpg' -%}
+    {%- assign image_extension = '.jpg' -%}
+  {%- elsif asset_chunk contains '.jpeg' -%}
+    {%- assign image_extension = '.jpeg' -%}
+  {%- elsif asset_chunk contains '.webp' -%}
+    {%- assign image_extension = '.webp' -%}
+  {%- elsif asset_chunk contains '.gif' -%}
+    {%- assign image_extension = '.gif' -%}
+  {%- endif -%}
+
+  {%- if image_extension -%}
+    {%- capture page_body_image %}/assets/{{ asset_chunk | split: image_extension | first }}{{ image_extension }}{% endcapture -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | default: page_body_image -%}
 {%- unless page_large_image contains '://' -%}
   {%- assign page_large_image = page_large_image | absolute_url -%}
 {%- endunless -%}
 {%- assign page_large_image = page_large_image | escape -%}
 
-{%- assign page_teaser_image = page.header.teaser | default: site.og_image -%}
+{%- assign page_teaser_image = page.header.teaser | default: page_body_image | default: site.og_image -%}
 {%- unless page_teaser_image contains '://' -%}
   {%- assign page_teaser_image = page_teaser_image | absolute_url -%}
 {%- endunless -%}
