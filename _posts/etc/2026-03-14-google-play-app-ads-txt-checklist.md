@@ -13,7 +13,7 @@ tags:
   - app-ads.txt
   - Google Play
 
-date: 2026-03-14 20:10:00 +09:00
+date: 2026-03-14 12:10:00 +09:00
 
 toc: true
 toc_sticky: true
