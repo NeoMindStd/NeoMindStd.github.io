@@ -21,6 +21,13 @@ toc_label: "목차"
 실무에서 직접 겪은 운영 이슈와 해결 과정을 중심으로 정리합니다.
 
 ### AI / LLM / 에이전트
+ - [Copilot Mode in Edge 사용법: AI 브라우저로 바뀐 엣지를 어디까지 쓸 수 있나](/기타/edge-copilot-mode-guide/)
+ - [Perplexity Labs란 무엇인가? 검색을 넘어 보고서와 산출물까지 만드는 모드](/기타/perplexity-labs-guide/)
+ - [컴퓨터 사용형 에이전트란 무엇인가? OpenAI CUA와 Operator 흐름 이해하기](/기타/computer-using-agent-guide/)
+ - [Gemini in Docs, Sheets, Slides, Drive 사용법: Google Workspace AI를 어디까지 쓸 수 있나](/기타/gemini-workspace-guide/)
+ - [AI 브라우저 비교: Perplexity Comet vs Brave Leo vs Copilot Mode in Edge](/기타/ai-browser-comparison-2026/)
+ - [Brave Leo 사용법: 브라우저 안 AI 비서와 BYOM, Ollama 연결까지](/기타/brave-leo-guide/)
+ - [Perplexity Comet 설치와 사용법: AI 브라우저를 Windows와 Mac에서 시작하는 법](/기타/perplexity-comet-guide/)
  - [GitHub Copilot 설치와 사용법: VS Code, JetBrains, 웹에서 바로 쓰기](/기타/github-copilot-setup-guide/)
  - [Cursor 설치와 사용법: AI 에디터에서 Agent, Tab, Rules 제대로 쓰기](/기타/cursor-editor-guide/)
  - [Claude Code 설치와 사용법: Anthropic 코딩 에이전트를 터미널에 붙이는 법](/기타/claude-code-setup-guide/)
