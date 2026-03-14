@@ -2,9 +2,12 @@
 
 <script>
   (function () {
+    var normalizeTimer = null;
+
     function isAdNode(node) {
       if (!(node instanceof HTMLElement)) return false;
 
+      if (node.classList.contains("google-auto-placed")) return true;
       if (node.classList.contains("adsbygoogle")) return true;
 
       var id = node.id || "";
@@ -24,6 +27,18 @@
       return false;
     }
 
+    function getAdRoot(node) {
+      if (!(node instanceof HTMLElement)) return null;
+
+      var autoPlaced = node.closest(".google-auto-placed");
+      if (autoPlaced) return autoPlaced;
+
+      var adSlot = node.closest("ins.adsbygoogle");
+      if (adSlot) return adSlot;
+
+      return isAdNode(node) ? node : null;
+    }
+
     function isInsideCodeBlock(node) {
       return !!node.closest("figure.highlight, div.highlighter-rouge, pre, code");
     }
@@ -33,12 +48,12 @@
     }
 
     function moveAdOutsideCode(node) {
-      if (!(node instanceof HTMLElement)) return;
-      if (!isAdNode(node)) return;
-      if (!isInsideCodeBlock(node)) return;
-      if (node.dataset.nmMovedFromCode === "1") return;
+      var adRoot = getAdRoot(node);
+      if (!adRoot) return;
+      if (!isInsideCodeBlock(adRoot)) return;
+      if (adRoot.dataset.nmMovedFromCode === "1") return;
 
-      var codeBlock = nearestCodeBlock(node);
+      var codeBlock = nearestCodeBlock(adRoot);
       if (!codeBlock || !codeBlock.parentNode) return;
 
       var adSlot = document.createElement("div");
@@ -46,24 +61,238 @@
       adSlot.setAttribute("aria-label", "advertisement");
 
       codeBlock.insertAdjacentElement("afterend", adSlot);
-      adSlot.appendChild(node);
-      node.dataset.nmMovedFromCode = "1";
+      adSlot.appendChild(adRoot);
+      adRoot.dataset.nmMovedFromCode = "1";
+    }
+
+    function collectAdRoots(root) {
+      if (!(root instanceof HTMLElement)) return [];
+
+      var adRoots = [];
+
+      function pushUnique(node) {
+        var adRoot = getAdRoot(node);
+        if (!adRoot) return;
+        if (adRoots.indexOf(adRoot) !== -1) return;
+        adRoots.push(adRoot);
+      }
+
+      pushUnique(root);
+      root.querySelectorAll(".google-auto-placed, ins.adsbygoogle, iframe, div[id^='google_ads_iframe'], div[id^='aswift_']").forEach(pushUnique);
+
+      return adRoots;
+    }
+
+    function isHeading(node) {
+      return !!(node && /^H[1-6]$/.test(node.tagName));
+    }
+
+    function isForbiddenAdArea(node) {
+      if (!(node instanceof HTMLElement)) return false;
+
+      return !!node.closest(
+        ".page__meta, .page__taxonomy, .nm-post-hub-cta, .page__related, .sidebar, .sidebar__right, nav.toc, .toc, .author__content, .author__urls, .archive"
+      );
+    }
+
+    function isMeaningfulFlowNode(node) {
+      if (!(node instanceof HTMLElement)) return false;
+      if (isAdNode(node) || node.classList.contains("nm-inline-ad-slot")) return false;
+      if (isForbiddenAdArea(node)) return false;
+      if (node.matches("script, style")) return false;
+      if (node.hidden) return false;
+
+      if (isHeading(node) || node.matches("hr, table, pre, figure, blockquote, ul, ol")) {
+        return true;
+      }
+
+      if (node.querySelector("img, picture, svg, table, pre, blockquote, ul, ol, iframe, video")) {
+        return true;
+      }
+
+      var text = (node.textContent || "").replace(/\s+/g, " ").trim();
+      return text.length >= 20;
+    }
+
+    function previousMeaningfulSibling(node) {
+      var current = node ? node.previousElementSibling : null;
+
+      while (current) {
+        if (isMeaningfulFlowNode(current)) return current;
+        current = current.previousElementSibling;
+      }
+
+      return null;
+    }
+
+    function nextMeaningfulSibling(node) {
+      var current = node ? node.nextElementSibling : null;
+
+      while (current) {
+        if (isMeaningfulFlowNode(current)) return current;
+        current = current.nextElementSibling;
+      }
+
+      return null;
+    }
+
+    function hideManagedAd(node) {
+      if (!(node instanceof HTMLElement)) return;
+
+      node.dataset.nmHiddenByLayout = "1";
+      node.style.setProperty("display", "none", "important");
+    }
+
+    function showManagedAd(node) {
+      if (!(node instanceof HTMLElement)) return;
+      if (node.dataset.nmHiddenByLayout !== "1") return;
+
+      node.dataset.nmHiddenByLayout = "0";
+      node.style.removeProperty("display");
+    }
+
+    function findSectionEndAfter(adRoot) {
+      var cursor = nextMeaningfulSibling(adRoot);
+      if (!cursor || isHeading(cursor)) return null;
+
+      var last = cursor;
+      var next = nextMeaningfulSibling(last);
+
+      while (next) {
+        if (isHeading(next) || next.matches("hr")) break;
+        last = next;
+        next = nextMeaningfulSibling(last);
+      }
+
+      return last;
+    }
+
+    function countMeaningfulBlocksBefore(node) {
+      var count = 0;
+      var current = node ? node.previousElementSibling : null;
+
+      while (current) {
+        if (isMeaningfulFlowNode(current)) {
+          count += 1;
+        }
+        current = current.previousElementSibling;
+      }
+
+      return count;
+    }
+
+    function inlineAdLimit() {
+      var width = window.innerWidth || document.documentElement.clientWidth || 1280;
+      if (width <= 1024) return 1;
+      return 2;
+    }
+
+    function minBlocksBeforeInlineAd() {
+      var width = window.innerWidth || document.documentElement.clientWidth || 1280;
+      if (width <= 768) return 6;
+      if (width <= 1024) return 5;
+      return 4;
+    }
+
+    function minBlockGapBetweenAds() {
+      var width = window.innerWidth || document.documentElement.clientWidth || 1280;
+      if (width <= 768) return 7;
+      if (width <= 1024) return 6;
+      return 5;
+    }
+
+    function normalizeArticleAds() {
+      document.querySelectorAll("article.page").forEach(function (article) {
+        var content = article.querySelector(".page__content");
+        if (!content) return;
+
+        var articleAds = collectAdRoots(article);
+        articleAds.forEach(showManagedAd);
+
+        articleAds.forEach(function (adRoot) {
+          if (isForbiddenAdArea(adRoot)) {
+            hideManagedAd(adRoot);
+          }
+        });
+
+        var contentAds = collectAdRoots(content).filter(function (adRoot) {
+          return adRoot.parentElement === content && adRoot.dataset.nmHiddenByLayout !== "1";
+        });
+
+        contentAds.forEach(function (adRoot) {
+          var previousNode = previousMeaningfulSibling(adRoot);
+          if (!previousNode) return;
+
+          if (isHeading(previousNode)) {
+            var target = findSectionEndAfter(adRoot);
+            if (target) {
+              target.insertAdjacentElement("afterend", adRoot);
+            }
+          }
+        });
+
+        contentAds = collectAdRoots(content).filter(function (adRoot) {
+          return adRoot.parentElement === content;
+        });
+
+        var keptCount = 0;
+        var lastKeptIndex = -999;
+        var minBlocks = minBlocksBeforeInlineAd();
+        var minGap = minBlockGapBetweenAds();
+        var maxAds = inlineAdLimit();
+
+        contentAds.forEach(function (adRoot) {
+          var previousNode = previousMeaningfulSibling(adRoot);
+          var meaningfulIndex = countMeaningfulBlocksBefore(adRoot);
+
+          adRoot.classList.add("nm-inline-ad-slot", "nm-inline-ad-slot--managed");
+
+          if (meaningfulIndex < minBlocks) {
+            hideManagedAd(adRoot);
+            return;
+          }
+
+          if (isHeading(previousNode)) {
+            hideManagedAd(adRoot);
+            return;
+          }
+
+          if (keptCount >= maxAds) {
+            hideManagedAd(adRoot);
+            return;
+          }
+
+          if (meaningfulIndex - lastKeptIndex < minGap) {
+            hideManagedAd(adRoot);
+            return;
+          }
+
+          showManagedAd(adRoot);
+          keptCount += 1;
+          lastKeptIndex = meaningfulIndex;
+        });
+      });
+    }
+
+    function scheduleNormalize() {
+      window.clearTimeout(normalizeTimer);
+      normalizeTimer = window.setTimeout(function () {
+        scan(document.body);
+        normalizeArticleAds();
+      }, 80);
     }
 
     function scan(root) {
       if (!(root instanceof HTMLElement)) return;
 
-      if (isAdNode(root)) {
-        moveAdOutsideCode(root);
-      }
-
-      root.querySelectorAll("ins.adsbygoogle, iframe, div[id^='google_ads_iframe'], div[id^='aswift_']").forEach(function (node) {
+      collectAdRoots(root).forEach(function (node) {
         moveAdOutsideCode(node);
       });
     }
 
     function init() {
       scan(document.body);
+      normalizeArticleAds();
 
       var observer = new MutationObserver(function (mutations) {
         mutations.forEach(function (mutation) {
@@ -73,17 +302,18 @@
             }
           });
         });
+
+        scheduleNormalize();
       });
 
       observer.observe(document.body, { childList: true, subtree: true });
 
+      window.addEventListener("resize", scheduleNormalize);
+
       // Auto ads can appear a bit later than DOMContentLoaded.
-      setTimeout(function () {
-        scan(document.body);
-      }, 1000);
-      setTimeout(function () {
-        scan(document.body);
-      }, 3000);
+      [400, 1200, 3000].forEach(function (delay) {
+        setTimeout(scheduleNormalize, delay);
+      });
     }
 
     if (document.readyState === "loading") {

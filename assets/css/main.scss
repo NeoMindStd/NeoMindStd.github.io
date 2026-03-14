@@ -316,6 +316,29 @@ code div[id^="aswift_"],
   clear: both;
 }
 
+.nm-inline-ad-slot--managed,
+.page__content > .google-auto-placed,
+.page__content > ins.adsbygoogle {
+  margin: 1.4rem 0 1.8rem;
+  clear: both;
+}
+
+.page__meta .google-auto-placed,
+.page__meta ins.adsbygoogle,
+.page__meta div[id^="google_ads_iframe"],
+.page__meta div[id^="aswift_"],
+.page__meta iframe[src*="googlesyndication"] {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .nm-inline-ad-slot--managed,
+  .page__content > .google-auto-placed,
+  .page__content > ins.adsbygoogle {
+    margin: 1.1rem 0 1.4rem;
+  }
+}
+
 .toc .active > a,
 .toc .active a {
   background-color: rgba(31, 127, 155, 0.13);
