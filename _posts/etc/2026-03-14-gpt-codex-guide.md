@@ -32,6 +32,10 @@ published: true
 `Codex`라는 이름은 예전에도 있었지만, 2026년 현재의 `Codex`는 단순 모델명이 아니라  
 **실제로 저장소를 읽고, 코드를 수정하고, 테스트를 돌리고, 결과를 보고하는 코딩 에이전트 경험**으로 보는 편이 정확합니다.
 
+![](/assets/images/posts/etc/gpt-codex-guide/codex-official.png)
+
+_OpenAI Codex 공식 소개 페이지의 스크린샷_
+
 OpenAI 공식 설명을 기준으로 보면 Codex는 소프트웨어 개발을 위해 설계된 코딩 에이전트입니다.
 
 # Codex를 이해할 때 꼭 구분할 것
