@@ -32,6 +32,12 @@ published: true
 
 ![](/assets/images/posts/etc/local-llm-guide/hero.svg)
 
+# 빠른 답
+
+- 가장 쉽게 시작하려면 Ollama, 데스크톱 UI가 중요하면 LM Studio, 세밀한 성능 조정과 경량 배포는 `llama.cpp`가 잘 맞습니다.
+- 입문자는 보통 `Ollama 또는 LM Studio` 중 하나로 먼저 시작한 뒤, 필요할 때 `Open WebUI` 같은 상위 인터페이스를 얹는 편이 덜 복잡합니다.
+- 로컬 LLM의 가장 큰 병목은 설정 난이도보다 메모리와 GPU 사양입니다.
+
 `로컬 LLM`은 말 그대로 내 PC나 내 서버에서 직접 돌리는 언어 모델입니다.  
 요즘 다시 주목받는 이유는 간단합니다.
 

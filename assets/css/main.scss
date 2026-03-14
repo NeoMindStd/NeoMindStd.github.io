@@ -247,10 +247,22 @@ body {
 
 .nm-post-hub-cta ul {
   margin: 0;
+  padding-left: 1.2rem;
 }
 
 .nm-post-hub-cta li {
   margin: 0.2rem 0;
+}
+
+@media (min-width: 768px) {
+  .nm-post-hub-cta ul {
+    columns: 2;
+    column-gap: 1.6rem;
+  }
+
+  .nm-post-hub-cta li {
+    break-inside: avoid;
+  }
 }
 
 @media (min-width: 1024px) {

@@ -21,6 +21,7 @@ toc_label: "목차"
 실무에서 직접 겪은 운영 이슈와 해결 과정을 중심으로 정리합니다.
 
 ### AI / LLM / 에이전트
+ - [AI 허브: 비교·설치·로컬 LLM·생성형 AI를 목적별로 빠르게 찾기](/ai/)
  - [음악 생성 AI 비교와 사용법: Suno, Udio, 그리고 창팝 시대의 감각](/기타/ai-music-generation-guide-2026/)
  - [생성형 창작 AI 입문: 음악, 그림, 사진, 영상 AI를 2026년에 어떻게 고를까](/기타/creative-ai-guide-2026/)
  - [그림·사진 생성 AI 비교: ChatGPT 이미지, Midjourney, Firefly를 어떻게 고를까](/기타/ai-image-photo-generation-guide-2026/)
