@@ -35,7 +35,7 @@ toc_label: "목차"
 ### 시스템 점검/메모리 도구
  - [Cheat Engine 설치와 사용법: 공식 다운로드부터 기본 메모리 스캔까지](/tools/cheat-engine-guide/)
  - [Cheat-O-Matic 설치와 사용법: 공식 배포가 끝난 레거시 메모리 도구 정리](/tools/cheat-o-matic-guide/)
- - [GoodbyeDPI ??? ???: ?? GitHub ???? Windows DPI ?? ?? ?? ????](/tools/gui-for-dpi-guide/)
+ - [GoodbyeDPI 설치와 사용법: 공식 GitHub 기준으로 Windows DPI 우회 도구 시작하기](/tools/gui-for-dpi-guide/)
  - [CPU-Z 설치와 사용법: 공식 다운로드부터 CPU/메모리 확인까지](/tools/cpu-z-guide/)
  - [GPU-Z 설치와 사용법: 공식 다운로드부터 센서 로깅까지](/tools/gpu-z-guide/)
  - [CrystalDiskInfo 설치와 사용법: 공식 다운로드부터 SSD 상태 확인까지](/tools/crystaldiskinfo-guide/)
