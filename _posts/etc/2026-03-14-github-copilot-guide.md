@@ -32,6 +32,10 @@ published: true
 GitHub Copilot은 한동안 "코드 자동완성 도구"라는 이미지가 강했습니다.  
 그런데 2026년 기준 공식 문서를 보면 이미 그 범위를 꽤 넘어섰습니다.
 
+![](/assets/images/posts/etc/github-copilot-guide/copilot-official.png)
+
+_GitHub Copilot 공식 문서의 대표 이미지_
+
 지금의 Copilot은 대략 이렇게 보는 편이 맞습니다.
 
 - 인라인 제안
