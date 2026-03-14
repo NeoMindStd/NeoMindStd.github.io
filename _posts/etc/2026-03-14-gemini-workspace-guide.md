@@ -26,6 +26,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "문서 작성, 시트 정리, 슬라이드 초안이 많은 사람이라면 Gemini Workspace가 코딩 도구보다 훨씬 바로 체감되는 AI입니다."
+  - "반대로 코드 수정이나 리포지토리 작업이 중심이라면 Gemini CLI나 Cursor 같은 도구가 더 직접적입니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "Docs, Sheets, Slides를 매일 씀"
+    right: "Gemini Workspace 우선"
+  - left: "터미널·리포지토리 작업이 더 많음"
+    right: "Gemini CLI나 Cursor 검토"
+  - left: "조사와 자료 수집 비중이 큼"
+    right: "딥리서치나 AI 브라우저 흐름도 같이 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "Gemini CLI 설치와 사용법"
+    url: "/기타/gemini-cli-guide/"
+    note: "개발자 워크플로까지 확장할 때"
+  - title: "딥리서치란 무엇인가"
+    url: "/기타/what-is-deep-research/"
+    note: "문서 초안 이전 조사 단계"
+  - title: "생성형 창작 AI 입문"
+    url: "/기타/creative-ai-guide-2026/"
+    note: "텍스트 밖 창작 도구까지 넓혀 볼 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

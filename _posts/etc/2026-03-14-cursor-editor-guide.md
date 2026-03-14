@@ -24,6 +24,31 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "IDE 안에서 에이전트와 오래 협업"
+    right: "Cursor가 가장 자연스러운 편"
+  - left: "터미널에서 작은 수정과 테스트를 자주 반복"
+    right: "Codex CLI나 Claude Code 검토"
+  - left: "자동완성과 PR 보조가 중심"
+    right: "Copilot과도 함께 비교"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "GitHub Copilot 설치와 사용법"
+    url: "/기타/github-copilot-setup-guide/"
+    note: "가벼운 대안을 같이 볼 때"
+  - title: "Codex CLI 설치와 사용법"
+    url: "/기타/codex-cli-guide/"
+    note: "터미널 기반 흐름과 비교할 때"
+  - title: "Claude Code 설치와 사용법"
+    url: "/기타/claude-code-setup-guide/"
+    note: "다른 코딩 에이전트와 비교할 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

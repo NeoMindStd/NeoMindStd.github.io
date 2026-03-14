@@ -26,6 +26,31 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "CLI로 빠르게 로컬 모델 실행"
+    right: "Ollama가 가장 쉬운 편"
+  - left: "GUI에서 모델을 고르고 테스트"
+    right: "LM Studio도 함께 보기"
+  - left: "웹 UI와 공유 환경까지 필요"
+    right: "Open WebUI 조합 검토"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "로컬 LLM 시작 가이드"
+    url: "/기타/local-llm-guide/"
+    note: "전체 러너 비교를 먼저 볼 때"
+  - title: "Open WebUI 설치와 사용법"
+    url: "/기타/open-webui-guide/"
+    note: "웹 인터페이스까지 붙이고 싶을 때"
+  - title: "Apple Silicon과 로컬 LLM"
+    url: "/기타/apple-silicon-unified-memory-local-llm/"
+    note: "맥에서 성능 감을 잡을 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

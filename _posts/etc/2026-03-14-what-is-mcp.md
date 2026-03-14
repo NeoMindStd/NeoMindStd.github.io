@@ -20,6 +20,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "MCP는 모델을 외부 도구와 데이터에 연결하는 표준이라서, 요즘 AI 에디터와 CLI 에이전트 흐름을 이해할 때 거의 필수 개념입니다."
+  - "툴 연결은 MCP, 여러 에이전트끼리 역할을 나누는 쪽은 A2A라고 보면 큰 흐름을 잡기 쉽습니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "파일, DB, API 같은 도구를 모델에 연결"
+    right: "MCP부터 이해하기"
+  - left: "여러 에이전트가 협업하는 구조"
+    right: "A2A와 오케스트레이션 구조까지 같이 보기"
+  - left: "터미널·IDE 에이전트를 실제로 써보기"
+    right: "Claude Code, Gemini CLI, Codex CLI 가이드로 이어가기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "A2A란 무엇인가"
+    url: "/기타/what-is-a2a/"
+    note: "MCP 다음 개념을 이어서 볼 때"
+  - title: "Claude Code 설치와 사용법"
+    url: "/기타/claude-code-setup-guide/"
+    note: "MCP 감각이 실제로 보이는 도구"
+  - title: "Gemini CLI 설치와 사용법"
+    url: "/기타/gemini-cli-guide/"
+    note: "CLI 에이전트 흐름을 함께 볼 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

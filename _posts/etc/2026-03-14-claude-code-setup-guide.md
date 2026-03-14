@@ -25,6 +25,31 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "공식 권장 흐름으로 빠르게 설치"
+    right: "설치 스크립트 중심으로 시작"
+  - left: "패키지 매니저로 관리하고 싶음"
+    right: "Homebrew 경로 검토"
+  - left: "Codex, Cursor와 비교해서 고를 예정"
+    right: "터미널 중심인지 IDE 중심인지부터 구분"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "Codex CLI 설치와 사용법"
+    url: "/기타/codex-cli-guide/"
+    note: "OpenAI 계열 CLI와 비교할 때"
+  - title: "Cursor 설치와 사용법"
+    url: "/기타/cursor-editor-guide/"
+    note: "IDE 기반 에이전트와 비교할 때"
+  - title: "MCP란 무엇인가"
+    url: "/기타/what-is-mcp/"
+    note: "도구 연결 구조까지 이해하고 싶을 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

@@ -24,6 +24,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "탭을 많이 열고 조사·비교 검색을 자주 하는 사람에게는 Comet이 일반 브라우저보다 훨씬 직관적으로 느껴질 수 있습니다."
+  - "반대로 기존 브라우저를 유지한 채 AI만 얹고 싶다면 Brave Leo나 Edge Copilot Mode 쪽이 더 부담이 적습니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "브라우저 자체를 AI 중심으로 바꾸고 싶음"
+    right: "Perplexity Comet"
+  - left: "프라이버시와 로컬/BYOM 감각을 중요하게 봄"
+    right: "Brave Leo"
+  - left: "Windows 기본 흐름과 코파일럿 연동"
+    right: "Edge Copilot Mode"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "AI 브라우저 비교"
+    url: "/기타/ai-browser-comparison-2026/"
+    note: "Comet의 위치를 한 번에 볼 때"
+  - title: "Brave Leo 사용법"
+    url: "/기타/brave-leo-guide/"
+    note: "BYOM과 프라이버시 흐름이 궁금할 때"
+  - title: "딥리서치란 무엇인가"
+    url: "/기타/what-is-deep-research/"
+    note: "브라우저 너머 조사 모드까지 볼 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

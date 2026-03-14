@@ -24,6 +24,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "조사와 비교 중심이면 Comet, 프라이버시와 BYOM은 Leo, Windows 기본 흐름과 Copilot 연동은 Edge 쪽이 더 자연스럽습니다."
+  - "브라우저 선택은 모델 성능보다 탭 관리, 기본 브라우저 전환, 데이터 처리 감각 같은 사용 습관이 더 크게 작용합니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "연구·쇼핑·탭 정리가 많은 사람"
+    right: "Perplexity Comet"
+  - left: "Brave 생태계와 BYOM 선호"
+    right: "Brave Leo"
+  - left: "Windows와 Microsoft 생태계 중심"
+    right: "Copilot Mode in Edge"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "Perplexity Comet 설치와 사용법"
+    url: "/기타/perplexity-comet-guide/"
+    note: "리서치 중심 브라우저 흐름"
+  - title: "Brave Leo 사용법"
+    url: "/기타/brave-leo-guide/"
+    note: "프라이버시 중심 대안"
+  - title: "Copilot Mode in Edge 사용법"
+    url: "/기타/edge-copilot-mode-guide/"
+    note: "Windows 사용자 기준 대안"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

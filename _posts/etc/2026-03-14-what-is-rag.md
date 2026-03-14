@@ -24,6 +24,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "RAG는 최신 문서나 내부 자료를 모델 바깥에서 찾아 붙여 주는 방식이라, 문서가 자주 바뀌는 서비스에 특히 잘 맞습니다."
+  - "모델 자체의 말투나 사고방식을 바꾸는 파인튜닝과는 목적이 다르기 때문에 둘을 섞어 생각하지 않는 편이 좋습니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "자주 바뀌는 문서와 정책을 반영"
+    right: "RAG 우선 검토"
+  - left: "말투, 출력 형식, 태스크 성향을 바꾸고 싶음"
+    right: "파인튜닝 또는 프롬프트 설계 검토"
+  - left: "대화 맥락을 누적 관리"
+    right: "메모리 구조와 세션 설계까지 같이 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "딥리서치란 무엇인가"
+    url: "/기타/what-is-deep-research/"
+    note: "검색과 조사 흐름까지 넓혀 볼 때"
+  - title: "AI Eval이란 무엇인가"
+    url: "/기타/what-is-ai-eval/"
+    note: "RAG 품질 검증까지 이어서 볼 때"
+  - title: "프롬프트 엔지니어링 가이드"
+    url: "/기타/prompt-engineering-practical-guide/"
+    note: "검색 없이도 품질을 올릴 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

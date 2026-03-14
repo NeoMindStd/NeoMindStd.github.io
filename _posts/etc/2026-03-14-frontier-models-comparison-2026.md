@@ -25,6 +25,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "코드 작업과 에이전트형 수정은 OpenAI Codex나 Claude Code 계열이, 긴 문맥과 구글 생태계는 Gemini 쪽이 더 잘 맞습니다."
+  - "실시간 웹 탐색과 브라우저 흐름까지 같이 보고 싶다면 Grok이나 AI 브라우저 계열도 함께 비교하는 편이 좋습니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "코드 수정과 에이전트형 작업"
+    right: "Codex CLI, Claude Code 계열부터 비교"
+  - left: "긴 문맥과 구글 생태계"
+    right: "Gemini 3.1 Pro와 Gemini Workspace 흐름 확인"
+  - left: "실시간 웹 탐색과 리서치"
+    right: "Grok과 AI 브라우저 계열을 같이 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "Gemini CLI 설치와 사용법"
+    url: "/기타/gemini-cli-guide/"
+    note: "구글 계열을 바로 써보고 싶을 때"
+  - title: "Claude Code 설치와 사용법"
+    url: "/기타/claude-code-setup-guide/"
+    note: "코딩 에이전트 비교를 이어서 볼 때"
+  - title: "AI 브라우저 비교"
+    url: "/기타/ai-browser-comparison-2026/"
+    note: "검색·리서치 흐름까지 넓혀 볼 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

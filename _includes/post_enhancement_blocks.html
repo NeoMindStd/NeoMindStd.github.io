@@ -1,0 +1,69 @@
+{% if include.position == "before" %}
+  {% if page.quick_takeaways %}
+    <section class="nm-post-brief nm-post-brief--before">
+      <h2 class="nm-post-brief__title">{{ page.quick_takeaways_title | default: "빠르게 보기" }}</h2>
+      <ul class="nm-post-brief__list">
+        {% for item in page.quick_takeaways %}
+          <li>{{ item | markdownify | remove: "<p>" | remove: "</p>" }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.decision_table_rows %}
+    <section class="nm-post-brief nm-post-brief--decision">
+      <h2 class="nm-post-brief__title">{{ page.decision_table_title | default: "한눈에 고르기" }}</h2>
+      <div class="table-wrapper">
+        <table class="nm-post-brief__table">
+          <thead>
+            <tr>
+              {% for header in page.decision_table_headers %}
+                <th>{{ header }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in page.decision_table_rows %}
+              <tr>
+                <td>{{ row.left | markdownify | remove: "<p>" | remove: "</p>" }}</td>
+                <td>{{ row.right | markdownify | remove: "<p>" | remove: "</p>" }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  {% endif %}
+{% endif %}
+
+{% if include.position == "after" %}
+  {% if page.summary_points %}
+    <section class="nm-post-brief nm-post-brief--after">
+      <h2 class="nm-post-brief__title">{{ page.summary_points_title | default: "핵심 요약" }}</h2>
+      <ul class="nm-post-brief__list">
+        {% for item in page.summary_points %}
+          <li>{{ item | markdownify | remove: "<p>" | remove: "</p>" }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.custom_next_reads %}
+    <section class="nm-post-brief nm-post-brief--reads">
+      <h2 class="nm-post-brief__title">{{ page.custom_next_reads_title | default: "이 글과 함께 보면 좋은 글" }}</h2>
+      {% if page.custom_next_reads_intro %}
+        <p class="nm-post-brief__lead">{{ page.custom_next_reads_intro }}</p>
+      {% endif %}
+      <ul class="nm-post-brief__reads">
+        {% for item in page.custom_next_reads %}
+          <li>
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            {% if item.note %}
+              <span class="nm-post-brief__note">{{ item.note }}</span>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+{% endif %}

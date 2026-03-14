@@ -24,6 +24,31 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "가장 안정적으로 빠르게 띄우기"
+    right: "Docker 경로 우선"
+  - left: "파이썬 환경에 직접 붙이기"
+    right: "pip 설치 경로 검토"
+  - left: "웹 UI와 로컬 모델을 같이 쓰기"
+    right: "Ollama와 조합하기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "Ollama 설치와 사용법"
+    url: "/기타/ollama-guide/"
+    note: "Open WebUI와 가장 많이 묶이는 러너"
+  - title: "로컬 LLM 시작 가이드"
+    url: "/기타/local-llm-guide/"
+    note: "러너 전체 비교를 볼 때"
+  - title: "OpenClaw 설치와 사용법"
+    url: "/기타/openclaw-guide/"
+    note: "셀프호스팅 워크스페이스를 더 넓게 볼 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

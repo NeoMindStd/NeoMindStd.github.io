@@ -25,6 +25,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "영상 AI는 한 번에 긴 결과물을 기대하기보다, 짧은 컷과 콘셉트 시퀀스를 먼저 뽑고 편집으로 이어가는 감각이 더 실용적입니다."
+  - "Sora, Veo, Runway는 품질뿐 아니라 접근성, 편집 흐름, 공개 범위 차이까지 같이 봐야 선택이 쉬워집니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "콘셉트 영상과 장면 실험"
+    right: "Sora, Veo 계열 먼저 비교"
+  - left: "편집 워크플로와 후반 작업"
+    right: "Runway까지 같이 보기"
+  - left: "이미지에서 영상으로 확장"
+    right: "이미지 생성 AI와 묶어서 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "생성형 창작 AI 입문"
+    url: "/기타/creative-ai-guide-2026/"
+    note: "음악·이미지까지 함께 비교할 때"
+  - title: "그림·사진 생성 AI 비교"
+    url: "/기타/ai-image-photo-generation-guide-2026/"
+    note: "스토리보드용 이미지부터 만들 때"
+  - title: "프롬프트 엔지니어링 가이드"
+    url: "/기타/prompt-engineering-practical-guide/"
+    note: "장면 지시문을 더 잘 쓰고 싶을 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

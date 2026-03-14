@@ -23,6 +23,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "로컬 개발 환경을 빠르게 맞추고 싶다면 Docker Desktop으로 시작하는 쪽이 가장 부담이 적습니다."
+  - "초반에는 이미지, 컨테이너, 볼륨, 포트 매핑 순서만 이해해도 체감이 크게 좋아집니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "노트북에서 바로 개발 환경 재현"
+    right: "Docker Desktop부터 시작"
+  - left: "서버나 CI 같은 리눅스 환경 중심"
+    right: "Engine/Compose 흐름까지 같이 보기"
+  - left: "개발 툴과 API 테스트를 묶어 쓰기"
+    right: "Python, Postman 글도 함께 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "Python 설치와 사용법"
+    url: "/tools/python-guide/"
+    note: "개발 환경 기본 축을 같이 맞출 때"
+  - title: "Postman 설치와 사용법"
+    url: "/tools/postman-guide/"
+    note: "컨테이너로 띄운 API를 테스트할 때"
+  - title: "Open WebUI 설치와 사용법"
+    url: "/기타/open-webui-guide/"
+    note: "Docker 실전 예제로 이어질 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

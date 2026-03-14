@@ -22,6 +22,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "빠르게 시작하려면 Ollama, 데스크톱 GUI가 좋으면 LM Studio, 세밀한 튜닝과 임베딩 파이프라인은 llama.cpp 계열이 잘 맞습니다."
+  - "로컬 LLM은 설치법보다 메모리와 모델 크기 선택이 체감 품질을 더 크게 좌우합니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "터미널에서 가장 빨리 시작"
+    right: "Ollama"
+  - left: "GUI로 모델을 고르고 테스트"
+    right: "LM Studio"
+  - left: "직접 최적화하고 파이프라인 구성"
+    right: "llama.cpp 계열"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "Ollama 설치와 사용법"
+    url: "/기타/ollama-guide/"
+    note: "가장 쉬운 로컬 LLM 입문"
+  - title: "LM Studio 설치와 사용법"
+    url: "/기타/lm-studio-guide/"
+    note: "GUI 중심으로 시작할 때"
+  - title: "Apple Silicon과 로컬 LLM"
+    url: "/기타/apple-silicon-unified-memory-local-llm/"
+    note: "맥 메모리 구조가 궁금할 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

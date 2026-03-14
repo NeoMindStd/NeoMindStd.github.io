@@ -25,6 +25,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "가장 쉽게 시작하려면 ChatGPT 이미지, 스타일과 커뮤니티 감각은 Midjourney, Adobe 작업 흐름은 Firefly가 강점이 뚜렷합니다."
+  - "이미지 AI는 결과물 한 장보다 편집 반복과 상업 이용 정책이 실제 만족도를 크게 좌우합니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "대화형으로 빠르게 결과 보기"
+    right: "ChatGPT 이미지"
+  - left: "스타일 중심 일러스트와 커뮤니티 레퍼런스"
+    right: "Midjourney"
+  - left: "Photoshop·디자인 실무와 연결"
+    right: "Adobe Firefly"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "생성형 창작 AI 입문"
+    url: "/기타/creative-ai-guide-2026/"
+    note: "음악·영상까지 한 번에 볼 때"
+  - title: "영상 생성 AI 비교"
+    url: "/기타/ai-video-generation-guide-2026/"
+    note: "이미지 다음 단계로 넘어갈 때"
+  - title: "프롬프트 엔지니어링 가이드"
+    url: "/기타/prompt-engineering-practical-guide/"
+    note: "결과물 품질을 더 끌어올릴 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

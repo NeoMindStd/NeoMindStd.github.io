@@ -24,6 +24,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "Brave Leo는 AI 브라우저 중에서도 프라이버시와 BYOM 감각이 강한 편이라, 기존 브라우저 습관을 크게 버리지 않고 확장하기 좋습니다."
+  - "Perplexity Comet처럼 브라우저 경험 전체를 바꾸는 쪽과는 결이 다르니, 내 사용 습관이 어디에 가까운지 먼저 보는 편이 좋습니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "기존 브라우저에 AI를 덧대는 감각"
+    right: "Brave Leo"
+  - left: "검색과 리서치를 AI 브라우저로 통합"
+    right: "Perplexity Comet"
+  - left: "Microsoft 계정·Windows 기본 흐름"
+    right: "Edge Copilot Mode"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "AI 브라우저 비교"
+    url: "/기타/ai-browser-comparison-2026/"
+    note: "세 제품을 한 번에 비교할 때"
+  - title: "Perplexity Comet 설치와 사용법"
+    url: "/기타/perplexity-comet-guide/"
+    note: "브라우저 자체가 더 바뀌는 대안"
+  - title: "Ollama 설치와 사용법"
+    url: "/기타/ollama-guide/"
+    note: "BYOM 감각을 로컬 모델로 이어갈 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

@@ -25,6 +25,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "음악은 Suno/Udio, 이미지·사진은 ChatGPT 이미지·Midjourney·Firefly, 영상은 Sora·Veo·Runway처럼 매체별로 먼저 나눠 보는 편이 훨씬 쉽습니다."
+  - "창작형 AI는 품질 자체보다 저작권, 상업 이용 범위, 편집 워크플로까지 같이 비교해야 실제로 쓸 도구를 고르기 편합니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "노래를 빠르게 만들고 공유"
+    right: "음악 생성 AI부터 보기"
+  - left: "썸네일·일러스트·사진 편집"
+    right: "이미지 생성 AI 비교부터 보기"
+  - left: "짧은 영상 콘셉트와 컷 생성"
+    right: "영상 생성 AI 비교부터 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "음악 생성 AI 비교와 사용법"
+    url: "/기타/ai-music-generation-guide-2026/"
+    note: "창팝·밈 문화까지 같이 볼 때"
+  - title: "그림·사진 생성 AI 비교"
+    url: "/기타/ai-image-photo-generation-guide-2026/"
+    note: "썸네일·이미지 제작 도구를 고를 때"
+  - title: "영상 생성 AI 비교"
+    url: "/기타/ai-video-generation-guide-2026/"
+    note: "Sora, Veo, Runway 흐름을 볼 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

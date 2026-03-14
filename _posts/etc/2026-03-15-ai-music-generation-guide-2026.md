@@ -25,6 +25,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "짧은 시간에 완성곡 감각을 보고 싶다면 Suno, 대안 비교와 스타일 실험을 넓히고 싶다면 Udio를 같이 보는 편이 좋습니다."
+  - "밈·커뮤니티 문화와 잘 붙는 장르라서, 기술 비교와 함께 창팝 같은 활용 문화를 같이 보면 이해가 더 빠릅니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "가사부터 곡까지 빠르게 완성"
+    right: "Suno 중심으로 보기"
+  - left: "다른 스타일과 대안을 비교"
+    right: "Udio까지 같이 보기"
+  - left: "밈·커뮤니티형 활용 감각이 궁금함"
+    right: "창팝/신창섭 문화 맥락까지 같이 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "생성형 창작 AI 입문"
+    url: "/기타/creative-ai-guide-2026/"
+    note: "다른 매체 생성 AI까지 확장할 때"
+  - title: "영상 생성 AI 비교"
+    url: "/기타/ai-video-generation-guide-2026/"
+    note: "음악에 영상을 붙이는 단계"
+  - title: "프롬프트 엔지니어링 가이드"
+    url: "/기타/prompt-engineering-practical-guide/"
+    note: "가사·스타일 프롬프트를 다듬을 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -

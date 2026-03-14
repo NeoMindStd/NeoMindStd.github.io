@@ -23,6 +23,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# shortterm-growth-enhancement: begin
+quick_takeaways:
+  - "파이썬은 설치 자체보다 `python --version`, `pip`, `venv`까지 한 번에 익혀 두는 편이 훨씬 실용적입니다."
+  - "윈도우에서는 py 런처와 PATH 설정, 맥·리눅스에서는 기본 파이썬과 별도 설치본을 구분하는 감각이 중요합니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "스크립트와 자동화를 빠르게 시작"
+    right: "공식 설치본 + venv부터 익히기"
+  - left: "AI·데이터 툴도 함께 쓸 예정"
+    right: "패키지 관리와 가상환경까지 같이 정리"
+  - left: "컨테이너 환경과도 함께 쓸 예정"
+    right: "Docker 글까지 이어서 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
+custom_next_reads:
+  - title: "Docker 설치와 사용법"
+    url: "/tools/docker-guide/"
+    note: "파이썬 환경을 컨테이너로 옮길 때"
+  - title: "Postman 설치와 사용법"
+    url: "/tools/postman-guide/"
+    note: "파이썬 API를 테스트할 때"
+  - title: "Open WebUI 설치와 사용법"
+    url: "/기타/open-webui-guide/"
+    note: "파이썬 기반 AI 앱 예제로 이어질 때"
+# shortterm-growth-enhancement: end
 ---
 
 - - -
