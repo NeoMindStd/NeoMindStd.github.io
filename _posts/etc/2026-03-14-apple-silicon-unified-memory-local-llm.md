@@ -32,6 +32,10 @@ published: true
 
 로컬 LLM 이야기를 하다 보면 유난히 자주 나오는 말이 있습니다.
 
+![](/assets/images/posts/etc/apple-silicon-unified-memory-local-llm/apple-silicon-official.jpg)
+
+_Apple Newsroom의 Apple Silicon 공식 이미지_
+
 - "Mac은 VRAM 제약이 덜하다"
 - "Apple Silicon은 통합 메모리라 로컬 AI에 유리하다"
 - "일반 PC보다 RAM을 GPU처럼 쓸 수 있다"
