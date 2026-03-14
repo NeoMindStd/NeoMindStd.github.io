@@ -108,11 +108,6 @@ analytics:
     anonymize_ip         : true # true, false (default)
 
 
-# Advertising
-adsense:
-  enabled                : false
-  client                 : "ca-pub-5609154832705787"
-
 # Site Author
 author:
   name             : "NeoMind"
