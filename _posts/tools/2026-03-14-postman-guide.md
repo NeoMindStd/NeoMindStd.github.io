@@ -33,6 +33,8 @@ published: true
 
 ![Postman 개요](/assets/images/posts/tools/postman-guide/hero.svg)
 
+![Postman ?? ??](/assets/images/posts/tools/postman-guide/logo.png)
+
 ![Postman 공식 이미지](/assets/images/posts/tools/postman-guide/official.png)
 
 # 무엇인가

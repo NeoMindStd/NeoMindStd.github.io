@@ -34,6 +34,8 @@ published: true
 
 ![대표 이미지](/assets/images/posts/etc/openclaw-guide/hero.svg)
 
+![OpenClaw ?? ??](/assets/images/posts/etc/openclaw-guide/logo.png)
+
 ![공식 페이지 이미지](/assets/images/posts/etc/openclaw-guide/official.png)
 
 # 어떤 도구인가

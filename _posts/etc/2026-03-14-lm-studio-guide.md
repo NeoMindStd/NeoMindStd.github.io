@@ -36,6 +36,8 @@ published: true
 
 ![대표 이미지](/assets/images/posts/etc/lm-studio-guide/hero.svg)
 
+![LM Studio ?? ??](/assets/images/posts/etc/lm-studio-guide/logo.png)
+
 ![공식 페이지 이미지](/assets/images/posts/etc/lm-studio-guide/official.png)
 
 # 어떤 도구인가

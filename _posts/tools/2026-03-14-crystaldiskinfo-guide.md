@@ -32,6 +32,8 @@ published: true
 
 ![CrystalDiskInfo 개요](/assets/images/posts/tools/crystaldiskinfo-guide/hero.svg)
 
+![CrystalDiskInfo ?? ??](/assets/images/posts/tools/crystaldiskinfo-guide/logo.png)
+
 ![CrystalDiskInfo 공식 이미지](/assets/images/posts/tools/crystaldiskinfo-guide/official.png)
 
 # 무엇인가

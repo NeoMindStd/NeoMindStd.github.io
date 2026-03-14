@@ -31,6 +31,8 @@ published: true
 
 ![Cheat Engine 개요](/assets/images/posts/tools/cheat-engine-guide/hero.svg)
 
+![Cheat Engine ?? ??](/assets/images/posts/tools/cheat-engine-guide/logo.png)
+
 # 무엇인가
 
 Cheat Engine은 프로세스 메모리 값을 검색하고 다시 좁혀 가며 상태를 관찰하는 도구입니다. 디버깅이나 개인 프로젝트 실험에는 유용하지만, 온라인 게임이나 서비스 약관을 어기는 용도로 쓰면 안 됩니다.

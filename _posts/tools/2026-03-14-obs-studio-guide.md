@@ -34,6 +34,8 @@ published: true
 
 ![OBS Studio 개요](/assets/images/posts/tools/obs-studio-guide/hero.svg)
 
+![OBS Studio ?? ??](/assets/images/posts/tools/obs-studio-guide/logo.png)
+
 ![OBS Studio 공식 이미지](/assets/images/posts/tools/obs-studio-guide/official.png)
 
 # 무엇인가

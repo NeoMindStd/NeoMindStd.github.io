@@ -31,6 +31,8 @@ published: true
 
 ![HxD Hex Editor 개요](/assets/images/posts/tools/hxd-hex-editor-guide/hero.svg)
 
+![HxD ?? ??](/assets/images/posts/tools/hxd-hex-editor-guide/logo.png)
+
 ![HxD Hex Editor 공식 이미지](/assets/images/posts/tools/hxd-hex-editor-guide/official.png)
 
 # 무엇인가

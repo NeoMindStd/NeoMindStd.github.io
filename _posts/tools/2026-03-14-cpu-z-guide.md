@@ -31,6 +31,8 @@ published: true
 
 ![CPU-Z 개요](/assets/images/posts/tools/cpu-z-guide/hero.svg)
 
+![CPU-Z ?? ??](/assets/images/posts/tools/cpu-z-guide/logo.png)
+
 ![CPU-Z 공식 이미지](/assets/images/posts/tools/cpu-z-guide/official.png)
 
 # 무엇인가

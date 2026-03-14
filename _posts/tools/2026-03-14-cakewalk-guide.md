@@ -31,6 +31,8 @@ published: true
 
 ![Cakewalk 개요](/assets/images/posts/tools/cakewalk-guide/hero.svg)
 
+![Cakewalk ?? ??](/assets/images/posts/tools/cakewalk-guide/logo.png)
+
 ![Cakewalk 공식 이미지](/assets/images/posts/tools/cakewalk-guide/official.png)
 
 # 무엇인가

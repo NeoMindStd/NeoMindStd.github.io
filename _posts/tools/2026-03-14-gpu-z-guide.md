@@ -31,6 +31,8 @@ published: true
 
 ![GPU-Z 개요](/assets/images/posts/tools/gpu-z-guide/hero.svg)
 
+![GPU-Z ?? ??](/assets/images/posts/tools/gpu-z-guide/logo.png)
+
 ![GPU-Z 공식 이미지](/assets/images/posts/tools/gpu-z-guide/official.png)
 
 # 무엇인가

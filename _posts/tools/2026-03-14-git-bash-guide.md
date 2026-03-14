@@ -31,6 +31,8 @@ published: true
 
 ![Git Bash 개요](/assets/images/posts/tools/git-bash-guide/hero.svg)
 
+![Git Bash ?? ??](/assets/images/posts/tools/git-bash-guide/logo.png)
+
 # 무엇인가
 
 Git Bash는 Windows에서 Git CLI를 비교적 자연스럽게 쓰게 해 주는 셸 환경입니다. 실제 설치는 Git for Windows 패키지로 이뤄지고, Git Bash는 그 안에 포함된 Bash 터미널이라고 보면 이해가 쉽습니다.

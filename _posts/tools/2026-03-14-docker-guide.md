@@ -33,6 +33,8 @@ published: true
 
 ![Docker Desktop 개요](/assets/images/posts/tools/docker-guide/hero.svg)
 
+![Docker ?? ??](/assets/images/posts/tools/docker-guide/logo.png)
+
 ![Docker Desktop 공식 이미지](/assets/images/posts/tools/docker-guide/official.png)
 
 # 무엇인가

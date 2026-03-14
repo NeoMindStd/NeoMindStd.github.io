@@ -31,6 +31,8 @@ published: true
 
 ![Notepad++ 개요](/assets/images/posts/tools/notepad-plus-plus-guide/hero.svg)
 
+![Notepad++ ?? ??](/assets/images/posts/tools/notepad-plus-plus-guide/logo.png)
+
 ![Notepad++ 공식 이미지](/assets/images/posts/tools/notepad-plus-plus-guide/official.png)
 
 # 무엇인가

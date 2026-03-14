@@ -31,6 +31,8 @@ published: true
 
 ![TestMem5 개요](/assets/images/posts/tools/testmem5-guide/hero.svg)
 
+![TestMem5 ?? ??](/assets/images/posts/tools/testmem5-guide/logo.png)
+
 ![TestMem5 공식 이미지](/assets/images/posts/tools/testmem5-guide/official.png)
 
 # 무엇인가

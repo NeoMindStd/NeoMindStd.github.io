@@ -34,6 +34,8 @@ published: true
 
 ![OpenJDK (Eclipse Temurin) 개요](/assets/images/posts/tools/openjdk-temurin-guide/hero.svg)
 
+![Eclipse Temurin ?? ??](/assets/images/posts/tools/openjdk-temurin-guide/logo.png)
+
 ![OpenJDK (Eclipse Temurin) 공식 이미지](/assets/images/posts/tools/openjdk-temurin-guide/official.png)
 
 # 무엇인가

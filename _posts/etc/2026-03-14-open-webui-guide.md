@@ -34,6 +34,8 @@ published: true
 
 ![대표 이미지](/assets/images/posts/etc/open-webui-guide/hero.svg)
 
+![Open WebUI ?? ??](/assets/images/posts/etc/open-webui-guide/logo.png)
+
 ![공식 페이지 이미지](/assets/images/posts/etc/open-webui-guide/official.png)
 
 # 어떤 도구인가

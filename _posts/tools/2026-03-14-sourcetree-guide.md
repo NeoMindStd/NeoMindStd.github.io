@@ -32,6 +32,8 @@ published: true
 
 ![SourceTree 개요](/assets/images/posts/tools/sourcetree-guide/hero.svg)
 
+![Sourcetree ?? ??](/assets/images/posts/tools/sourcetree-guide/logo.png)
+
 ![SourceTree 공식 이미지](/assets/images/posts/tools/sourcetree-guide/official.png)
 
 # 무엇인가

@@ -34,6 +34,10 @@ published: true
 
 ![DaVinci Resolve 개요](/assets/images/posts/tools/davinci-resolve-guide/hero.svg)
 
+![DaVinci Resolve ?? ??](/assets/images/posts/tools/davinci-resolve-guide/logo.png)
+
+![DaVinci Resolve 설치와 사용법: 공식 다운로드부터 첫 렌더까지 ?? ??](/assets/images/posts/tools/davinci-resolve-guide/official.png)
+
 # 무엇인가
 
 DaVinci Resolve는 컷 편집, 컬러 그레이딩, 오디오, 그래픽을 한 프로그램 안에서 다루는 영상 제작 도구입니다. 강력한 만큼 설치 요구사항도 높은 편이라, GPU와 저장장치 여유를 먼저 보는 것이 중요합니다.

@@ -31,6 +31,8 @@ published: true
 
 ![XSplit Broadcaster 개요](/assets/images/posts/tools/xsplit-broadcaster-guide/hero.svg)
 
+![XSplit Broadcaster ?? ??](/assets/images/posts/tools/xsplit-broadcaster-guide/logo.png)
+
 ![XSplit Broadcaster 공식 이미지](/assets/images/posts/tools/xsplit-broadcaster-guide/official.png)
 
 # 무엇인가

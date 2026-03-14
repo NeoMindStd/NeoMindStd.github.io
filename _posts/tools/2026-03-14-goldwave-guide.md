@@ -31,6 +31,8 @@ published: true
 
 ![GoldWave 개요](/assets/images/posts/tools/goldwave-guide/hero.svg)
 
+![GoldWave ?? ??](/assets/images/posts/tools/goldwave-guide/logo.png)
+
 ![GoldWave 공식 이미지](/assets/images/posts/tools/goldwave-guide/official.png)
 
 # 무엇인가

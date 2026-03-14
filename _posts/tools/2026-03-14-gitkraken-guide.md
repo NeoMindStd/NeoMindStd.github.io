@@ -33,6 +33,8 @@ published: true
 
 ![GitKraken 개요](/assets/images/posts/tools/gitkraken-guide/hero.svg)
 
+![GitKraken ?? ??](/assets/images/posts/tools/gitkraken-guide/logo.png)
+
 ![GitKraken 공식 이미지](/assets/images/posts/tools/gitkraken-guide/official.png)
 
 # 무엇인가

@@ -33,6 +33,8 @@ published: true
 
 ![Python 개요](/assets/images/posts/tools/python-guide/hero.svg)
 
+![Python ?? ??](/assets/images/posts/tools/python-guide/logo.png)
+
 ![Python 공식 이미지](/assets/images/posts/tools/python-guide/official.png)
 
 # 무엇인가
