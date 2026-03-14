@@ -21,6 +21,7 @@ toc_label: "목차"
 실무에서 직접 겪은 운영 이슈와 해결 과정을 중심으로 정리합니다.
 
 ### AI / LLM / 에이전트
+ - [RAG란 무엇인가? 검색, 파인튜닝, 메모리와 어떻게 다른가](/기타/what-is-rag/)
  - [딥리서치란 무엇인가? AI가 답변을 넘어 조사하는 방식](/기타/what-is-deep-research/)
  - [Vibe Coding이란 무엇인가? 왜 뜨고 어디까지 믿어야 할까](/기타/what-is-vibe-coding/)
  - [AI Eval이란 무엇인가? 벤치마크보다 중요한 실전 검증](/기타/what-is-ai-eval/)
