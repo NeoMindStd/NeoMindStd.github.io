@@ -59,15 +59,50 @@ Windows에서는 Node.js와 npm이 준비되어 있으면 `npx @google/gemini-cl
 @google/gemini-cli`로 전역 설치할 수 있습니다. GUI 설치 마법사보다는 Node 생태계에 얹히는 방식이라, PowerShell이나 Windows
 Terminal에서 쓰는 흐름에 더 자연스럽습니다.
 
+가볍게 체험만 할 때는 `npx`, 계속 쓸 거면 전역 설치가 대표 경로입니다.
+
+```powershell
+npx @google/gemini-cli
+```
+
+```powershell
+npm install -g @google/gemini-cli
+gemini
+```
+
 ## macOS
 
 macOS에서는 `npm install -g @google/gemini-cli`로 설치할 수 있고, 공식 README 기준으로 Homebrew와 MacPorts 경로도
 제공됩니다. 터미널 권한과 기본 셸 설정만 정리해 두면 바로 사용할 수 있습니다.
 
+대표적인 설치법은 npm 전역 설치와 Homebrew입니다.
+
+```bash
+npm install -g @google/gemini-cli
+gemini
+```
+
+```bash
+brew install gemini-cli
+gemini
+```
+
 ## Linux
 
 Linux에서는 npm 전역 설치가 가장 단순하고, Homebrew를 쓰는 배포판이라면 `brew install gemini-cli` 경로도 가능합니다. 서버나 원격 개발
 환경에서도 CLI라서 설정이 비교적 가볍습니다.
+
+보통은 npm 전역 설치 하나만 기억해도 충분하고, Homebrew를 이미 쓰는 환경이면 brew도 괜찮습니다.
+
+```bash
+npm install -g @google/gemini-cli
+gemini
+```
+
+```bash
+brew install gemini-cli
+gemini
+```
 
 # 기본 사용법
 
