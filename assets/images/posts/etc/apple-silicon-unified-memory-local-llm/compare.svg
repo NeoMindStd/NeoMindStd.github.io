@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" rx="36" fill="#082F49"/>
+  <text x="90" y="100" fill="#F8FAFC" font-size="42" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">Traditional PC vs Apple Silicon for Local LLM</text>
+  <text x="90" y="142" fill="#CFFAFE" font-size="24" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">핵심 차이는 "RAM이 많은가"가 아니라 "GPU가 접근 가능한 메모리 풀이 어떻게 구성되었는가"에 있다</text>
+  <rect x="100" y="220" width="620" height="560" rx="32" fill="#0F172A" stroke="#60A5FA" stroke-width="3"/>
+  <rect x="880" y="220" width="620" height="560" rx="32" fill="#0F172A" stroke="#2DD4BF" stroke-width="3"/>
+  <text x="410" y="290" text-anchor="middle" fill="#F8FAFC" font-size="38" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">일반적인 dGPU PC</text>
+  <text x="1190" y="290" text-anchor="middle" fill="#F8FAFC" font-size="38" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">Apple Silicon</text>
+  <rect x="170" y="360" width="210" height="110" rx="24" fill="#1D4ED8"/>
+  <rect x="430" y="360" width="210" height="110" rx="24" fill="#2563EB"/>
+  <rect x="250" y="560" width="310" height="120" rx="28" fill="#1E3A8A"/>
+  <text x="275" y="425" fill="#EFF6FF" font-size="28" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">CPU + RAM</text>
+  <text x="480" y="425" fill="#EFF6FF" font-size="28" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">GPU + VRAM</text>
+  <text x="405" y="626" text-anchor="middle" fill="#DBEAFE" font-size="26" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">모델 실행 한계가 VRAM에서 먼저 막히기 쉬움</text>
+  <path d="M380 415H430" stroke="#BFDBFE" stroke-width="10" stroke-linecap="round"/>
+  <rect x="980" y="360" width="420" height="130" rx="28" fill="#115E59"/>
+  <rect x="1040" y="560" width="300" height="120" rx="28" fill="#0F766E"/>
+  <text x="1190" y="420" text-anchor="middle" fill="#ECFEFF" font-size="30" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">Unified Memory Pool</text>
+  <text x="1190" y="460" text-anchor="middle" fill="#CCFBF1" font-size="24" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">CPU / GPU / Neural Engine shared access</text>
+  <text x="1190" y="626" text-anchor="middle" fill="#CCFBF1" font-size="26" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">VRAM 벽이 약해 로컬 LLM에서 체감상 유리</text>
+</svg>

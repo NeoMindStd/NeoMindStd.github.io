@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#082F49"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1600" height="900">
+      <feGaussianBlur stdDeviation="44"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1220" cy="170" r="240" fill="#5EEAD4" fill-opacity="0.22" filter="url(#blur)"/>
+  <circle cx="1370" cy="720" r="270" fill="#ffffff" fill-opacity="0.08" filter="url(#blur)"/>
+  <circle cx="260" cy="770" r="250" fill="#5EEAD4" fill-opacity="0.18" filter="url(#blur)"/>
+  <rect x="90" y="90" width="1420" height="720" rx="42" fill="#0B1220" fill-opacity="0.20" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="140" y="170" fill="#F8FAFC" font-size="24" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">NeoMind AI Hardware Notes</text>
+  <text x="140" y="300" fill="#F8FAFC" font-size="66" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">Apple Silicon 통합 메모리</text>
+  <text x="140" y="382" fill="#F8FAFC" font-size="66" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">왜 로컬 LLM에 유리할까</text>
+  <text x="140" y="468" fill="#DDE8F5" font-size="28" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif">CPU, GPU, Neural Engine이 같은 메모리 풀을 공유하는 구조를 VRAM 관점에서 이해하기</text>
+  <rect x="140" y="548" width="190" height="52" rx="26" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="346" y="548" width="190" height="52" rx="26" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="552" y="548" width="190" height="52" rx="26" fill="#ffffff" fill-opacity="0.12"/>
+  <text x="235" y="582" text-anchor="middle" fill="#F8FAFC" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">Unified Memory</text>
+  <text x="441" y="582" text-anchor="middle" fill="#F8FAFC" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">Local LLM</text>
+  <text x="647" y="582" text-anchor="middle" fill="#F8FAFC" font-size="22" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="700">Apple Silicon</text>
+  <rect x="980" y="220" width="360" height="120" rx="28" fill="#ffffff" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.22"/>
+  <rect x="1050" y="390" width="290" height="96" rx="24" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.16"/>
+  <rect x="930" y="530" width="420" height="112" rx="30" fill="#ffffff" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.22"/>
+  <text x="1160" y="290" text-anchor="middle" fill="#F8FAFC" font-size="34" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">Unified Memory</text>
+  <text x="1195" y="448" text-anchor="middle" fill="#F8FAFC" font-size="30" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">CPU / GPU / NPU</text>
+  <text x="1140" y="597" text-anchor="middle" fill="#F8FAFC" font-size="30" font-family="Pretendard, Apple SD Gothic Neo, Segoe UI, sans-serif" font-weight="800">AI-era RAM / SSD Pricing</text>
+</svg>
