@@ -1,6 +1,11 @@
 (function () {
   const resultsEl = document.getElementById("nm-tag-results");
   const cloudEl = document.getElementById("nm-tag-cloud");
+  const browserEl = document.getElementById("nm-tag-browser");
+  const cloudWrapEl = document.getElementById("nm-tag-cloud-wrap");
+  const toggleBtn = document.getElementById("nm-tag-toggle");
+  const toggleLabelEl = document.getElementById("nm-tag-toggle-label");
+  const toggleMetaEl = document.getElementById("nm-tag-toggle-meta");
   if (!resultsEl || !cloudEl) {
     return;
   }
@@ -33,6 +38,42 @@
     window.history.pushState({}, "", url);
   }
 
+  function setCloudCollapsed(collapsed, tag) {
+    if (!browserEl || !cloudWrapEl || !toggleBtn) {
+      return;
+    }
+
+    browserEl.classList.toggle("is-collapsed", collapsed);
+    cloudWrapEl.hidden = collapsed;
+    toggleBtn.setAttribute("aria-expanded", String(!collapsed));
+
+    if (toggleLabelEl) {
+      toggleLabelEl.textContent = collapsed ? "태그 목록 펼치기" : "태그 목록 접기";
+    }
+
+    if (toggleMetaEl) {
+      toggleMetaEl.textContent = tag
+        ? '선택된 태그: "' + tag + '"'
+        : "총 " + chips.length + "개 태그";
+    }
+  }
+
+  function scrollResultsIntoView() {
+    window.requestAnimationFrame(() => {
+      resultsEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
+  function scrollTagBrowserIntoView() {
+    if (!browserEl) {
+      return;
+    }
+
+    window.requestAnimationFrame(() => {
+      browserEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
   function markActiveChip(tag) {
     chips.forEach((chip) => {
       chip.classList.toggle("is-active", chip.dataset.tag === tag);
@@ -63,8 +104,11 @@
 
     resultsEl.innerHTML = [
       '<div class="nm-tag-results__header">',
-      '  <h2 class="archive__subtitle">' + escapeHtml(tag) + '</h2>',
-      '  <p class="nm-tag-results__meta">총 ' + posts.length + '개 글</p>',
+      '  <div class="nm-tag-results__summary">',
+      '    <h2 class="archive__subtitle">' + escapeHtml(tag) + '</h2>',
+      '    <p class="nm-tag-results__meta">총 ' + posts.length + '개 글</p>',
+      '  </div>',
+      '  <button type="button" class="nm-tag-results__show-list" data-tag-show-list>태그 목록 다시 보기</button>',
       '</div>',
       '<div class="entries-list">',
       items,
@@ -85,27 +129,54 @@
     return tagIndexPromise;
   }
 
-  async function renderSelectedTag(tag) {
+  async function renderSelectedTag(tag, options = {}) {
+    const shouldScroll = Boolean(options.scrollToResults);
     markActiveChip(tag);
 
     if (!tag) {
+      setCloudCollapsed(false, null);
       renderMessage("info", "태그를 선택하면 해당 태그의 포스트만 불러옵니다.");
       return;
     }
 
+    setCloudCollapsed(true, tag);
     renderMessage("info", '"' + tag + '" 태그 글을 불러오는 중입니다.');
+    if (shouldScroll) {
+      scrollResultsIntoView();
+    }
 
     try {
       const data = await loadIndex();
       const posts = data.tags && data.tags[tag] ? data.tags[tag] : [];
       if (!posts.length) {
         renderMessage("warning", '"' + tag + '" 태그에는 아직 포스트가 없습니다.');
+        if (shouldScroll) {
+          scrollResultsIntoView();
+        }
         return;
       }
       renderPosts(tag, posts);
+      if (shouldScroll) {
+        scrollResultsIntoView();
+      }
     } catch (error) {
       renderMessage("danger", error.message || "목록을 불러오지 못했습니다.");
+      if (shouldScroll) {
+        scrollResultsIntoView();
+      }
     }
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", function () {
+      const collapsed = browserEl ? browserEl.classList.contains("is-collapsed") : false;
+      const nextCollapsed = !collapsed;
+      setCloudCollapsed(nextCollapsed, getSelectedTag());
+
+      if (!nextCollapsed) {
+        scrollTagBrowserIntoView();
+      }
+    });
   }
 
   chips.forEach((chip) => {
@@ -113,8 +184,21 @@
       event.preventDefault();
       const tag = chip.dataset.tag;
       setSelectedTag(tag);
-      renderSelectedTag(tag);
+      renderSelectedTag(tag, { scrollToResults: true });
     });
+  });
+
+  resultsEl.addEventListener("click", function (event) {
+    const showListBtn = event.target.closest("[data-tag-show-list]");
+    if (!showListBtn) {
+      return;
+    }
+
+    setCloudCollapsed(false, getSelectedTag());
+    scrollTagBrowserIntoView();
+    if (toggleBtn) {
+      toggleBtn.focus({ preventScroll: true });
+    }
   });
 
   window.addEventListener("popstate", function () {
