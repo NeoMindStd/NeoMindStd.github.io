@@ -12,6 +12,9 @@ tags:
   - IDE
   - 코딩에이전트
 date: 2026-03-14 14:20:00 +09:00
+header:
+  og_image: /assets/images/posts/etc/cursor-ide-guide/cursor-official.png
+  teaser: /assets/images/posts/etc/cursor-ide-guide/cursor-official.png
 
 toc: true
 toc_sticky: true
@@ -33,10 +36,10 @@ published: true
 **에디터 안에서 채팅, 수정, 규칙, 백그라운드 작업을 함께 묶는 작업 환경**에 가깝습니다.
 
 <p>
-  <img src="/assets/images/posts/etc/cursor-ide-guide/cursor-official.svg" width="140px" alt="Cursor official logo"/>
+  <img src="/assets/images/posts/etc/cursor-ide-guide/cursor-official.png" width="320px" alt="Cursor official image"/>
 </p>
 
-_Cursor 공식 로고_
+_Cursor 공식 이미지_
 
 # Cursor를 이해할 때 중요한 세 가지
 
