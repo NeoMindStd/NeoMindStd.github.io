@@ -21,6 +21,10 @@ toc_label: "목차"
 실무에서 직접 겪은 운영 이슈와 해결 과정을 중심으로 정리합니다.
 
 ### AI / LLM / 에이전트
+ - [음악 생성 AI 비교와 사용법: Suno, Udio, 그리고 창팝 시대의 감각](/기타/ai-music-generation-guide-2026/)
+ - [생성형 창작 AI 입문: 음악, 그림, 사진, 영상 AI를 2026년에 어떻게 고를까](/기타/creative-ai-guide-2026/)
+ - [그림·사진 생성 AI 비교: ChatGPT 이미지, Midjourney, Firefly를 어떻게 고를까](/기타/ai-image-photo-generation-guide-2026/)
+ - [영상 생성 AI 비교: Sora, Veo, Runway를 어떻게 고를까](/기타/ai-video-generation-guide-2026/)
  - [Copilot Mode in Edge 사용법: AI 브라우저로 바뀐 엣지를 어디까지 쓸 수 있나](/기타/edge-copilot-mode-guide/)
  - [Perplexity Labs란 무엇인가? 검색을 넘어 보고서와 산출물까지 만드는 모드](/기타/perplexity-labs-guide/)
  - [컴퓨터 사용형 에이전트란 무엇인가? OpenAI CUA와 Operator 흐름 이해하기](/기타/computer-using-agent-guide/)
