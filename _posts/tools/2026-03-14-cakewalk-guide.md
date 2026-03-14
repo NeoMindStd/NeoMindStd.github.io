@@ -41,8 +41,7 @@ Cakewalk는 Windows 오디오 제작 환경에서 꾸준히 언급되는 DAW 계
 
 # 공식 사이트와 다운로드 경로
 
-- 공식 사이트: [Cakewalk](https://www.cakewalk.com/)
-- 다운로드: [공식 다운로드 페이지](https://www.cakewalk.com/)
+- 공식 홈페이지 & 다운로드: [Cakewalk](https://www.cakewalk.com/)
 
 # 지원 OS와 설치 방법
 

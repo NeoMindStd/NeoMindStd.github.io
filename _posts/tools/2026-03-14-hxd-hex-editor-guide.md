@@ -41,8 +41,7 @@ published: true
 
 # 공식 사이트와 다운로드 경로
 
-- 공식 사이트: [HxD Hex Editor](https://mh-nexus.de/en/hxd/)
-- 다운로드: [공식 다운로드 페이지](https://mh-nexus.de/en/hxd/)
+- 공식 홈페이지 & 다운로드: [HxD Hex Editor](https://mh-nexus.de/en/hxd/)
 
 # 지원 OS와 설치 방법
 
