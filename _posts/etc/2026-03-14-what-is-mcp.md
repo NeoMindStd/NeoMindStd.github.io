@@ -31,6 +31,10 @@ published: true
 AI 에이전트 이야기를 하다 보면 `MCP 서버 붙였어요`, `MCP로 툴 연결했어요` 같은 말을 자주 듣게 됩니다.  
 처음엔 뭔가 거대한 프레임워크처럼 들리지만, 핵심만 보면 생각보다 단순합니다.
 
+![](/assets/images/posts/etc/what-is-mcp/mcp-official.png)
+
+_Model Context Protocol 공식 문서의 대표 이미지_
+
 MCP는 `Model Context Protocol`의 약자입니다.  
 한마디로 말하면 **모델이 외부 도구와 맥락을 표준 방식으로 연결받기 위한 인터페이스 규약**입니다.
 
