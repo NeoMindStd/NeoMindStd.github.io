@@ -1,7 +1,9 @@
 <!-- start custom head snippets -->
 
+{% if site.adsense and site.adsense.enabled %}
 <!-- Google Adsense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5609154832705787" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense.client }}" crossorigin="anonymous"></script>
+{% endif %}
 
 <script type="application/ld+json">
 {
