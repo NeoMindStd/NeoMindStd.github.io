@@ -13,6 +13,7 @@ tags:
   - 터미널
   - 개발도구
 date: 2026-03-14 14:12:00 +09:00
+permalink: /??/what-is-cli/
 
 toc: true
 toc_sticky: true

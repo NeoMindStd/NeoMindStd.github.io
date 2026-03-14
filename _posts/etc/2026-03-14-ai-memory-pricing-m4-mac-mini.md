@@ -16,6 +16,7 @@ tags:
   - SSD
   - 로컬LLM
 date: 2026-03-14 15:10:00 +09:00
+permalink: /??/ai-memory-pricing-m4-mac-mini/
 
 toc: true
 toc_sticky: true

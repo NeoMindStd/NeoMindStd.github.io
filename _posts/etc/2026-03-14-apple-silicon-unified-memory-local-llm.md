@@ -15,6 +15,7 @@ tags:
   - 로컬LLM
   - Mac mini
 date: 2026-03-14 15:11:00 +09:00
+permalink: /??/apple-silicon-unified-memory-local-llm/
 
 toc: true
 toc_sticky: true

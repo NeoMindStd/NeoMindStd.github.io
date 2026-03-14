@@ -13,6 +13,7 @@ tags:
   - Prompt Engineering
   - LLM
 date: 2026-03-14 14:14:00 +09:00
+permalink: /??/prompt-engineering-practical-guide/
 
 toc: true
 toc_sticky: true

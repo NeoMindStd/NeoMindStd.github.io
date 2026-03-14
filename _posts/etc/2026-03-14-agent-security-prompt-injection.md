@@ -14,6 +14,7 @@ tags:
   - MCP
   - 에이전트
 date: 2026-03-14 14:22:00 +09:00
+permalink: /??/agent-security-prompt-injection/
 
 toc: true
 toc_sticky: true

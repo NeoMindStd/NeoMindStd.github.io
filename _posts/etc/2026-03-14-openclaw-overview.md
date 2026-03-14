@@ -14,6 +14,7 @@ tags:
   - Skill
   - MCP
 date: 2026-03-14 14:17:00 +09:00
+permalink: /??/openclaw-overview/
 
 toc: true
 toc_sticky: true

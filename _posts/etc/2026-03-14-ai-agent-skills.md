@@ -13,6 +13,7 @@ tags:
   - 에이전트
   - 자동화
 date: 2026-03-14 14:13:00 +09:00
+permalink: /??/ai-agent-skills/
 
 toc: true
 toc_sticky: true

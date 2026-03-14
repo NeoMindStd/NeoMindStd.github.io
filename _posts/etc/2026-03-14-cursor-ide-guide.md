@@ -13,6 +13,7 @@ tags:
   - IDE
   - 코딩에이전트
 date: 2026-03-14 14:20:00 +09:00
+permalink: /??/cursor-ide-guide/
 header:
   og_image: /assets/images/posts/etc/cursor-ide-guide/cursor-official.png
   teaser: /assets/images/posts/etc/cursor-ide-guide/cursor-official.png
