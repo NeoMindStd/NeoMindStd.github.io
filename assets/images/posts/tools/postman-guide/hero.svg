@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#FF6C37"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="48" y="48" width="1184" height="624" rx="36" fill="rgba(15,23,42,0.45)" stroke="rgba(255,255,255,0.16)"/>
+  <text x="80" y="140" font-size="34" fill="#cbd5e1" font-family="Arial">Tools Guide</text>
+  <text x="80" y="230" font-size="72" fill="#ffffff" font-family="Arial" font-weight="700">Postman</text>
+  <rect x="80" y="250" rx="18" ry="18" width="188" height="46" fill="rgba(255,255,255,0.13)"/><text x="98" y="280" font-size="24" fill="#f8fafc" font-family="Arial">Windows</text><rect x="284" y="250" rx="18" ry="18" width="144" height="46" fill="rgba(255,255,255,0.13)"/><text x="302" y="280" font-size="24" fill="#f8fafc" font-family="Arial">macOS</text><rect x="444" y="250" rx="18" ry="18" width="144" height="46" fill="rgba(255,255,255,0.13)"/><text x="462" y="280" font-size="24" fill="#f8fafc" font-family="Arial">Linux</text>
+  <text x="80" y="360" font-size="28" fill="#e2e8f0" font-family="Arial">Official site, download path, OS support, install flow, and basic usage</text>
+  <circle cx="980" cy="250" r="150" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="980" cy="250" r="94" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="980" cy="250" r="34" fill="rgba(255,255,255,0.85)"/>
+  <rect x="850" y="436" width="260" height="18" rx="9" fill="rgba(255,255,255,0.25)"/>
+  <rect x="790" y="498" width="380" height="14" rx="7" fill="rgba(255,255,255,0.18)"/>
+</svg>
