@@ -4,33 +4,24 @@ layout: archive
 
 {{ content }}
 
-{% assign tags_max = 0 %}
-{% for tag in site.tags %}
-  {% if tag[1].size > tags_max %}
-    {% assign tags_max = tag[1].size %}
-  {% endif %}
-{% endfor %}
-
 <div class="nm-tag-cloud" id="nm-tag-cloud">
-  {% for i in (1..tags_max) reversed %}
-    {% for tag in site.tags %}
-      {% if tag[1].size == i %}
-        {% capture tag_url %}{% include tag-url.html tag=tag[0] %}{% endcapture %}
-        <a href="{{ tag_url | strip }}" class="nm-tag-chip" data-tag="{{ tag[0] }}">
-          <span class="nm-tag-chip__label">{{ tag[0] }}</span>
-          <span class="taxonomy__count">{{ i }}</span>
-        </a>
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
+  {%- for tag in site.tags -%}
+    {%- assign tag_name = tag[0] -%}
+    {%- assign tag_count = tag[1] | size -%}
+    {%- capture tag_url -%}{% include tag-url.html tag=tag_name %}{%- endcapture -%}
+    <a href="{{ tag_url | strip }}" class="nm-tag-chip" data-tag="{{ tag_name }}">
+      <span class="nm-tag-chip__label">{{ tag_name }}</span>
+      <span class="taxonomy__count">{{ tag_count }}</span>
+    </a>
+  {%- endfor -%}
 </div>
 
 <div id="nm-tag-results" class="nm-tag-results" data-index-url="{{ '/assets/data/tag-posts.json' | relative_url }}">
-  <div class="notice--info">??? ???? ?? ??? ?? ?????.</div>
+  <div class="notice--info">태그를 선택하면 해당 태그의 포스트만 불러옵니다.</div>
 </div>
 
 <noscript>
-  <div class="notice--warning">??? ? ?? ??? ??????? ?? ??? ?????.</div>
+  <div class="notice--warning">자바스크립트를 켜야 태그별 포스트 목록을 볼 수 있습니다.</div>
 </noscript>
 
 <script src="{{ '/assets/js/tag-archive.js' | relative_url }}"></script>

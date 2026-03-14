@@ -1,26 +1,26 @@
 # main links
 main:
-  - title: "?? ??"
+  - title: "연재 목록"
     url: /series/
-  - title: "????"
+  - title: "카테고리"
     url: /categories/
     children:
-       - title: "??"
-         url: "/categories/games/"
-       - title: "??"
-         url: "/categories/review/"
-       - title: "????"
-         url: "/categories/problem-solving/"
-       - title: "AI"
-         url: "/categories/ai/"
-       - title: "Tools"
-         url: "/categories/tools/"
-       - title: "Project"
-         url: "/categories/project/"
-       - title: "??"
-         url: "/categories/etc/"
-  - title: "??"
+      - title: "게임"
+        url: "/categories/games/"
+      - title: "리뷰"
+        url: "/categories/review/"
+      - title: "문제풀이"
+        url: "/categories/problem-solving/"
+      - title: "AI"
+        url: "/categories/ai/"
+      - title: "Tools"
+        url: "/categories/tools/"
+      - title: "Project"
+        url: "/categories/project/"
+      - title: "기타"
+        url: "/categories/etc/"
+  - title: "태그"
     url: /tags/
     children:
-  - title: "????"
+  - title: "사이트맵"
     url: /sitemap.xml

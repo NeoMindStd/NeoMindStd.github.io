@@ -2,5 +2,6 @@
 {% if category_meta %}
   {{ site.category_archive.path | append: category_meta.slug | append: "/" | relative_url }}
 {% else %}
-  {{ site.category_archive.path | append: include.category | slugify | append: "/" | relative_url }}
+  {% assign fallback_slug = include.category | slugify %}
+  {{ site.category_archive.path | append: fallback_slug | append: "/" | relative_url }}
 {% endif %}

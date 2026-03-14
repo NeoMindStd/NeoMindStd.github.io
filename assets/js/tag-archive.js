@@ -47,7 +47,7 @@
     const items = posts.map((post) => {
       const excerpt = post.excerpt ? '<p class="archive__item-excerpt">' + escapeHtml(post.excerpt) + '</p>' : "";
       const categories = Array.isArray(post.categories) && post.categories.length
-        ? '<p class="page__meta">????: ' + escapeHtml(post.categories.join(", ")) + '</p>'
+        ? '<p class="page__meta">카테고리: ' + escapeHtml(post.categories.join(", ")) + '</p>'
         : "";
       return [
         '<div class="list__item">',
@@ -64,7 +64,7 @@
     resultsEl.innerHTML = [
       '<div class="nm-tag-results__header">',
       '  <h2 class="archive__subtitle">' + escapeHtml(tag) + '</h2>',
-      '  <p class="nm-tag-results__meta">? ' + posts.length + '?? ?</p>',
+      '  <p class="nm-tag-results__meta">총 ' + posts.length + '개 글</p>',
       '</div>',
       '<div class="entries-list">',
       items,
@@ -77,7 +77,7 @@
       tagIndexPromise = fetch(indexUrl, { headers: { Accept: "application/json" } })
         .then((response) => {
           if (!response.ok) {
-            throw new Error("?? ???? ???? ?????.");
+            throw new Error("태그 데이터를 불러오지 못했습니다.");
           }
           return response.json();
         });
@@ -89,22 +89,22 @@
     markActiveChip(tag);
 
     if (!tag) {
-      renderMessage("info", "??? ???? ?? ??? ?? ?????.");
+      renderMessage("info", "태그를 선택하면 해당 태그의 포스트만 불러옵니다.");
       return;
     }
 
-    renderMessage("info", '"' + tag + '" ?? ?? ???? ????.');
+    renderMessage("info", '"' + tag + '" 태그 글을 불러오는 중입니다.');
 
     try {
       const data = await loadIndex();
       const posts = data.tags && data.tags[tag] ? data.tags[tag] : [];
       if (!posts.length) {
-        renderMessage("warning", '"' + tag + '" ??? ???? ?? ?? ?????.');
+        renderMessage("warning", '"' + tag + '" 태그에는 아직 포스트가 없습니다.');
         return;
       }
       renderPosts(tag, posts);
     } catch (error) {
-      renderMessage("danger", error.message || "?? ?? ???? ?????.");
+      renderMessage("danger", error.message || "목록을 불러오지 못했습니다.");
     }
   }
 

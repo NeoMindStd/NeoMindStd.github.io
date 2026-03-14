@@ -4,33 +4,24 @@ layout: archive
 
 {{ content }}
 
-{% assign categories_max = 0 %}
-{% for category in site.categories %}
-  {% if category[1].size > categories_max %}
-    {% assign categories_max = category[1].size %}
-  {% endif %}
-{% endfor %}
-
 <div class="nm-category-grid">
-  {% for i in (1..categories_max) reversed %}
-    {% for category in site.categories %}
-      {% if category[1].size == i %}
-        {% assign category_meta = site.data.categories | where: "name", category[0] | first %}
-        {% capture category_url %}{% include category-url.html category=category[0] %}{% endcapture %}
-        <article class="nm-category-card">
-          <a href="{{ category_url | strip }}" class="nm-category-card__link">
-            <div class="nm-category-card__header">
-              <h2 class="nm-category-card__title">{{ category[0] }}</h2>
-              <span class="taxonomy__count">{{ i }}</span>
-            </div>
-            {% if category_meta and category_meta.description %}
-              <p class="nm-category-card__description">{{ category_meta.description }}</p>
-            {% else %}
-              <p class="nm-category-card__description">? ????? ?? ?? ?? ??? ? ? ????.</p>
-            {% endif %}
-          </a>
-        </article>
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
+  {%- for category in site.categories -%}
+    {%- assign category_name = category[0] -%}
+    {%- assign category_count = category[1] | size -%}
+    {%- assign category_meta = site.data.categories | where: "name", category_name | first -%}
+    {%- capture category_url -%}{% include category-url.html category=category_name %}{%- endcapture -%}
+    <article class="nm-category-card">
+      <a href="{{ category_url | strip }}" class="nm-category-card__link">
+        <div class="nm-category-card__header">
+          <h2 class="nm-category-card__title">{{ category_name }}</h2>
+          <span class="taxonomy__count">{{ category_count }}</span>
+        </div>
+        {% if category_meta and category_meta.description %}
+          <p class="nm-category-card__description">{{ category_meta.description }}</p>
+        {% else %}
+          <p class="nm-category-card__description">이 카테고리에 속한 글만 따로 모아보는 목록입니다.</p>
+        {% endif %}
+      </a>
+    </article>
+  {%- endfor -%}
 </div>
