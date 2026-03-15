@@ -10,7 +10,7 @@ import generate_weekly_growth_review as review
 
 
 class GenerateWeeklyGrowthReviewTest(unittest.TestCase):
-    def test_render_includes_core_sections_and_top_pages(self) -> None:
+    def test_render_includes_core_sections_top_pages_and_search_console(self) -> None:
         snapshot = {
             "config": {
                 "windows": {
@@ -43,7 +43,7 @@ class GenerateWeeklyGrowthReviewTest(unittest.TestCase):
                         "top_content": {
                             "rows": [
                                 {"dimension": "/", "views": 30},
-                                {"dimension": "/기타/frontier-models-comparison-2026/", "views": 6},
+                                {"dimension": "/%EA%B8%B0%ED%83%80/frontier-models-comparison-2026/", "views": 6},
                                 {"dimension": "/tools/docker-guide/", "views": 5},
                             ]
                         },
@@ -51,31 +51,60 @@ class GenerateWeeklyGrowthReviewTest(unittest.TestCase):
                 ]
             },
             "adsense": {
-                "accounts": [
+                "reports": [
                     {
-                        "reports": [
-                            {
-                                "domain": "neomindstd.github.io",
-                                "last_period": {
+                        "last_period": {
+                            "rows": [
+                                {
+                                    "domain": "neomindstd.github.io",
                                     "earnings_usd": 0.10,
-                                    "ctr": 0.75,
                                     "page_views": 150,
                                     "impressions": 500,
                                     "clicks": 4,
-                                    "page_rpm": 0.5,
-                                },
-                                "prev_period": {
+                                }
+                            ]
+                        },
+                        "prev_period": {
+                            "rows": [
+                                {
+                                    "domain": "neomindstd.github.io",
                                     "earnings_usd": 0.05,
-                                    "ctr": 0.40,
                                     "page_views": 100,
                                     "impressions": 300,
                                     "clicks": 2,
-                                    "page_rpm": 0.4,
-                                },
-                            }
-                        ]
+                                }
+                            ]
+                        },
                     }
                 ]
+            },
+            "search_console": {
+                "report": {
+                    "last_period": {
+                        "totals": {"totals": {"clicks": 12, "impressions": 180, "ctr": 0.066, "position": 8.2}},
+                        "top_queries": {
+                            "rows": [
+                                {"keys": ["gemini cli"], "clicks": 4, "impressions": 40, "ctr": 0.1, "position": 6.2}
+                            ]
+                        },
+                        "top_pages": {
+                            "rows": [
+                                {
+                                    "keys": ["https://neomindstd.github.io/%EA%B8%B0%ED%83%80/gemini-cli-guide/"],
+                                    "clicks": 5,
+                                    "impressions": 55,
+                                    "ctr": 0.09,
+                                    "position": 5.8,
+                                }
+                            ]
+                        },
+                    },
+                    "prev_period": {
+                        "totals": {"totals": {"clicks": 6, "impressions": 120, "ctr": 0.05, "position": 10.3}},
+                        "top_queries": {"rows": []},
+                        "top_pages": {"rows": []},
+                    },
+                }
             },
         }
 
@@ -84,8 +113,10 @@ class GenerateWeeklyGrowthReviewTest(unittest.TestCase):
         self.assertIn("# 블로그 주간 성장 리뷰", output)
         self.assertIn("## 블로그 KPI", output)
         self.assertIn("## 상위 랜딩 페이지", output)
+        self.assertIn("## Search Console 기회", output)
         self.assertIn("/기타/frontier-models-comparison-2026/", output)
         self.assertIn("/tools/docker-guide/", output)
+        self.assertIn("gemini cli", output)
         self.assertIn("ai_referral_visit", output)
 
 

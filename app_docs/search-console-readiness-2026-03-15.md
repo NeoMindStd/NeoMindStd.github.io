@@ -2,20 +2,17 @@
 
 ## 현재 상태
 
-- Search Console API 사용 가능: `no`
-- 현재 OAuth 스코프: `https://www.googleapis.com/auth/admob.readonly, https://www.googleapis.com/auth/adsense.readonly`
+- Search Console OAuth 스코프 준비: `yes`
+- Search Console 속성 접근 가능: `yes`
+- 현재 OAuth 스코프: `https://www.googleapis.com/auth/admob.readonly, https://www.googleapis.com/auth/adsense.readonly, https://www.googleapis.com/auth/webmasters.readonly`
 
-현재 토큰에는 AdMob/AdSense 읽기 권한만 들어 있어, Search Console 검색어·랜딩페이지·평균순위 데이터를 직접 읽을 수 없습니다.
+현재 토큰에는 Search Console 조회에 필요한 스코프가 포함되어 있습니다. 사용 중인 스코프: `https://www.googleapis.com/auth/webmasters.readonly`
 
-## 추가로 필요한 스코프
-
-- `https://www.googleapis.com/auth/webmasters`
-- `https://www.googleapis.com/auth/webmasters.readonly`
+`https://neomindstd.github.io/` 속성은 현재 계정에서 정상적으로 읽히고 있습니다.
 
 ## 다음 단계
 
-1. Google Cloud OAuth 동의 설정에서 Search Console 스코프를 추가합니다.
-2. Search Console 접근 권한이 있는 계정으로 OAuth 토큰을 다시 발급합니다.
-3. 사이트 속성(`https://neomindstd.github.io/`)이 Search Console에 등록되어 있는지 확인합니다.
-4. 재발급 후에는 검색어, 랜딩페이지, 평균순위 데이터를 주간 리뷰에 합칩니다.
+1. Search Console 데이터를 성장 감사 스크립트와 주간 리뷰에 연결합니다.
+2. 상위 검색어와 랜딩페이지를 기준으로 AI/Tools 글 우선순위를 다시 정합니다.
+3. CTR이 낮고 노출이 높은 글부터 제목, 설명, 첫 문단 훅을 손봅니다.
 
