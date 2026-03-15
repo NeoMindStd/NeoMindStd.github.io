@@ -33,6 +33,31 @@ GA4 관리 화면에서 아래 사용자 정의 측정기준을 이벤트 범위
 
 둘 다 이벤트 범위로 잡아 두면 탐색 보고서와 이벤트 리포트에서 소스별 분리가 쉬워집니다.
 
+### 정확한 메뉴 경로
+
+- `Admin`
+- `Data display`
+- `Custom definitions`
+- `Create custom dimension`
+
+입력값은 아래처럼 맞추면 됩니다.
+
+1. `AI Source`
+   - Scope: `Event`
+   - Event parameter: `ai_source`
+   - Description: `AI referral source captured from ai_referral_visit`
+2. `AI Referrer Host`
+   - Scope: `Event`
+   - Event parameter: `ai_referrer_host`
+   - Description: `Referrer host captured from ai_referral_visit`
+
+### 현재 상태
+
+- 현재 속성 `properties/382166604`에는 `Event Category`, `Event Label`만 등록돼 있습니다.
+- 서비스 계정으로 자동 생성을 시도했지만 `PERMISSION_DENIED`가 반환됐습니다.
+- 즉 현재는 `조회 권한`은 있지만 `커스텀 차원 생성 권한`은 없는 상태입니다.
+- 그래서 실제 생성은 GA4 속성에서 `Editor` 이상 권한이 있는 계정으로 한 번 등록해야 합니다.
+
 ## 가장 먼저 볼 보고서
 
 ### 1. 이벤트 보고서
