@@ -20,36 +20,32 @@ toc_label: "목차"
 
 공식 사이트, 다운로드 경로, 지원 OS, 기본 사용 흐름 위주로 실무형 도구를 정리합니다.
 
-### 개발/협업
- - [GitKraken 설치와 사용법: 공식 다운로드부터 기본 Git 흐름까지](/tools/gitkraken-guide/)
- - [Notepad++ 설치와 사용법: 공식 다운로드부터 플러그인 활용까지](/tools/notepad-plus-plus-guide/)
+### 목적별 빠른 선택표
+
+| 목적 | 먼저 들어갈 허브 | 가장 먼저 볼 글 | 다음 단계 |
+|:--|:--|:--|:--|
+| 개발 환경과 협업 도구를 정리하고 싶을 때 | [개발·협업 도구 허브](/tools/development/) | [Docker 설치와 사용법](/tools/docker-guide/) | Python, Postman, Git 도구 |
+| PC 상태 점검과 유틸리티가 필요할 때 | [시스템 점검·유틸리티 허브](/tools/system-utilities/) | [CrystalDiskInfo 설치와 사용법](/tools/crystaldiskinfo-guide/) | CPU-Z, GPU-Z, TestMem5 |
+| 방송, 녹화, 편집 도구를 찾고 있을 때 | [방송·오디오·영상 도구 허브](/tools/creator-media/) | [OBS 설치와 사용법](/tools/obs-studio-guide/) | GoldWave, Cakewalk, DaVinci Resolve |
+
+### 추천 경로
+
+1. 개발용 도구부터 보려면 `개발·협업 도구 허브`에서 Docker, Python, Git 계열을 먼저 확인하면 흐름이 가장 자연스럽습니다.
+2. PC 점검이나 Windows 유틸리티가 목적이면 `시스템 점검·유틸리티 허브`에서 저장장치, 센서, 메모리 테스트 순으로 보는 편이 좋습니다.
+3. 녹화와 편집, 오디오 작업이 목적이면 `방송·오디오·영상 도구 허브`에서 OBS를 시작점으로 잡고 편집 도구로 내려가면 덜 헷갈립니다.
+
+### 허브별로 보기
+
+ - [개발·협업 도구 허브](/tools/development/)
+ - [시스템 점검·유틸리티 허브](/tools/system-utilities/)
+ - [방송·오디오·영상 도구 허브](/tools/creator-media/)
+
+### 먼저 시작하기 좋은 글
+
  - [Docker 설치와 사용법: 공식 다운로드부터 첫 컨테이너 실행까지](/tools/docker-guide/)
- - [Oracle Java 설치와 사용법: 공식 JDK 다운로드부터 JAVA_HOME 설정까지](/tools/oracle-java-guide/)
- - [OpenJDK 설치와 사용법: Eclipse Temurin 기준으로 실용적으로 시작하기](/tools/openjdk-temurin-guide/)
  - [Python 설치와 사용법: 공식 다운로드부터 가상환경까지](/tools/python-guide/)
- - [Git Bash 설치와 사용법: Git for Windows로 가장 편하게 시작하기](/tools/git-bash-guide/)
- - [Postman 설치와 사용법: 공식 다운로드부터 컬렉션 관리까지](/tools/postman-guide/)
- - [SourceTree 설치와 사용법: 공식 다운로드부터 GUI Git 흐름까지](/tools/sourcetree-guide/)
- - [헥스에디터 설치와 사용법: HxD 기준으로 안전하게 시작하기](/tools/hxd-hex-editor-guide/)
-
-### 시스템 점검/메모리 도구
- - [Cheat Engine 설치와 사용법: 공식 다운로드부터 기본 메모리 스캔까지](/tools/cheat-engine-guide/)
- - [Cheat-O-Matic 설치와 사용법: 공식 배포가 끝난 레거시 메모리 도구 정리](/tools/cheat-o-matic-guide/)
- - [GoodbyeDPI 설치와 사용법: 공식 GitHub 기준으로 Windows DPI 우회 도구 시작하기](/tools/gui-for-dpi-guide/)
- - [CPU-Z 설치와 사용법: 공식 다운로드부터 CPU/메모리 확인까지](/tools/cpu-z-guide/)
- - [GPU-Z 설치와 사용법: 공식 다운로드부터 센서 로깅까지](/tools/gpu-z-guide/)
  - [CrystalDiskInfo 설치와 사용법: 공식 다운로드부터 SSD 상태 확인까지](/tools/crystaldiskinfo-guide/)
- - [TestMem5 설치와 사용법: 메모리 안정성 테스트를 시작하는 법](/tools/testmem5-guide/)
-
-### 다운로드/자동화
- - [Hitomi Downloader 설치와 사용법: 공식 GitHub 릴리스 기준으로 시작하기](/tools/hitomi-downloader-guide/)
-
-### 방송/오디오/영상
  - [OBS 설치와 사용법: 공식 다운로드부터 첫 녹화와 송출까지](/tools/obs-studio-guide/)
- - [XSplit 설치와 사용법: 공식 다운로드부터 기본 방송 화면 구성까지](/tools/xsplit-broadcaster-guide/)
- - [GoldWave 설치와 사용법: 공식 다운로드부터 기본 오디오 편집까지](/tools/goldwave-guide/)
- - [Cakewalk 설치와 사용법: 공식 사이트 기준으로 오디오 제작 시작하기](/tools/cakewalk-guide/)
- - [DaVinci Resolve 설치와 사용법: 공식 다운로드부터 첫 렌더까지](/tools/davinci-resolve-guide/)
 
 - - -
 

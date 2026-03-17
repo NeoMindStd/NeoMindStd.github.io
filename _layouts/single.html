@@ -70,7 +70,7 @@ layout: default
             {% if page.categories contains "AI" %}
               {% assign hub_cta_text = "AI 글은 허브에서 큰 흐름을 잡고, 비교 글과 설치 가이드를 함께 보면 나에게 맞는 도구를 더 빨리 고르기 좋습니다." %}
             {% elsif page.categories contains "Tools" %}
-              {% assign hub_cta_text = "비슷한 실무 도구를 같이 보면 필요한 조합과 활용 범위를 더 빨리 찾을 수 있습니다." %}
+              {% assign hub_cta_text = "도구 글은 허브에서 용도별로 묶어 보면 필요한 조합과 설치 순서를 훨씬 더 빨리 잡을 수 있습니다." %}
             {% elsif page.categories contains "문제풀이" %}
               {% assign hub_cta_text = "비슷한 난이도와 유형의 문제를 이어서 보면 풀이 감각을 더 빠르게 잡기 좋습니다." %}
             {% elsif page.categories contains "Project" %}
@@ -103,17 +103,14 @@ layout: default
                 {% unless page.url == "/tools/" %}
                   <li><a href="/tools/">Tools 허브 전체 보기</a></li>
                 {% endunless %}
-                {% unless page.url == "/tools/docker-guide/" %}
-                  <li><a href="/tools/docker-guide/">Docker 설치 가이드</a></li>
+                {% unless page.url == "/tools/development/" %}
+                  <li><a href="/tools/development/">개발·협업 도구 허브</a></li>
                 {% endunless %}
-                {% unless page.url == "/tools/python-guide/" %}
-                  <li><a href="/tools/python-guide/">Python 설치 가이드</a></li>
+                {% unless page.url == "/tools/system-utilities/" %}
+                  <li><a href="/tools/system-utilities/">시스템 점검·유틸리티 허브</a></li>
                 {% endunless %}
-                {% unless page.url == "/tools/postman-guide/" %}
-                  <li><a href="/tools/postman-guide/">Postman 설치 가이드</a></li>
-                {% endunless %}
-                {% unless page.url == "/tools/obs-studio-guide/" %}
-                  <li><a href="/tools/obs-studio-guide/">OBS 설치 가이드</a></li>
+                {% unless page.url == "/tools/creator-media/" %}
+                  <li><a href="/tools/creator-media/">방송·오디오·영상 도구 허브</a></li>
                 {% endunless %}
               {% elsif page.categories contains "문제풀이" %}
                 <li><a href="/boj/">백준 문제풀이 허브</a></li>
