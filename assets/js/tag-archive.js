@@ -25,17 +25,29 @@
 
   function getSelectedTag() {
     const url = new URL(window.location.href);
+    const hash = url.hash || "";
+    if (hash.indexOf("#tag=") === 0) {
+      return decodeURIComponent(hash.slice(5));
+    }
     return url.searchParams.get("tag");
   }
 
   function setSelectedTag(tag) {
     const url = new URL(window.location.href);
-    if (tag) {
-      url.searchParams.set("tag", tag);
-    } else {
-      url.searchParams.delete("tag");
-    }
+    url.searchParams.delete("tag");
+    url.hash = tag ? "tag=" + encodeURIComponent(tag) : "";
     window.history.pushState({}, "", url);
+  }
+
+  function normalizeLegacyTagUrl() {
+    const url = new URL(window.location.href);
+    const queryTag = url.searchParams.get("tag");
+    if (!queryTag) {
+      return;
+    }
+    url.searchParams.delete("tag");
+    url.hash = "tag=" + encodeURIComponent(queryTag);
+    window.history.replaceState({}, "", url);
   }
 
   function setCloudCollapsed(collapsed, tag) {
@@ -205,5 +217,10 @@
     renderSelectedTag(getSelectedTag());
   });
 
+  window.addEventListener("hashchange", function () {
+    renderSelectedTag(getSelectedTag());
+  });
+
+  normalizeLegacyTagUrl();
   renderSelectedTag(getSelectedTag());
 })();
