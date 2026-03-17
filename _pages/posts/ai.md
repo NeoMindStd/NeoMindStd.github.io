@@ -28,6 +28,14 @@ toc_label: "목차"
 
 처음 들어왔다면 아래 순서대로 읽는 편이 가장 덜 헤맵니다.
 
+### 클러스터별로 보기
+
+ - [AI 코딩 도구 허브](/ai/coding-tools/)
+ - [AI 브라우저·리서치 허브](/ai/browsers-research/)
+ - [로컬 LLM·셀프호스팅 허브](/ai/local-llm/)
+ - [생성형 창작 AI 허브](/ai/creative/)
+ - [실무용 AI·워크플로우 허브](/ai/workflows/)
+
 ### 처음 시작할 때
  - [2026 프론티어 모델 비교: ChatGPT, Gemini, Claude, Grok를 어떻게 고를까](/기타/frontier-models-comparison-2026/)
  - [AI 브라우저 비교: Perplexity Comet vs Brave Leo vs Copilot Mode in Edge](/기타/ai-browser-comparison-2026/)

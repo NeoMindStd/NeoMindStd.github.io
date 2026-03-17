@@ -22,6 +22,11 @@ toc_label: "목차"
 
 ### AI / LLM / 에이전트
  - [AI 허브: 비교·설치·로컬 LLM·생성형 AI를 목적별로 빠르게 찾기](/ai/)
+ - [AI 코딩 도구 허브](/ai/coding-tools/)
+ - [AI 브라우저·리서치 허브](/ai/browsers-research/)
+ - [로컬 LLM·셀프호스팅 허브](/ai/local-llm/)
+ - [생성형 창작 AI 허브](/ai/creative/)
+ - [실무용 AI·워크플로우 허브](/ai/workflows/)
  - [음악 생성 AI 비교와 사용법: Suno, Udio, 그리고 창팝 시대의 감각](/기타/ai-music-generation-guide-2026/)
  - [생성형 창작 AI 입문: 음악, 그림, 사진, 영상 AI를 2026년에 어떻게 고를까](/기타/creative-ai-guide-2026/)
  - [그림·사진 생성 AI 비교: ChatGPT 이미지, Midjourney, Firefly를 어떻게 고를까](/기타/ai-image-photo-generation-guide-2026/)
