@@ -186,6 +186,80 @@ body {
   color: var(--nm-page-meta);
 }
 
+.nm-home-hub-section {
+  margin: 1.25rem 0 1.8rem;
+}
+
+.nm-home-hub-section__head {
+  margin-bottom: 0.9rem;
+}
+
+.nm-home-hub-section__head h2 {
+  margin: 0 0 0.28rem;
+  font-size: clamp(1.2rem, 1.9vw, 1.55rem);
+  font-weight: 800;
+  color: var(--nm-home-subtitle);
+}
+
+.nm-home-hub-section__head p {
+  margin: 0;
+  color: var(--nm-item-excerpt);
+}
+
+.nm-home-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.nm-home-hub-grid--compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.nm-home-hub-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.38rem;
+  min-height: 100%;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--nm-border);
+  border-radius: 18px;
+  background: var(--nm-surface);
+  box-shadow: var(--nm-shadow-soft);
+  color: var(--nm-text-body);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.nm-home-hub-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(31, 127, 155, 0.34);
+  box-shadow: var(--nm-shadow-card);
+  text-decoration: none;
+}
+
+.nm-home-hub-card__eyebrow {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(31, 127, 155, 0.11);
+  color: var(--nm-accent);
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.nm-home-hub-card strong {
+  font-size: 1.02rem;
+  line-height: 1.32;
+}
+
+.nm-home-hub-card span:last-child {
+  color: var(--nm-item-excerpt);
+  line-height: 1.58;
+}
+
 .sidebar {
   padding-right: 0.25rem;
 }
@@ -305,6 +379,11 @@ body {
     border-radius: 14px;
     padding: 0.95rem 1rem;
   }
+
+  .nm-home-hub-grid,
+  .nm-home-hub-grid--compact {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Keep ad injections out of code blocks. */
@@ -401,6 +480,14 @@ html[data-theme="dark"] .page__content h6 {
 
 html[data-theme="dark"] .layout--home .archive__item-title a:hover {
   color: #b8efff;
+}
+
+html[data-theme="dark"] .nm-home-hub-card {
+  color: #e6eef7;
+}
+
+html[data-theme="dark"] .nm-home-hub-card__eyebrow {
+  background: rgba(102, 202, 232, 0.12);
 }
 
 html[data-theme="dark"] .page__content,
