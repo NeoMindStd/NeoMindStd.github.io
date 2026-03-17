@@ -27,11 +27,23 @@ description: "AI 코딩 도구를 한곳에서 비교하고, 설치 가이드와
 | GitHub Copilot | 기존 에디터를 크게 바꾸지 않고 바로 보조를 붙이고 싶은 사람 | IDE / 웹 | [GitHub Copilot 설치와 사용법](/기타/github-copilot-setup-guide/) |
 | Codex 앱 | 브라우저나 앱 환경에서 OpenAI 코딩 워크플로를 쓰고 싶은 사람 | 웹 / 앱 | [GPT Codex 앱 사용 가이드](/기타/codex-app-guide/) |
 
+### 설치 난이도와 사용 성격
+
+| 도구 | 설치 난이도 | 작업 성격 | 로컬/원격 감각 |
+|:--|:--|:--|:--|
+| Codex CLI | 쉬움 | 터미널 에이전트, 코드 수정, 실행 | 원격형 작업 감각이 강함 |
+| Claude Code | 보통 | 긴 문맥 협업, 설명형 수정, 팀 워크플로 | 원격형 + 터미널 중심 |
+| Gemini CLI | 보통 | 구글 계정 기반 CLI, 셸과 도구 연결 | 원격형 + 도구 연결 감각 |
+| Cursor | 쉬움 | IDE 안에서 Agent, Tab, Rules로 오래 협업 | IDE 중심, 로컬 작업감이 강함 |
+| GitHub Copilot | 가장 쉬움 | 자동완성, 에디터 보조, 가벼운 에이전트 | IDE/웹 보조형 |
+| Codex 앱 | 쉬움 | 브라우저/앱에서 Codex 워크플로 진입 | 웹/앱 중심, 리포 연결형 |
+
 ### 추천 순서
 
 1. 터미널에서 바로 맡기고 싶다면 `Codex CLI`, `Claude Code`, `Gemini CLI`부터 비교합니다.
 2. VS Code나 JetBrains 안에서 쓰고 싶다면 `Cursor`와 `GitHub Copilot`을 먼저 봅니다.
-3. 개념부터 잡고 싶다면 `프론티어 모델 비교`, `GPT Codex`, `Claude Code`, `Copilot 완전정리`를 먼저 읽고 설치 글로 내려가는 편이 덜 헷갈립니다.
+3. 설치가 가장 쉬운 쪽부터 맛보려면 `GitHub Copilot`이나 `Cursor`가, 에이전트다운 흐름을 빨리 느끼고 싶다면 `Codex CLI`가 보통 진입이 빠릅니다.
+4. 개념부터 잡고 싶다면 `프론티어 모델 비교`, `GPT Codex`, `Claude Code`, `Copilot 완전정리`를 먼저 읽고 설치 글로 내려가는 편이 덜 헷갈립니다.
 
 ### 먼저 비교할 글
 
