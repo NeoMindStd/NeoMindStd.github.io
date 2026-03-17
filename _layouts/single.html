@@ -68,7 +68,7 @@ layout: default
           <div class="nm-post-hub-cta">
             <h4>이런 주제는 어떠신가요?</h4>
             {% if page.categories contains "AI" %}
-              {% assign hub_cta_text = "비교 글과 설치 가이드를 함께 보면 나에게 맞는 도구를 더 빨리 고르기 좋습니다." %}
+              {% assign hub_cta_text = "AI 글은 허브에서 큰 흐름을 잡고, 비교 글과 설치 가이드를 함께 보면 나에게 맞는 도구를 더 빨리 고르기 좋습니다." %}
             {% elsif page.categories contains "Tools" %}
               {% assign hub_cta_text = "비슷한 실무 도구를 같이 보면 필요한 조합과 활용 범위를 더 빨리 찾을 수 있습니다." %}
             {% elsif page.categories contains "문제풀이" %}
@@ -84,17 +84,20 @@ layout: default
                 {% unless page.url == "/ai/" %}
                   <li><a href="/ai/">AI 허브 한눈에 보기</a></li>
                 {% endunless %}
-                {% unless page.url == "/기타/frontier-models-comparison-2026/" %}
-                  <li><a href="/기타/frontier-models-comparison-2026/">프론티어 모델 비교 글</a></li>
+                {% unless page.url == "/ai/coding-tools/" %}
+                  <li><a href="/ai/coding-tools/">AI 코딩 도구 허브</a></li>
                 {% endunless %}
-                {% unless page.url == "/기타/gemini-cli-guide/" %}
-                  <li><a href="/기타/gemini-cli-guide/">Gemini CLI 설치 가이드</a></li>
+                {% unless page.url == "/ai/browsers-research/" %}
+                  <li><a href="/ai/browsers-research/">AI 브라우저·리서치 허브</a></li>
                 {% endunless %}
-                {% unless page.url == "/기타/perplexity-comet-guide/" %}
-                  <li><a href="/기타/perplexity-comet-guide/">Perplexity Comet 설치 가이드</a></li>
+                {% unless page.url == "/ai/local-llm/" %}
+                  <li><a href="/ai/local-llm/">로컬 LLM·셀프호스팅 허브</a></li>
                 {% endunless %}
-                {% unless page.url == "/기타/creative-ai-guide-2026/" %}
-                  <li><a href="/기타/creative-ai-guide-2026/">생성형 창작 AI 허브</a></li>
+                {% unless page.url == "/ai/creative/" %}
+                  <li><a href="/ai/creative/">생성형 창작 AI 허브</a></li>
+                {% endunless %}
+                {% unless page.url == "/ai/workflows/" %}
+                  <li><a href="/ai/workflows/">실무용 AI·워크플로우 허브</a></li>
                 {% endunless %}
               {% elsif page.categories contains "Tools" %}
                 {% unless page.url == "/tools/" %}

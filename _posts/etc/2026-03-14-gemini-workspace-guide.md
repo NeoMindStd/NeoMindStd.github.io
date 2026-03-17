@@ -44,15 +44,18 @@ decision_table_rows:
 custom_next_reads_title: "이 글과 함께 보면 좋은 글"
 custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
 custom_next_reads:
+  - title: "실무용 AI·워크플로우 허브"
+    url: "/ai/workflows/"
+    note: "업무형 AI 흐름을 한 번에 볼 때"
   - title: "Gemini CLI 설치와 사용법"
     url: "/기타/gemini-cli-guide/"
     note: "개발자 워크플로까지 확장할 때"
   - title: "딥리서치란 무엇인가"
     url: "/기타/what-is-deep-research/"
     note: "문서 초안 이전 조사 단계"
-  - title: "생성형 창작 AI 입문"
-    url: "/기타/creative-ai-guide-2026/"
-    note: "텍스트 밖 창작 도구까지 넓혀 볼 때"
+  - title: "Perplexity Labs란 무엇인가"
+    url: "/기타/perplexity-labs-guide/"
+    note: "리서치와 산출물 흐름까지 넓혀 볼 때"
 # shortterm-growth-enhancement: end
 ---
 

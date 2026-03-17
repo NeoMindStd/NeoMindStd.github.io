@@ -20,6 +20,35 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+quick_takeaways:
+  - "좋은 프롬프트는 문장을 예쁘게 쓰는 기술보다 역할, 목표, 맥락, 제약, 출력 형식을 명확히 주는 작업 명세서에 가깝습니다."
+  - "에이전트형 도구에서는 파일 범위와 검증 기준까지 적어줄수록 결과 품질이 훨씬 안정됩니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "블로그 글·문서 초안 품질을 높이고 싶음"
+    right: "프롬프트 기본 6요소부터 적용"
+  - left: "코딩 에이전트에게 실제 작업을 맡김"
+    right: "파일 범위·검증 기준까지 포함"
+  - left: "업무형 AI와 에이전트 구조까지 같이 이해하고 싶음"
+    right: "MCP, Skill, Eval 글도 함께 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "프롬프트만 따로 보지 말고, 실제 도구와 워크플로우 글을 같이 보면 적용 감각이 더 빨리 잡힙니다."
+custom_next_reads:
+  - title: "실무용 AI·워크플로우 허브"
+    url: "/ai/workflows/"
+    note: "프롬프트, MCP, RAG, Eval 글을 한 번에 볼 때"
+  - title: "AI 코딩 도구 허브"
+    url: "/ai/coding-tools/"
+    note: "프롬프트를 실제 코딩 도구에 붙일 때"
+  - title: "MCP란 무엇인가"
+    url: "/기타/what-is-mcp/"
+    note: "에이전트 도구 연결 개념까지 볼 때"
+  - title: "AI Eval이란 무엇인가"
+    url: "/기타/what-is-ai-eval/"
+    note: "좋은 결과를 어떻게 검증할지 볼 때"
 ---
 
 - - -

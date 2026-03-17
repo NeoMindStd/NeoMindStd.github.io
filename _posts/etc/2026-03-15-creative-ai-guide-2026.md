@@ -43,6 +43,9 @@ decision_table_rows:
 custom_next_reads_title: "이 글과 함께 보면 좋은 글"
 custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
 custom_next_reads:
+  - title: "생성형 창작 AI 허브"
+    url: "/ai/creative/"
+    note: "창작형 AI 글을 한 번에 볼 때"
   - title: "음악 생성 AI 비교와 사용법"
     url: "/기타/ai-music-generation-guide-2026/"
     note: "창팝·밈 문화까지 같이 볼 때"
@@ -52,6 +55,9 @@ custom_next_reads:
   - title: "영상 생성 AI 비교"
     url: "/기타/ai-video-generation-guide-2026/"
     note: "Sora, Veo, Runway 흐름을 볼 때"
+  - title: "프롬프트 엔지니어링 가이드"
+    url: "/기타/prompt-engineering-practical-guide/"
+    note: "창작 결과물을 더 잘 뽑는 프롬프트 감각"
 # shortterm-growth-enhancement: end
 ---
 

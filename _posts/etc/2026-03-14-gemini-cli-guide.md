@@ -39,6 +39,9 @@ decision_table_rows:
 custom_next_reads_title: "이 글과 함께 보면 좋은 글"
 custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
 custom_next_reads:
+  - title: "AI 코딩 도구 허브"
+    url: "/ai/coding-tools/"
+    note: "CLI·IDE 코딩 도구를 한 번에 볼 때"
   - title: "2026 프론티어 모델 비교"
     url: "/기타/frontier-models-comparison-2026/"
     note: "Gemini가 어디에 강한지 먼저 볼 때"
@@ -48,6 +51,9 @@ custom_next_reads:
   - title: "Claude Code 설치와 사용법"
     url: "/기타/claude-code-setup-guide/"
     note: "다른 CLI 에이전트와 비교할 때"
+  - title: "실무용 AI·워크플로우 허브"
+    url: "/ai/workflows/"
+    note: "프롬프트·MCP·RAG 흐름까지 같이 볼 때"
 # shortterm-growth-enhancement: end
 ---
 

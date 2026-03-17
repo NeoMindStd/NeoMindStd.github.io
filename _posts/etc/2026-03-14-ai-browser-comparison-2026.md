@@ -42,6 +42,9 @@ decision_table_rows:
 custom_next_reads_title: "이 글과 함께 보면 좋은 글"
 custom_next_reads_intro: "지금 읽은 내용을 바로 확장하거나, 실제 선택과 설치까지 이어질 만한 글들만 골랐습니다."
 custom_next_reads:
+  - title: "AI 브라우저·리서치 허브"
+    url: "/ai/browsers-research/"
+    note: "브라우저형 AI 글을 한 번에 볼 때"
   - title: "Perplexity Comet 설치와 사용법"
     url: "/기타/perplexity-comet-guide/"
     note: "리서치 중심 브라우저 흐름"
@@ -51,6 +54,9 @@ custom_next_reads:
   - title: "Copilot Mode in Edge 사용법"
     url: "/기타/edge-copilot-mode-guide/"
     note: "Windows 사용자 기준 대안"
+  - title: "딥리서치란 무엇인가"
+    url: "/기타/what-is-deep-research/"
+    note: "검색을 넘어 조사 단계까지 볼 때"
 # shortterm-growth-enhancement: end
 ---
 
