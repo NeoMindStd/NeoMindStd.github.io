@@ -16,6 +16,23 @@ description: "로컬 LLM 설치, 셀프호스팅 워크스페이스, Apple Silic
 
 직접 모델을 내려받아 돌리거나, 개인 AI 워크스페이스를 셀프호스팅하는 흐름을 중심으로 정리했습니다.
 
+### 환경별 빠른 선택표
+
+| 도구 | UI | 잘 맞는 환경 | 메모리/장비 감각 | 대표 글 |
+|:--|:--|:--|:--|:--|
+| Ollama | CLI | Windows / macOS / Linux | 터미널 중심, 빠른 시작 | [Ollama 설치와 사용법](/기타/ollama-guide/) |
+| LM Studio | GUI | Windows / macOS / Linux | 데스크톱에서 모델을 쉽게 바꿔보는 용도 | [LM Studio 설치와 사용법](/기타/lm-studio-guide/) |
+| Open WebUI | 웹 UI | Docker / pip 가능한 환경 | 여러 모델과 워크스페이스를 브라우저로 묶을 때 | [Open WebUI 설치와 사용법](/기타/open-webui-guide/) |
+| OpenClaw | 채팅형 UI | 개인 AI 비서 흐름 | 채팅 앱 중심 자동화 감각 | [OpenClaw 설치와 사용법](/기타/openclaw-guide/) |
+| Apple Silicon 맥 | 장비 관점 | macOS | 통합 메모리로 로컬 LLM 체감이 갈림 | [Apple Silicon 통합 메모리 글](/기타/apple-silicon-unified-memory-local-llm/) |
+
+### 추천 순서
+
+1. 처음 로컬 LLM을 맛보려면 `Ollama` 또는 `LM Studio` 중 하나만 먼저 고릅니다.
+2. `CLI/API 중심`이면 Ollama, `GUI 중심`이면 LM Studio가 더 편합니다.
+3. 모델을 여러 명이 같이 쓰거나 개인 워크스페이스처럼 운영하려면 Open WebUI까지 확장합니다.
+4. 맥 사용자라면 설치보다 먼저 `Apple Silicon 통합 메모리` 글을 보고 내 장비 한계를 이해하는 편이 훨씬 덜 헤맵니다.
+
 ### 먼저 비교할 글
 
  - [로컬 LLM 시작 가이드: Ollama, LM Studio, llama.cpp를 어떻게 고를까](/기타/local-llm-guide/)

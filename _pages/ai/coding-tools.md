@@ -16,6 +16,23 @@ description: "AI 코딩 도구를 한곳에서 비교하고, 설치 가이드와
 
 코드 수정, 리포지토리 탐색, 터미널 작업, IDE 보조처럼 개발자 작업 흐름에 직접 들어오는 글만 모았습니다.
 
+### 한눈에 고르기
+
+| 도구 | 잘 맞는 사람 | 인터페이스 | 추천 시작점 |
+|:--|:--|:--|:--|
+| Codex CLI | 터미널 중심으로 코드 수정과 실행을 같이 맡기고 싶은 사람 | CLI | [Codex CLI 설치와 사용법](/기타/codex-cli-guide/) |
+| Claude Code | 긴 문맥과 설명형 협업, 리포지토리 탐색을 함께 보고 싶은 사람 | CLI | [Claude Code 설치와 사용법](/기타/claude-code-setup-guide/) |
+| Gemini CLI | 구글 계정 기반, 셸과 도구 연결을 함께 보고 싶은 사람 | CLI | [Gemini CLI 설치와 사용법](/기타/gemini-cli-guide/) |
+| Cursor | IDE 안에서 Agent, Tab, Rules까지 한 번에 쓰고 싶은 사람 | IDE | [Cursor 설치와 사용법](/기타/cursor-editor-guide/) |
+| GitHub Copilot | 기존 에디터를 크게 바꾸지 않고 바로 보조를 붙이고 싶은 사람 | IDE / 웹 | [GitHub Copilot 설치와 사용법](/기타/github-copilot-setup-guide/) |
+| Codex 앱 | 브라우저나 앱 환경에서 OpenAI 코딩 워크플로를 쓰고 싶은 사람 | 웹 / 앱 | [GPT Codex 앱 사용 가이드](/기타/codex-app-guide/) |
+
+### 추천 순서
+
+1. 터미널에서 바로 맡기고 싶다면 `Codex CLI`, `Claude Code`, `Gemini CLI`부터 비교합니다.
+2. VS Code나 JetBrains 안에서 쓰고 싶다면 `Cursor`와 `GitHub Copilot`을 먼저 봅니다.
+3. 개념부터 잡고 싶다면 `프론티어 모델 비교`, `GPT Codex`, `Claude Code`, `Copilot 완전정리`를 먼저 읽고 설치 글로 내려가는 편이 덜 헷갈립니다.
+
 ### 먼저 비교할 글
 
  - [2026 프론티어 모델 비교: ChatGPT, Gemini, Claude, Grok를 어떻게 고를까](/기타/frontier-models-comparison-2026/)
