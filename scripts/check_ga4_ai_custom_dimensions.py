@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -29,11 +30,29 @@ EXPECTED_DIMENSIONS = [
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Check GA4 custom dimensions for AI referral reporting.")
-    parser.add_argument("--service-account", type=Path, default=Path(r"D:\WorkSpace\secrets\play-sa.json"))
+    parser.add_argument(
+        "--service-account",
+        type=Path,
+        default=None,
+        help="Path to a Google service account JSON. Falls back to GA4_SERVICE_ACCOUNT_JSON or GOOGLE_APPLICATION_CREDENTIALS.",
+    )
     parser.add_argument("--property-id", default="382166604")
     parser.add_argument("--attempt-create", action="store_true")
     parser.add_argument("--out", type=Path, required=True)
     return parser.parse_args()
+
+
+def resolve_service_account_path(cli_value: Path | None) -> Path:
+    if cli_value is not None:
+        return cli_value
+
+    env_value = os.environ.get("GA4_SERVICE_ACCOUNT_JSON") or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+    if env_value:
+        return Path(env_value)
+
+    raise SystemExit(
+        "Missing service account path. Pass --service-account or set GA4_SERVICE_ACCOUNT_JSON / GOOGLE_APPLICATION_CREDENTIALS."
+    )
 
 
 def build_token(service_account_path: Path, scopes: list[str]) -> str:
@@ -125,13 +144,14 @@ def render(property_id: str, listed: dict[str, Any], create_results: list[dict[s
 
 def main() -> None:
     args = parse_args()
-    readonly_token = build_token(args.service_account, ["https://www.googleapis.com/auth/analytics.readonly"])
+    service_account_path = resolve_service_account_path(args.service_account)
+    readonly_token = build_token(service_account_path, ["https://www.googleapis.com/auth/analytics.readonly"])
     listed = list_dimensions(args.property_id, readonly_token)
 
     create_results: list[dict[str, Any]] = []
     if args.attempt_create:
         existing_by_parameter = {row.get("parameterName") for row in listed.get("rows", [])}
-        edit_token = build_token(args.service_account, ["https://www.googleapis.com/auth/analytics.edit"])
+        edit_token = build_token(service_account_path, ["https://www.googleapis.com/auth/analytics.edit"])
         for dimension in EXPECTED_DIMENSIONS:
             if dimension["parameterName"] in existing_by_parameter:
                 continue

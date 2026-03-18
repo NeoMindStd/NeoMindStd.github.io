@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import urllib.parse
 from pathlib import Path
 
@@ -19,10 +20,28 @@ SEARCH_SCOPES = [
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Check whether the current Google OAuth token is ready for Search Console.")
-    parser.add_argument("--token", type=Path, default=Path(r"D:\WorkSpace\secrets\oauth-token.json"))
+    parser.add_argument(
+        "--token",
+        type=Path,
+        default=None,
+        help="Path to an OAuth authorized-user JSON. Falls back to SEARCH_CONSOLE_TOKEN_JSON or GOOGLE_OAUTH_TOKEN_JSON.",
+    )
     parser.add_argument("--site-url", default="https://neomindstd.github.io/")
     parser.add_argument("--out", type=Path, required=True)
     return parser.parse_args()
+
+
+def resolve_token_path(cli_value: Path | None) -> Path:
+    if cli_value is not None:
+        return cli_value
+
+    env_value = os.environ.get("SEARCH_CONSOLE_TOKEN_JSON") or os.environ.get("GOOGLE_OAUTH_TOKEN_JSON")
+    if env_value:
+        return Path(env_value)
+
+    raise SystemExit(
+        "Missing OAuth token path. Pass --token or set SEARCH_CONSOLE_TOKEN_JSON / GOOGLE_OAUTH_TOKEN_JSON."
+    )
 
 
 def detect_scope(scopes: list[str]) -> str | None:
@@ -115,8 +134,9 @@ def render(token_json: dict, token_path: Path, site_url: str) -> str:
 
 def main() -> None:
     args = parse_args()
-    token_json = json.loads(args.token.read_text(encoding="utf-8"))
-    text = render(token_json, args.token, args.site_url)
+    token_path = resolve_token_path(args.token)
+    token_json = json.loads(token_path.read_text(encoding="utf-8"))
+    text = render(token_json, token_path, args.site_url)
     args.out.write_text(text + "\n", encoding="utf-8")
     print(f"Wrote readiness report: {args.out}")
 
