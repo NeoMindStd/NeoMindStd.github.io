@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tesla referral active markets guide</title>
+  <desc id="desc">Dark hero card for Tesla referral active markets guide.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0b0f"/>
+      <stop offset="100%" stop-color="#181b23"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="72" y="64" width="1056" height="502" rx="30" fill="#0f1118" stroke="#2d3340"/>
+  <circle cx="950" cy="186" r="116" fill="#1b2030"/>
+  <circle cx="950" cy="186" r="86" fill="none" stroke="#e82127" stroke-width="16"/>
+  <path d="M923 171h54c-1 7-5 13-12 16-7-3-23-4-30-4s-23 1-30 4c-7-3-11-9-12-16zm15 23h24v88h-11v-28c-5 2-10 3-12 3s-7-1-12-3v28h-11v-88zm12 26c5 0 9 1 13 4v-12h-26v12c4-3 8-4 13-4z" fill="#ffffff"/>
+  <text x="118" y="220" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="74" font-weight="700">Tesla Referral Guide</text>
+  <text x="118" y="292" fill="#d5d9e2" font-family="Segoe UI, Arial, sans-serif" font-size="34">Active markets, official links, and the safest way to verify</text>
+  <rect x="118" y="362" width="220" height="52" rx="26" fill="#1b2030"/>
+  <text x="157" y="396" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600">U.S.</text>
+  <rect x="360" y="362" width="220" height="52" rx="26" fill="#1b2030"/>
+  <text x="400" y="396" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600">U.K.</text>
+  <rect x="602" y="362" width="220" height="52" rx="26" fill="#1b2030"/>
+  <text x="638" y="396" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600">Australia</text>
+</svg>

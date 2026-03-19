@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tesla referral guide official card</title>
+  <desc id="desc">Dark card with Tesla referral guide text.</desc>
+  <rect width="1200" height="630" fill="#0b0b0d"/>
+  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#121317" stroke="#2a2d34"/>
+  <path d="M520 182h160c-2 12-10 23-23 28-20-8-94-8-114 0-13-5-21-16-23-28zm41 42h78v158h-20v-53c-8 3-17 4-19 4s-11-1-19-4v53h-20V224zm39 46c7 0 14 2 19 6v-24h-38v24c5-4 12-6 19-6z" fill="#e82127"/>
+  <text x="120" y="420" fill="#f5f7fb" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="700">TESLA REFERRAL GUIDE</text>
+  <text x="120" y="485" fill="#b9c0cc" font-family="Segoe UI, Arial, sans-serif" font-size="32">Check local eligibility before ordering</text>
+</svg>
