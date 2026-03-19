@@ -20,6 +20,10 @@ toc_label: "목차"
 
 실무에서 직접 겪은 운영 이슈와 해결 과정을 중심으로 정리합니다.
 
+### 서비스·구매 가이드
+ - [테슬라 리퍼럴 지금도 쓸 수 있을까? 한국 종료 상태와 해외 활성 시장 정리](/기타/tesla-referral-korea-vs-active-markets/)
+ - [Tesla Referral Guide for Active Markets in 2026](/기타/tesla-referral-guide-active-markets/)
+
 ### AI / LLM / 에이전트
  - [AI 허브: 비교·설치·로컬 LLM·생성형 AI를 목적별로 빠르게 찾기](/ai/)
  - [AI 코딩 도구 허브](/ai/coding-tools/)
