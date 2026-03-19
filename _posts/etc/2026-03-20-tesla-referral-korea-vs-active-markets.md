@@ -10,7 +10,7 @@ tags:
   - Tesla
   - 리퍼럴
   - EV
-date: 2026-03-20 20:11:00 +09:00
+date: 2026-03-20 01:55:00 +09:00
 permalink: /기타/tesla-referral-korea-vs-active-markets/
 header:
   og_image: /assets/images/posts/etc/tesla-referral-common/official.jpg

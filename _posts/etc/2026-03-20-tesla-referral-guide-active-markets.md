@@ -11,7 +11,7 @@ tags:
   - Referral
   - EV
   - English
-date: 2026-03-20 20:10:00 +09:00
+date: 2026-03-20 01:54:00 +09:00
 permalink: /기타/tesla-referral-guide-active-markets/
 header:
   og_image: /assets/images/posts/etc/tesla-referral-common/official.jpg
