@@ -25,7 +25,7 @@ published: true
 
 - - -
 
-# 쿠폰 매니저
+# VR Shooting
 
 ## 실행 화면
 
