@@ -16,6 +16,38 @@ description: "녹화, 스트리밍, 오디오 편집, DAW, 영상 편집 툴을 
 
 녹화, 스트리밍, 오디오 편집, 작곡, 영상 편집처럼 크리에이터 작업에 가까운 도구만 모았습니다.
 
+### 대표 도구 카드
+
+<div class="nm-tools-pick-grid">
+  <article class="nm-tools-pick-card">
+    <h4><a href="/tools/obs-studio-guide/">OBS Studio</a></h4>
+    <p>무료로 녹화와 송출을 모두 시작할 수 있어서 크리에이터 워크플로우의 첫 도구로 가장 무난합니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문</span>
+      <span class="nm-tools-badge">OS: Win/macOS/Linux</span>
+      <span class="nm-tools-badge">추천: 방송·녹화</span>
+    </p>
+  </article>
+  <article class="nm-tools-pick-card">
+    <h4><a href="/tools/davinci-resolve-guide/">DaVinci Resolve</a></h4>
+    <p>컷 편집부터 컬러와 렌더까지 한 도구에서 처리할 수 있어 영상 제작 파이프라인에 강합니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 중급</span>
+      <span class="nm-tools-badge">OS: Win/macOS/Linux</span>
+      <span class="nm-tools-badge">추천: 영상 편집</span>
+    </p>
+  </article>
+  <article class="nm-tools-pick-card">
+    <h4><a href="/tools/cakewalk-guide/">Cakewalk</a></h4>
+    <p>멀티트랙과 MIDI 기반의 음악 제작을 해보고 싶을 때 접근성이 좋은 DAW입니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문~중급</span>
+      <span class="nm-tools-badge">OS: Windows</span>
+      <span class="nm-tools-badge">추천: 작곡·믹싱</span>
+    </p>
+  </article>
+</div>
+
 ### 작업 흐름별 빠른 선택표
 
 | 목적 | 먼저 볼 글 | 잘 맞는 상황 | 다음 단계 |

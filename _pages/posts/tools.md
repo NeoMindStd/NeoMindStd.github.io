@@ -20,6 +20,38 @@ toc_label: "목차"
 
 공식 사이트, 다운로드 경로, 지원 OS, 기본 사용 흐름 위주로 실무형 도구를 정리합니다.
 
+### 빠른 시작 카드
+
+<div class="nm-tools-pick-grid">
+  <article class="nm-tools-pick-card">
+    <h4><a href="/tools/development/">개발·협업 도구 허브</a></h4>
+    <p>Docker, Python, Java, Git, Postman처럼 개발 생산성을 바로 올리는 도구를 묶었습니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문~중급</span>
+      <span class="nm-tools-badge">OS: Win/macOS/Linux</span>
+      <span class="nm-tools-badge">추천: 개발자·학생</span>
+    </p>
+  </article>
+  <article class="nm-tools-pick-card">
+    <h4><a href="/tools/system-utilities/">시스템 점검·유틸리티 허브</a></h4>
+    <p>CPU-Z, GPU-Z, CrystalDiskInfo, TestMem5처럼 PC 상태를 확인하는 도구를 정리했습니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문</span>
+      <span class="nm-tools-badge">OS: Windows 중심</span>
+      <span class="nm-tools-badge">추천: PC 사용자</span>
+    </p>
+  </article>
+  <article class="nm-tools-pick-card">
+    <h4><a href="/tools/creator-media/">방송·오디오·영상 도구 허브</a></h4>
+    <p>OBS, DaVinci Resolve, Cakewalk, GoldWave를 중심으로 제작 흐름을 정리했습니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문~중급</span>
+      <span class="nm-tools-badge">OS: Win/macOS/Linux</span>
+      <span class="nm-tools-badge">추천: 크리에이터</span>
+    </p>
+  </article>
+</div>
+
 ### 목적별 빠른 선택표
 
 | 목적 | 먼저 들어갈 허브 | 가장 먼저 볼 글 | 다음 단계 |
