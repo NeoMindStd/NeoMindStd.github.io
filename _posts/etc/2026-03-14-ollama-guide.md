@@ -26,6 +26,14 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+profile_difficulty: "입문"
+profile_platforms:
+  - Windows
+  - macOS
+  - Linux
+profile_audience:
+  - 로컬 LLM 입문자
+  - 프라이버시 중시 사용자
 # shortterm-growth-enhancement: begin
 decision_table_title: "한눈에 고르기"
 decision_table_headers:

@@ -24,6 +24,14 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+profile_difficulty: "입문~중급"
+profile_platforms:
+  - Windows
+  - macOS
+  - Linux
+profile_audience:
+  - CLI 사용자
+  - Google AI 사용자
 # shortterm-growth-enhancement: begin
 decision_table_title: "한눈에 고르기"
 decision_table_headers:

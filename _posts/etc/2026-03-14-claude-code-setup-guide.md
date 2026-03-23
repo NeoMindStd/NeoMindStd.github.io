@@ -25,6 +25,14 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+profile_difficulty: "중급"
+profile_platforms:
+  - macOS
+  - Linux
+  - Windows (WSL)
+profile_audience:
+  - 긴 문맥 코딩 협업 사용자
+  - CLI 에이전트 사용자
 # shortterm-growth-enhancement: begin
 decision_table_title: "한눈에 고르기"
 decision_table_headers:

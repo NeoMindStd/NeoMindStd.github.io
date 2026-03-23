@@ -24,6 +24,14 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+profile_difficulty: "입문"
+profile_platforms:
+  - Windows
+  - macOS
+  - Linux
+profile_audience:
+  - 대중형 AI 코딩 입문자
+  - 팀 표준 도구 사용자
 ---
 
 - - -

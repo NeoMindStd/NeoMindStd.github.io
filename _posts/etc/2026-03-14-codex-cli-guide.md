@@ -24,6 +24,14 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+profile_difficulty: "중급"
+profile_platforms:
+  - Windows
+  - macOS
+  - Linux
+profile_audience:
+  - 터미널 중심 개발자
+  - 자동화 워크플로우 사용자
 # shortterm-growth-enhancement: begin
 decision_table_title: "한눈에 고르기"
 decision_table_headers:

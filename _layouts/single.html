@@ -42,6 +42,23 @@ layout: default
             </time>
           </p>
           {% endif %}
+          {% if page.profile_difficulty or page.profile_platforms or page.profile_audience %}
+          <div class="nm-tools-badges nm-post-profile-badges">
+            {% if page.profile_difficulty %}
+              <span class="nm-tools-badge">난이도: {{ page.profile_difficulty }}</span>
+            {% endif %}
+            {% if page.profile_platforms %}
+              {% for platform in page.profile_platforms %}
+                <span class="nm-tools-badge">플랫폼: {{ platform }}</span>
+              {% endfor %}
+            {% endif %}
+            {% if page.profile_audience %}
+              {% for audience in page.profile_audience %}
+                <span class="nm-tools-badge">추천: {{ audience }}</span>
+              {% endfor %}
+            {% endif %}
+          </div>
+          {% endif %}
         </header>
       {% endunless %}
 
