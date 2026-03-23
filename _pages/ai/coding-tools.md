@@ -16,6 +16,38 @@ description: "AI 코딩 도구를 한곳에서 비교하고, 설치 가이드와
 
 코드 수정, 리포지토리 탐색, 터미널 작업, IDE 보조처럼 개발자 작업 흐름에 직접 들어오는 글만 모았습니다.
 
+### 빠른 선택 카드
+
+<div class="nm-hub-pick-grid">
+  <article class="nm-hub-pick-card">
+    <h4><a href="/기타/codex-cli-guide/">터미널 에이전트로 바로 시작</a></h4>
+    <p>코드 수정과 실행을 함께 맡기는 흐름이 목적이면 Codex CLI, Claude Code, Gemini CLI부터 비교하는 편이 빠릅니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문~중급</span>
+      <span class="nm-tools-badge">환경: CLI</span>
+      <span class="nm-tools-badge">추천: 개발자</span>
+    </p>
+  </article>
+  <article class="nm-hub-pick-card">
+    <h4><a href="/기타/cursor-editor-guide/">IDE에서 자연스럽게 붙이기</a></h4>
+    <p>기존 VS Code·JetBrains 흐름을 유지하고 싶다면 Cursor와 GitHub Copilot 조합부터 확인하면 진입 장벽이 낮습니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문</span>
+      <span class="nm-tools-badge">환경: IDE</span>
+      <span class="nm-tools-badge">추천: 학생·실무자</span>
+    </p>
+  </article>
+  <article class="nm-hub-pick-card">
+    <h4><a href="/기타/gpt-codex-guide/">개념부터 먼저 정리하기</a></h4>
+    <p>도구를 설치하기 전에 각 에이전트의 차이를 알고 싶다면 GPT Codex, Claude Code, Copilot 개념 글부터 보는 편이 덜 헷갈립니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문</span>
+      <span class="nm-tools-badge">형식: 비교·개념</span>
+      <span class="nm-tools-badge">추천: 초보 사용자</span>
+    </p>
+  </article>
+</div>
+
 ### 한눈에 고르기
 
 | 도구 | 잘 맞는 사람 | 인터페이스 | 추천 시작점 |

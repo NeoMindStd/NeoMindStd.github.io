@@ -16,6 +16,47 @@ description: "로컬 LLM 설치, 셀프호스팅 워크스페이스, Apple Silic
 
 직접 모델을 내려받아 돌리거나, 개인 AI 워크스페이스를 셀프호스팅하는 흐름을 중심으로 정리했습니다.
 
+### 빠른 선택 카드
+
+<div class="nm-hub-pick-grid">
+  <article class="nm-hub-pick-card">
+    <h4><a href="/기타/ollama-guide/">터미널 중심으로 빠르게 시작</a></h4>
+    <p>로컬 LLM을 가장 빠르게 체험하려면 Ollama부터 시작하는 편이 쉽고, API 기반 실험까지 바로 이어집니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문</span>
+      <span class="nm-tools-badge">환경: Win/macOS/Linux</span>
+      <span class="nm-tools-badge">추천: 개발자</span>
+    </p>
+  </article>
+  <article class="nm-hub-pick-card">
+    <h4><a href="/기타/lm-studio-guide/">GUI 중심으로 모델 바꿔보기</a></h4>
+    <p>터미널보다 화면 기반 사용이 편하면 LM Studio가 진입 장벽이 낮고, 모델 교체와 성능 비교도 직관적입니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문</span>
+      <span class="nm-tools-badge">환경: 데스크톱 앱</span>
+      <span class="nm-tools-badge">추천: 일반 사용자</span>
+    </p>
+  </article>
+  <article class="nm-hub-pick-card">
+    <h4><a href="/기타/open-webui-guide/">셀프호스팅 워크스페이스 확장</a></h4>
+    <p>개인/팀 단위로 여러 모델을 하나의 웹 UI에서 관리하고 싶다면 Open WebUI 흐름으로 확장하는 것이 좋습니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 중급</span>
+      <span class="nm-tools-badge">환경: Docker/pip</span>
+      <span class="nm-tools-badge">추천: 운영 사용자</span>
+    </p>
+  </article>
+  <article class="nm-hub-pick-card">
+    <h4><a href="/기타/apple-silicon-unified-memory-local-llm/">장비 한계부터 이해하기</a></h4>
+    <p>맥 사용자라면 설치 전에 통합 메모리 구조와 모델 크기별 체감을 먼저 이해하면 시행착오를 줄일 수 있습니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문</span>
+      <span class="nm-tools-badge">형식: 하드웨어 이해</span>
+      <span class="nm-tools-badge">추천: macOS 사용자</span>
+    </p>
+  </article>
+</div>
+
 ### 환경별 빠른 선택표
 
 | 도구 | UI | 잘 맞는 환경 | 메모리/장비 감각 | 대표 글 |

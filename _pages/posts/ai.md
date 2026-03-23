@@ -28,6 +28,56 @@ toc_label: "목차"
 
 처음 들어왔다면 아래 순서대로 읽는 편이 가장 덜 헤맵니다.
 
+### 빠른 시작 카드
+
+<div class="nm-hub-pick-grid">
+  <article class="nm-hub-pick-card">
+    <h4><a href="/ai/coding-tools/">AI 코딩 도구 허브</a></h4>
+    <p>Codex, Claude Code, Cursor, Copilot, Gemini CLI처럼 코드 작업에 바로 쓰는 도구를 모았습니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문~중급</span>
+      <span class="nm-tools-badge">플랫폼: CLI/IDE</span>
+      <span class="nm-tools-badge">추천: 개발자</span>
+    </p>
+  </article>
+  <article class="nm-hub-pick-card">
+    <h4><a href="/ai/browsers-research/">AI 브라우저·리서치 허브</a></h4>
+    <p>Comet, Leo, Copilot Mode, Labs, Deep Research 흐름을 비교 중심으로 정리했습니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문</span>
+      <span class="nm-tools-badge">플랫폼: 웹/브라우저</span>
+      <span class="nm-tools-badge">추천: 리서치 사용자</span>
+    </p>
+  </article>
+  <article class="nm-hub-pick-card">
+    <h4><a href="/ai/local-llm/">로컬 LLM·셀프호스팅 허브</a></h4>
+    <p>Ollama, LM Studio, Open WebUI, OpenClaw까지 로컬 실행과 운영 관점으로 이어집니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문~중급</span>
+      <span class="nm-tools-badge">플랫폼: Win/macOS/Linux</span>
+      <span class="nm-tools-badge">추천: 파워유저</span>
+    </p>
+  </article>
+  <article class="nm-hub-pick-card">
+    <h4><a href="/ai/creative/">생성형 창작 AI 허브</a></h4>
+    <p>음악, 이미지, 영상 생성 AI를 실제 사용 목적 기준으로 고르기 쉽게 묶었습니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 입문</span>
+      <span class="nm-tools-badge">플랫폼: 웹 중심</span>
+      <span class="nm-tools-badge">추천: 크리에이터</span>
+    </p>
+  </article>
+  <article class="nm-hub-pick-card">
+    <h4><a href="/ai/workflows/">실무용 AI·워크플로우 허브</a></h4>
+    <p>프롬프트, MCP, RAG, Eval, Computer Use처럼 업무에 붙이는 구조를 중심으로 정리합니다.</p>
+    <p class="nm-tools-badges">
+      <span class="nm-tools-badge">난이도: 중급</span>
+      <span class="nm-tools-badge">플랫폼: 업무 도구 연동</span>
+      <span class="nm-tools-badge">추천: 실무자</span>
+    </p>
+  </article>
+</div>
+
 ### 목적별 빠른 시작표
 
 | 목적 | 먼저 들어갈 허브 | 가장 먼저 읽을 글 | 다음 단계 |

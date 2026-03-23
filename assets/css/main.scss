@@ -899,6 +899,42 @@ html[data-theme="dark"] .nm-post-brief {
   background: linear-gradient(180deg, rgba(68, 140, 166, 0.16), rgba(68, 140, 166, 0.08));
 }
 
+.nm-hub-pick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.95rem;
+  margin: 1.1rem 0 1.45rem;
+}
+
+.nm-hub-pick-card {
+  padding: 0.95rem 1rem 1.05rem;
+  border: 1px solid var(--nm-border);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(31, 127, 155, 0.08), rgba(31, 127, 155, 0.02));
+  box-shadow: var(--nm-shadow-soft);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nm-hub-pick-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(31, 127, 155, 0.34);
+  box-shadow: var(--nm-shadow-card);
+}
+
+.nm-hub-pick-card h4 {
+  margin: 0 0 0.5rem;
+}
+
+.nm-hub-pick-card p {
+  margin: 0;
+  color: var(--nm-item-excerpt);
+  line-height: 1.6;
+}
+
+.nm-hub-pick-card p + p {
+  margin-top: 0.7rem;
+}
+
 .nm-tools-pick-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -953,5 +989,9 @@ html[data-theme="dark"] .nm-post-brief {
 }
 
 html[data-theme="dark"] .nm-tools-pick-card {
+  background: linear-gradient(180deg, rgba(68, 140, 166, 0.16), rgba(68, 140, 166, 0.07));
+}
+
+html[data-theme="dark"] .nm-hub-pick-card {
   background: linear-gradient(180deg, rgba(68, 140, 166, 0.16), rgba(68, 140, 166, 0.07));
 }
