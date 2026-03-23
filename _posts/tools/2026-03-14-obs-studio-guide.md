@@ -24,6 +24,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# midterm-tools-enhancement: begin
+quick_takeaways:
+  - "OBS는 설치 직후 자동 구성 마법사와 짧은 테스트 녹화만 해도 실패 확률이 크게 줄어듭니다."
+  - "처음부터 고화질 프리셋보다 오디오 싱크와 안정성부터 맞추는 편이 결과가 좋습니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "게임/화면 녹화 중심"
+    right: "OBS 기본 씬 구성부터 시작"
+  - left: "라이브 송출까지 계획"
+    right: "오디오 믹서와 인코더 설정 우선 점검"
+  - left: "편집까지 포함한 제작 흐름"
+    right: "DaVinci Resolve와 함께 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "녹화, 편집, 라이브 송출 흐름을 하나로 묶어 볼 때 도움이 되는 글들입니다."
+custom_next_reads:
+  - title: "DaVinci Resolve 설치와 사용법"
+    url: "/tools/davinci-resolve-guide/"
+    note: "녹화 후 편집/렌더까지 이어갈 때"
+  - title: "XSplit Broadcaster 설치와 사용법"
+    url: "/tools/xsplit-broadcaster-guide/"
+    note: "다른 송출 도구와 비교할 때"
+  - title: "방송·오디오·영상 도구 허브"
+    url: "/tools/creator-media/"
+    note: "관련 도구를 한 번에 비교할 때"
+# midterm-tools-enhancement: end
 ---
 
 - - -

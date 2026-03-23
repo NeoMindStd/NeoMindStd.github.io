@@ -22,6 +22,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# midterm-tools-enhancement: begin
+quick_takeaways:
+  - "디스크 경고가 뜨면 원인 분석보다 백업이 먼저입니다."
+  - "CrystalDiskInfo는 온도와 SMART 추세를 주기적으로 보는 용도로 쓸 때 가장 가치가 큽니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "SSD/HDD 건강 상태 빠른 점검"
+    right: "CrystalDiskInfo부터 확인"
+  - left: "CPU·메모리까지 같이 점검"
+    right: "CPU-Z와 병행"
+  - left: "램 오류 가능성까지 의심"
+    right: "TestMem5 추가 점검"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "저장장치 확인 이후에 시스템 전반 상태를 이어서 점검할 때 도움이 되는 글들입니다."
+custom_next_reads:
+  - title: "CPU-Z 설치와 사용법"
+    url: "/tools/cpu-z-guide/"
+    note: "CPU와 메모리 상태를 함께 볼 때"
+  - title: "GPU-Z 설치와 사용법"
+    url: "/tools/gpu-z-guide/"
+    note: "그래픽카드 상태까지 확인할 때"
+  - title: "TestMem5 설치와 사용법"
+    url: "/tools/testmem5-guide/"
+    note: "메모리 불안정 의심 시 추가 테스트"
+# midterm-tools-enhancement: end
 ---
 
 - - -

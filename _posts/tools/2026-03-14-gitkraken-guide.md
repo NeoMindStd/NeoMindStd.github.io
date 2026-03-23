@@ -23,6 +23,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# midterm-tools-enhancement: begin
+quick_takeaways:
+  - "브랜치가 많은 저장소에서는 GitKraken 그래프만 잘 읽어도 충돌 대응 시간이 크게 줄어듭니다."
+  - "GUI를 써도 Git 기본 개념은 필요하므로, clone-branch-commit-push 흐름부터 고정하는 편이 좋습니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "히스토리와 브랜치 그래프를 시각적으로 관리"
+    right: "GitKraken으로 시작"
+  - left: "가벼운 GUI와 Atlassian 연동"
+    right: "SourceTree와 비교"
+  - left: "터미널 위주 협업에 보조 도구 필요"
+    right: "Git Bash 흐름과 같이 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "Git GUI 선택과 협업 흐름을 같이 보면서 팀 작업 기준을 맞추기 좋은 글들입니다."
+custom_next_reads:
+  - title: "SourceTree 설치와 사용법"
+    url: "/tools/sourcetree-guide/"
+    note: "다른 Git GUI와 사용감을 비교할 때"
+  - title: "Git Bash 설치와 사용법"
+    url: "/tools/git-bash-guide/"
+    note: "터미널 기반 명령 흐름을 함께 가져갈 때"
+  - title: "Postman 설치와 사용법"
+    url: "/tools/postman-guide/"
+    note: "API 협업 아티팩트를 같이 관리할 때"
+# midterm-tools-enhancement: end
 ---
 
 - - -

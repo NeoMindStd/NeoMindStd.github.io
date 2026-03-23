@@ -21,6 +21,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# midterm-tools-enhancement: begin
+quick_takeaways:
+  - "CPU-Z는 성능 벤치 도구가 아니라 하드웨어 정보를 빠르게 확인하는 기준점 도구로 쓰는 편이 정확합니다."
+  - "메모리 확인은 Memory 탭과 SPD 탭을 같이 봐야 슬롯별 실제 상태를 놓치지 않습니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "CPU와 메모리 클럭 확인"
+    right: "CPU-Z 중심으로 확인"
+  - left: "그래픽카드 정보까지 함께 확인"
+    right: "GPU-Z와 같이 사용"
+  - left: "디스크 건강 상태까지 종합 점검"
+    right: "CrystalDiskInfo도 함께 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "PC 상태를 한 번에 점검할 때 같이 쓰기 좋은 시스템 유틸리티 글입니다."
+custom_next_reads:
+  - title: "GPU-Z 설치와 사용법"
+    url: "/tools/gpu-z-guide/"
+    note: "그래픽카드 정보까지 확인할 때"
+  - title: "CrystalDiskInfo 설치와 사용법"
+    url: "/tools/crystaldiskinfo-guide/"
+    note: "저장장치 건강 상태를 함께 볼 때"
+  - title: "TestMem5 설치와 사용법"
+    url: "/tools/testmem5-guide/"
+    note: "메모리 안정성 테스트까지 이어갈 때"
+# midterm-tools-enhancement: end
 ---
 
 - - -

@@ -24,6 +24,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# midterm-tools-enhancement: begin
+quick_takeaways:
+  - "DaVinci Resolve는 설치 전에 GPU와 저장장치 여유를 먼저 확인해야 체감 품질이 크게 좋아집니다."
+  - "첫 프로젝트는 컷 편집과 짧은 렌더만 목표로 잡는 편이 학습 효율이 높습니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "무료로 본격 영상 편집 시작"
+    right: "DaVinci Resolve부터 시작"
+  - left: "녹화와 편집을 묶은 워크플로우"
+    right: "OBS와 함께 구성"
+  - left: "오디오 후반 작업 비중 큼"
+    right: "Cakewalk/GoldWave 흐름도 같이 보기"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "영상 제작 워크플로우를 녹화부터 오디오 마무리까지 이어서 구성할 때 좋은 글들입니다."
+custom_next_reads:
+  - title: "OBS 설치와 사용법"
+    url: "/tools/obs-studio-guide/"
+    note: "녹화 소스 확보부터 시작할 때"
+  - title: "Cakewalk 설치와 사용법"
+    url: "/tools/cakewalk-guide/"
+    note: "오디오 편집/믹싱을 강화할 때"
+  - title: "방송·오디오·영상 도구 허브"
+    url: "/tools/creator-media/"
+    note: "크리에이터 도구 전체를 비교할 때"
+# midterm-tools-enhancement: end
 ---
 
 - - -

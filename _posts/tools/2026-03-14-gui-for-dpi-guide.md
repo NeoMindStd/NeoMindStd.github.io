@@ -23,6 +23,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# midterm-tools-enhancement: begin
+quick_takeaways:
+  - "GoodbyeDPI는 네트워크 우회 성격의 도구라, 실행 전에 README와 릴리스 노트를 먼저 읽는 편이 안전합니다."
+  - "환경마다 동작이 달라질 수 있으므로 기본 옵션부터 단계적으로 시험하는 방식이 좋습니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "Windows 네트워크 차단 우회 테스트"
+    right: "GoodbyeDPI 기본 옵션부터 점검"
+  - left: "도구 업데이트와 이슈 확인"
+    right: "공식 GitHub Releases/Issues 확인"
+  - left: "시스템 전체 상태 점검도 필요"
+    right: "시스템 유틸리티 허브 글과 병행"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "네트워크 우회 도구를 다룰 때 함께 보면 좋은 시스템 점검 글들입니다."
+custom_next_reads:
+  - title: "시스템 점검·유틸리티 허브"
+    url: "/tools/system-utilities/"
+    note: "관련 점검 도구를 한 번에 찾을 때"
+  - title: "CPU-Z 설치와 사용법"
+    url: "/tools/cpu-z-guide/"
+    note: "기본 하드웨어 상태를 먼저 확인할 때"
+  - title: "CrystalDiskInfo 설치와 사용법"
+    url: "/tools/crystaldiskinfo-guide/"
+    note: "저장장치 상태까지 같이 점검할 때"
+# midterm-tools-enhancement: end
 ---
 
 - - -

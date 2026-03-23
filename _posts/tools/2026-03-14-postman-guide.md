@@ -23,6 +23,34 @@ toc_sticky: true
 toc_label: "목차"
 
 published: true
+# midterm-tools-enhancement: begin
+quick_takeaways:
+  - "API 테스트만 빠르게 시작하려면 요청 보내기보다 컬렉션과 환경 변수를 먼저 나누는 편이 훨씬 안정적입니다."
+  - "Docker나 로컬 서버를 함께 쓸 때는 Postman을 연결 테스트 도구로 두면 문제 원인을 더 빨리 좁힐 수 있습니다."
+decision_table_title: "한눈에 고르기"
+decision_table_headers:
+  - "상황"
+  - "먼저 보기"
+decision_table_rows:
+  - left: "로컬 API를 빠르게 점검"
+    right: "Postman 기본 요청 + 환경 변수부터 구성"
+  - left: "팀 단위로 API 명세 공유"
+    right: "컬렉션 구조와 변수 네이밍 규칙부터 정리"
+  - left: "컨테이너 환경 API 테스트"
+    right: "Docker 가이드와 함께 연결 흐름 확인"
+custom_next_reads_title: "이 글과 함께 보면 좋은 글"
+custom_next_reads_intro: "요청 테스트만 끝내지 않고, 개발 환경과 협업 흐름까지 이어서 볼 수 있는 글들입니다."
+custom_next_reads:
+  - title: "Docker 설치와 사용법"
+    url: "/tools/docker-guide/"
+    note: "컨테이너 API 테스트 환경을 함께 맞출 때"
+  - title: "Python 설치와 사용법"
+    url: "/tools/python-guide/"
+    note: "로컬 API 서버를 함께 돌릴 때"
+  - title: "GitKraken 설치와 사용법"
+    url: "/tools/gitkraken-guide/"
+    note: "컬렉션과 소스 변경 이력을 같이 관리할 때"
+# midterm-tools-enhancement: end
 ---
 
 - - -
