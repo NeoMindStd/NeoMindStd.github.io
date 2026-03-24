@@ -29,7 +29,7 @@ toc_label: "목차"
 
 published: true
 quick_takeaways:
-  - "이번 2박4일은 건비치 스노클링 1회 + 보트 스쿠버 2회(블루홀, 아메리칸 탱커 난파선) 구성으로 다녀왔습니다."
+  - "이번 2박4일은 2/9 보트 스쿠버 2회(블루홀, 아메리칸 탱커 난파선) -> 2/10 건비치 스노클링 -> 2/11 새벽 귀국 순으로 진행했습니다."
   - "PADI 어드밴스드 오픈워터(AOW) 기준으로 블루홀(최대 37m)은 깊이 체감이 확실했고, 난파선 포인트는 수평 이동과 템포 관리가 중요했습니다."
 summary_points:
   - "여행 기록에 포함된 예약번호·증권번호·개인 연락처·얼굴 노출 컷은 의도적으로 제외했습니다."
@@ -64,26 +64,14 @@ custom_next_reads:
 
 ## 일정 요약 (개인정보 제거판)
 
-- `2/10` : 이파오/투몬 동선 + 건비치 스노클링
 - `2/9` : 보트 다이빙(블루홀, 아메리칸 탱커 난파선)
+- `2/10` : 이파오/투몬 동선 + 건비치 스노클링
 - `2/11 새벽` : 렌터카 반납 후 귀국편 탑승
 
 실제 이동은 야간 동선이 섞여서 체감상 빡빡한 편이었고,
 장비 정리와 샤워/휴식 시간을 넉넉히 잡는 게 훨씬 안정적이었습니다.
 
-## 건비치 스노클링: 노을 타이밍이 좋았던 세션
-
-![건비치 스노클링 - 노을](/assets/images/posts/review/guam-scuba-snorkeling-2026/snorkel-01.jpg)
-
-![건비치 스노클링 - 비치 방향](/assets/images/posts/review/guam-scuba-snorkeling-2026/snorkel-02.jpg)
-
-![건비치 스노클링 - 수면 위 노을](/assets/images/posts/review/guam-scuba-snorkeling-2026/snorkel-03.jpg)
-
-건비치는 해 질 무렵 색감이 정말 좋았습니다.
-유속이 아주 강한 날은 아니었지만, 수면 잔파가 계속 있어서
-호흡 리듬이 깨지지 않게 천천히 이동하는 쪽이 편했습니다.
-
-## 블루홀: 깊이 체감이 확실한 포인트
+## 2/9: 보트 다이빙 1회차 - 블루홀
 
 ![블루홀 - 버블 컬럼](/assets/images/posts/review/guam-scuba-snorkeling-2026/bluehole-01.jpg)
 
@@ -98,7 +86,7 @@ AOW로 내려갔을 때는 부력 미세조정과 상승 템포를 계속 신경
 
 특히 버블이 위로 쏟아지는 구간은 영상/사진으로 보는 것보다 현장 몰입감이 훨씬 컸습니다.
 
-## 아메리칸 탱커 난파선: 수평 이동과 포인트 관찰
+## 2/9: 보트 다이빙 2회차 - 아메리칸 탱커 난파선
 
 ![아메리칸 탱커 난파선 - 메인 오브젝트](/assets/images/posts/review/guam-scuba-snorkeling-2026/wreck-01.jpg)
 
@@ -113,6 +101,18 @@ AOW로 내려갔을 때는 부력 미세조정과 상승 템포를 계속 신경
 
 작은 피시스쿨과 구조물 표면 생물들이 계속 보여서
 속도를 낮추고 한 장면씩 보는 식으로 다이브하는 게 좋았습니다.
+
+## 2/10: 건비치 스노클링 - 노을 타이밍 세션
+
+![건비치 스노클링 - 노을](/assets/images/posts/review/guam-scuba-snorkeling-2026/snorkel-01.jpg)
+
+![건비치 스노클링 - 비치 방향](/assets/images/posts/review/guam-scuba-snorkeling-2026/snorkel-02.jpg)
+
+![건비치 스노클링 - 수면 위 노을](/assets/images/posts/review/guam-scuba-snorkeling-2026/snorkel-03.jpg)
+
+건비치는 해 질 무렵 색감이 정말 좋았습니다.
+유속이 아주 강한 날은 아니었지만, 수면 잔파가 계속 있어서
+호흡 리듬이 깨지지 않게 천천히 이동하는 쪽이 편했습니다.
 
 ## 다이브 로그 요약
 
@@ -131,9 +131,19 @@ AOW로 내려갔을 때는 부력 미세조정과 상승 템포를 계속 신경
 
 ## 영상 클립
 
-<iframe width="100%" height="520" src="https://www.youtube.com/embed/PD69hPL-sYY?start=956&end=986" title="Guam scuba/snorkeling clip" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="position:relative;width:100%;max-width:760px;margin:0 auto;aspect-ratio:16/9;">
+  <iframe style="position:absolute;inset:0;width:100%;height:100%;" src="https://www.youtube.com/embed/PD69hPL-sYY?start=956&end=986" title="Guam scuba/snorkeling clip" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 - 클립 원본: [YouTube Clip](https://youtube.com/clip/UgkxtFBT6X5LWZcauM8edOrSyG_giomobFgE?si=gJsdCTSKDxTyoU7d)
+
+## 2/11 새벽: 장비 정리 후 귀국
+
+2/10 밤 일정을 마친 뒤에는 장비를 먼저 정리하고,
+세척이 필요한 것과 바로 패킹 가능한 것을 나눠서 정리했습니다.
+
+렌터카 야간 반납이 있는 일정이라 공항 동선은 미리 확인해두는 편이 안정적이었고,
+새벽편에서는 수면 부족을 고려해 귀국 당일 오전 일정은 비워두는 편이 좋았습니다.
 
 ## 현장 운영 팁 (개인정보 제거)
 
@@ -145,9 +155,9 @@ AOW로 내려갔을 때는 부력 미세조정과 상승 템포를 계속 신경
 
 이번 괌 2박4일은, 짧은 일정 안에서 스노클링과 스쿠버 포인트 성격이 확실히 달라서 더 재미있었습니다.
 
-- 건비치 스노클링: 노을과 수면 컨디션 중심
 - 블루홀: 깊이 체감 + 부력/상승 템포 관리
 - 아메리칸 탱커 난파선: 수평 이동 + 구조물 관찰
+- 건비치 스노클링: 노을과 수면 컨디션 중심
 
 AOW 기준으로도 충분히 만족도가 높았고,
 다음에 다시 간다면 촬영 장비 셋업(저조도/안정화)만 조금 더 보강해서 들어가고 싶습니다.
