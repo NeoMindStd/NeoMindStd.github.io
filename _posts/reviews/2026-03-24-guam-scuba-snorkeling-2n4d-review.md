@@ -86,6 +86,14 @@ AOW로 내려갔을 때는 부력 미세조정과 상승 템포를 계속 신경
 
 특히 버블이 위로 쏟아지는 구간은 영상/사진으로 보는 것보다 현장 몰입감이 훨씬 컸습니다.
 
+### 블루홀 영상 클립
+
+<div style="position:relative;width:100%;max-width:760px;margin:0 auto;aspect-ratio:16/9;">
+  <iframe style="position:absolute;inset:0;width:100%;height:100%;" src="https://www.youtube.com/embed/PD69hPL-sYY?start=956&end=986" title="Guam scuba/snorkeling clip" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+- 클립 원본: [YouTube Clip](https://youtube.com/clip/UgkxtFBT6X5LWZcauM8edOrSyG_giomobFgE?si=gJsdCTSKDxTyoU7d)
+
 ## 2/9: 보트 다이빙 2회차 - 아메리칸 탱커 난파선
 
 ![아메리칸 탱커 난파선 - 메인 오브젝트](/assets/images/posts/review/guam-scuba-snorkeling-2026/wreck-01.jpg)
@@ -128,14 +136,6 @@ AOW로 내려갔을 때는 부력 미세조정과 상승 템포를 계속 신경
   - 최대 수심 `23m`
   - 다이브 시간 `44:23`
   - 수온 `28~29°C`
-
-## 영상 클립
-
-<div style="position:relative;width:100%;max-width:760px;margin:0 auto;aspect-ratio:16/9;">
-  <iframe style="position:absolute;inset:0;width:100%;height:100%;" src="https://www.youtube.com/embed/PD69hPL-sYY?start=956&end=986" title="Guam scuba/snorkeling clip" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-- 클립 원본: [YouTube Clip](https://youtube.com/clip/UgkxtFBT6X5LWZcauM8edOrSyG_giomobFgE?si=gJsdCTSKDxTyoU7d)
 
 ## 2/11 새벽: 장비 정리 후 귀국
 
