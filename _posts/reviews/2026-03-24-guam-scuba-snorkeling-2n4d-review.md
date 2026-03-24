@@ -17,7 +17,7 @@ tags:
   - PADI
   - AOW
 
-date: 2026-03-24 23:58:00 +09:00
+date: 2026-03-24 00:10:00 +09:00
 permalink: /리뷰/guam-scuba-snorkeling-2n4d-2026/
 header:
   og_image: /assets/images/posts/review/guam-scuba-snorkeling-2026/cover.jpg
